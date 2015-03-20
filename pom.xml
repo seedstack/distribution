@@ -1,0 +1,77 @@
+<!--
+
+    Copyright (c) 2013-2015 by The SeedStack authors. All rights reserved.
+
+    This file is part of SeedStack, An enterprise-oriented full development stack.
+
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.seedstack</groupId>
+        <artifactId>parent</artifactId>
+        <version>2.0.0-M1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>distribution</artifactId>
+    <version>15.4-M1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <seed.version>2.0.0-M1-SNAPSHOT</seed.version>
+        <business.version>2.0.0-M1-SNAPSHOT</business.version>
+
+        <w20-function.version>2.0.0-M1-SNAPSHOT</w20-function.version>
+        <io-function.version>2.0.0-M1-SNAPSHOT</io-function.version>
+        <i18n-function.version>2.0.0-M1-SNAPSHOT</i18n-function.version>
+    </properties>
+
+    <modules>
+        <module>seedstack-bom</module>
+        <module>app-composite</module>
+        <module>domain-composite</module>
+        <module>web-composite</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+</project>

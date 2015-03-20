@@ -1,0 +1,84 @@
+<!--
+
+    Copyright (c) 2013-2015 by The SeedStack authors. All rights reserved.
+
+    This file is part of SeedStack, An enterprise-oriented full development stack.
+
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.seedstack</groupId>
+        <artifactId>distribution</artifactId>
+        <version>15.4-M1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>seedstack-bom</artifactId>
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Framework imports -->
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-bom</artifactId>
+                <version>${seed.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.business</groupId>
+                <artifactId>business-bom</artifactId>
+                <version>${business.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Function imports -->
+            <dependency>
+                <groupId>org.seedstack.functions.w20</groupId>
+                <artifactId>w20-function-bom</artifactId>
+                <version>${w20-function.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.functions.io</groupId>
+                <artifactId>io-function-bom</artifactId>
+                <version>${io-function.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.functions.i18n</groupId>
+                <artifactId>i18n-function-bom</artifactId>
+                <version>${i18n-function.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Solution composites versions -->
+            <dependency>
+                <groupId>org.seedstack</groupId>
+                <artifactId>domain-composite</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack</groupId>
+                <artifactId>app-composite</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack</groupId>
+                <artifactId>web-composite</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
