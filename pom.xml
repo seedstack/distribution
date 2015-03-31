@@ -23,7 +23,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <seed.version>2.0.0-M1-SNAPSHOT</seed.version>
+        <seed.version>2.0.0-M1</seed.version>
         <business.version>2.0.0-M1-SNAPSHOT</business.version>
 
         <w20-function.version>2.0.0-M1-SNAPSHOT</w20-function.version>
