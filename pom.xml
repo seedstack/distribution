@@ -27,8 +27,8 @@
         <business.version>2.0.0-M1</business.version>
 
         <w20-function.version>2.0.0-M1</w20-function.version>
-        <io-function.version>2.0.0-M1-SNAPSHOT</io-function.version>
-        <i18n-function.version>2.0.0-M1-SNAPSHOT</i18n-function.version>
+        <io-function.version>2.0.0-M1</io-function.version>
+        <i18n-function.version>2.0.0-M1</i18n-function.version>
     </properties>
 
     <modules>
@@ -48,6 +48,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <scm>
+        <url>https://github.com/seedstack/distribution</url>
+        <connection>scm:git:git://github.com/seedstack/distribution.git</connection>
+        <developerConnection>scm:git:git@github.com:seedstack/distribution.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
     <repositories>
         <repository>

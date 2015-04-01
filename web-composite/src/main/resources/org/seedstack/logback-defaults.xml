@@ -46,6 +46,7 @@
     <logger name="com.sun.jersey.server.impl.managedbeans.ManagedBeanComponentProviderFactoryInitilizer" level="INFO"/>
     <logger name="com.sun.xml.internal.bind.v2.runtime.reflect.opt" level="INFO"/>
 
+    <!-- Improve performance of JUL through bridge in case of log level change -->
     <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
         <resetJUL>true</resetJUL>
     </contextListener>
