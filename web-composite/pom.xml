@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>15.4-M1</version>
+        <version>15.4-M2-SNAPSHOT</version>
     </parent>
 
 	<artifactId>web-composite</artifactId>
