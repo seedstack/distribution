@@ -1,4 +1,4 @@
-# SeedStack distribution [![Build status](https://travis-ci.org/seedstack/distribution.svg?branch=master)](https://travis-ci.org/seedstack/distribution)
+# SeedStack distribution [![Build status](https://travis-ci.org/seedstack/distribution.svg?branch=master)](https://travis-ci.org/seedstack/distribution) [![Stories in Ready](https://badge.waffle.io/seedstack/distribution.png?label=ready&title=Ready)](https://waffle.io/seedstack/distribution)
 
 POMs for version management of the whole stack. 
 
