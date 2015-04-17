@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>parent</artifactId>
-        <version>2.0.0-M1</version>
+        <version>2.0.0-M2-SNAPSHOT</version>
     </parent>
 
     <artifactId>distribution</artifactId>
@@ -22,12 +22,12 @@
     <packaging>pom</packaging>
 
     <properties>
-        <seed.version>2.0.0-M1</seed.version>
-        <business.version>2.0.0-M1</business.version>
+        <seed.version>2.0.0-M2-SNAPSHOT</seed.version>
+        <business.version>2.0.0-M2-SNAPSHOT</business.version>
 
-        <w20-function.version>2.0.0-M1</w20-function.version>
-        <io-function.version>2.0.0-M1</io-function.version>
-        <i18n-function.version>2.0.0-M1</i18n-function.version>
+        <w20-function.version>2.0.0-M2-SNAPSHOT</w20-function.version>
+        <io-function.version>2.0.0-M2-SNAPSHOT</io-function.version>
+        <i18n-function.version>2.0.0-M2-SNAPSHOT</i18n-function.version>
     </properties>
 
     <modules>
@@ -36,17 +36,6 @@
         <module>domain-composite</module>
         <module>web-composite</module>
     </modules>
-
-    <!-- TODO: remove this when fixed in upper dependency management (maybe with exclusion) -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.json</groupId>
-                <artifactId>json</artifactId>
-                <version>20140107</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <scm>
         <url>https://github.com/seedstack/distribution</url>
