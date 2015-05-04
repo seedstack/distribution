@@ -60,6 +60,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.seedstack.functions.batch-monitoring</groupId>
+                <artifactId>batch-monitoring-function-bom</artifactId>
+                <version>${batch-monitoring-function.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
             <!-- Solution composites versions -->
             <dependency>

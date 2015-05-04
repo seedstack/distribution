@@ -28,6 +28,7 @@
         <w20-function.version>2.0.0-M2-SNAPSHOT</w20-function.version>
         <io-function.version>2.0.0-M2-SNAPSHOT</io-function.version>
         <i18n-function.version>2.0.0-M2-SNAPSHOT</i18n-function.version>
+        <batch-monitoring-function.version>2.0.0-M2-SNAPSHOT</batch-monitoring-function.version>
     </properties>
 
     <modules>
