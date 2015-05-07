@@ -18,7 +18,7 @@
     </parent>
 
 	<artifactId>web-composite</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
    <dependencies>
        <dependency>
