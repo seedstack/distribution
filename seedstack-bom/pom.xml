@@ -85,6 +85,7 @@
                 <groupId>org.seedstack</groupId>
                 <artifactId>web-composite</artifactId>
                 <version>${project.version}</version>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
