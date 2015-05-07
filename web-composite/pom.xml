@@ -47,10 +47,5 @@
            <artifactId>business-web</artifactId>
            <version>${business.version}</version>
        </dependency>
-       <dependency>
-           <groupId>org.seedstack.functions.w20</groupId>
-           <artifactId>w20-function-web</artifactId>
-           <version>${w20-function.version}</version>
-       </dependency>
-   </dependencies>
+  </dependencies>
 </project>
