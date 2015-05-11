@@ -49,7 +49,7 @@
        </dependency>
        <dependency>
            <groupId>org.seedstack.functions.w20</groupId>
-           <artifactId>w20-function-web</artifactId>
+           <artifactId>w20-function-rest</artifactId>
            <version>${w20-function.version}</version>
        </dependency>
    </dependencies>
