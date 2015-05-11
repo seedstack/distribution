@@ -14,21 +14,21 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>parent</artifactId>
-        <version>2.0.0-M2-SNAPSHOT</version>
+        <version>2.0.0-M2</version>
     </parent>
 
     <artifactId>distribution</artifactId>
-    <version>15.4-M2-SNAPSHOT</version>
+    <version>15.7-M2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
-        <seed.version>2.0.0-M2-SNAPSHOT</seed.version>
-        <business.version>2.0.0-M2-SNAPSHOT</business.version>
+        <seed.version>2.0.0-M2</seed.version>
+        <business.version>2.0.0-M2</business.version>
 
-        <w20-function.version>2.0.0-M2-SNAPSHOT</w20-function.version>
-        <io-function.version>2.0.0-M2-SNAPSHOT</io-function.version>
-        <i18n-function.version>2.0.0-M2-SNAPSHOT</i18n-function.version>
-        <batch-monitoring-function.version>2.0.0-M2-SNAPSHOT</batch-monitoring-function.version>
+        <w20-function.version>2.0.0-M2</w20-function.version>
+        <io-function.version>2.0.0-M2</io-function.version>
+        <i18n-function.version>2.0.0-M2</i18n-function.version>
+        <batch-monitoring-function.version>2.0.0-M2</batch-monitoring-function.version>
     </properties>
 
     <modules>
