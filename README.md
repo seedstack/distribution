@@ -1,6 +1,7 @@
-# SeedStack distribution [![Build status](https://travis-ci.org/seedstack/distribution.svg?branch=master)](https://travis-ci.org/seedstack/distribution) [![Stories in Ready](https://badge.waffle.io/seedstack/distribution.png?label=ready&title=Ready)](https://waffle.io/seedstack/distribution)
+# SeedStack distribution 
+[![Build status](https://travis-ci.org/seedstack/distribution.svg?branch=master)](https://travis-ci.org/seedstack/distribution) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.seedstack/distribution/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/org.seedstack/distribution)
 
-POMs for version management of the whole stack. 
+Distribution of the whole stack (dependency management, project archetypes, composite dependencies, ...). 
 
 # Copyright and license
 
