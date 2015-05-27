@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>parent</artifactId>
-        <version>2.0.0-M2</version>
+        <version>2.0.0-M3</version>
     </parent>
 
     <artifactId>distribution</artifactId>
@@ -22,13 +22,13 @@
     <packaging>pom</packaging>
 
     <properties>
-        <seed.version>2.0.0-M2</seed.version>
-        <business.version>2.0.0-M2</business.version>
+        <seed.version>2.0.0-M3</seed.version>
+        <business.version>2.0.0-M3</business.version>
 
-        <w20-function.version>2.0.0-M2</w20-function.version>
+        <w20-function.version>2.0.0-M3</w20-function.version>
         <io-function.version>2.0.0-M2</io-function.version>
-        <i18n-function.version>2.0.0-M2</i18n-function.version>
-        <batch-monitoring-function.version>2.0.0-M2</batch-monitoring-function.version>
+        <i18n-function.version>2.0.0-M3</i18n-function.version>
+        <batch-monitoring-function.version>2.0.0-M3</batch-monitoring-function.version>
     </properties>
 
     <modules>
