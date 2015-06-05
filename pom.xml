@@ -35,7 +35,9 @@
         <module>seedstack-bom</module>
         <module>app-composite</module>
         <module>domain-composite</module>
+        <module>domain-archetype</module>
         <module>web-composite</module>
+        <module>web-archetype</module>
     </modules>
 
     <scm>
