@@ -38,7 +38,7 @@
        </dependency>
        <dependency>
            <groupId>org.seedstack.business</groupId>
-           <artifactId>business-web</artifactId>
+           <artifactId>business-core</artifactId>
            <version>${business.version}</version>
        </dependency>
 
