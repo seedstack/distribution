@@ -38,6 +38,8 @@
         <module>domain-archetype</module>
         <module>web-composite</module>
         <module>web-archetype</module>
+        <module>rest-composite</module>
+        <module>rest-archetype</module>
     </modules>
 
     <scm>

@@ -87,6 +87,12 @@
                 <version>${project.version}</version>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>org.seedstack</groupId>
+                <artifactId>rest-composite</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
