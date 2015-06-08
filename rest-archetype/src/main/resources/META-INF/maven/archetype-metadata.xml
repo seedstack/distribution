@@ -12,96 +12,52 @@
 -->
 <archetype-descriptor
         xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-        name="root"
+        name="rest"
         xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <modules>
-        <module id="app" dir="app" name="app">
-            <fileSets>
-                <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                    <directory>src/main/java</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="false" encoding="UTF-8">
-                    <directory>src/main/resources</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                    <directory>src/test/java</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="false" encoding="UTF-8">
-                    <directory>src/test/resources</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                    <directory>src/it/java</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="false" encoding="UTF-8">
-                    <directory>src/it/resources</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-            </fileSets>
-        </module>
-        <module id="rest" dir="rest" name="rest">
-            <fileSets>
-                <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                    <directory>src/main/java</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="false" encoding="UTF-8">
-                    <directory>src/main/resources</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="false" encoding="UTF-8">
-                    <directory>src/main/webapp</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                    <directory>src/test/java</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="false" encoding="UTF-8">
-                    <directory>src/test/resources</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="true" encoding="UTF-8">
-                    <directory>src/it/java</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-                <fileSet filtered="true" packaged="false" encoding="UTF-8">
-                    <directory>src/it/resources</directory>
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                </fileSet>
-            </fileSets>
-        </module>
-    </modules>
+    <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>src/main/webapp</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>src/test/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>src/test/resources</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>src/it/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>src/it/resources</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+    </fileSets>
 </archetype-descriptor>

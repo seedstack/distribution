@@ -23,6 +23,21 @@
    <dependencies>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
+           <artifactId>seed-core-support-core</artifactId>
+           <version>${seed.version}</version>
+       </dependency>
+       <dependency>
+           <groupId>org.seedstack.seed</groupId>
+           <artifactId>seed-security-support-core</artifactId>
+           <version>${seed.version}</version>
+       </dependency>
+       <dependency>
+           <groupId>org.seedstack.seed</groupId>
+           <artifactId>seed-shell-support</artifactId>
+           <version>${seed.version}</version>
+       </dependency>
+       <dependency>
+           <groupId>org.seedstack.seed</groupId>
            <artifactId>seed-web-support-core</artifactId>
            <version>${seed.version}</version>
        </dependency>
@@ -36,16 +51,11 @@
            <artifactId>seed-rest-support-core</artifactId>
            <version>${seed.version}</version>
        </dependency>
+
        <dependency>
            <groupId>org.seedstack.business</groupId>
            <artifactId>business-core</artifactId>
            <version>${business.version}</version>
-       </dependency>
-
-       <dependency>
-           <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-integrationtest-support-web</artifactId>
-           <version>${seed.version}</version>
        </dependency>
    </dependencies>
 </project>

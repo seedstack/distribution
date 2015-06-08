@@ -1,4 +1,0 @@
-# Uncomment to add basic auth
-#[org.seedstack.seed.security.urls]
-#/** = authcBasic
-

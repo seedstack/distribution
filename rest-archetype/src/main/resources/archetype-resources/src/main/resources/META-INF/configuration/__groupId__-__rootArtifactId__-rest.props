@@ -8,5 +8,9 @@ application-id = ${rootArtifactId}
 [org.seedstack.seed.security.users]
 username = password
 
+# Uncomment to add basic auth
+#[org.seedstack.seed.security.urls]
+#/** = authcBasic
+
 # The following section resets to properties without prefix
 []
