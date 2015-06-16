@@ -71,6 +71,12 @@
             <!-- Solution composites versions -->
             <dependency>
                 <groupId>org.seedstack</groupId>
+                <artifactId>batch-composite</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack</groupId>
                 <artifactId>domain-composite</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>

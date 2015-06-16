@@ -23,6 +23,7 @@
 
     <properties>
         <seed.version>2.0.0-M3</seed.version>
+        <seed-spring-extensions.version>2.0.0-M2</seed-spring-extensions.version>
         <business.version>2.0.0-M3</business.version>
 
         <w20-function.version>2.0.0-M3</w20-function.version>
@@ -34,6 +35,8 @@
     <modules>
         <module>seedstack-bom</module>
         <module>app-composite</module>
+        <module>batch-composite</module>
+        <module>batch-archetype</module>
         <module>domain-composite</module>
         <module>domain-archetype</module>
         <module>web-composite</module>
@@ -41,6 +44,21 @@
         <module>rest-composite</module>
         <module>rest-archetype</module>
     </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>2.5</version>
+                    <configuration>
+                        <escapeString>\</escapeString>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
     <scm>
         <url>https://github.com/seedstack/distribution</url>

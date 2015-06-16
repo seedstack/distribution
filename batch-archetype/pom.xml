@@ -18,7 +18,7 @@
         <version>15.7-M5-SNAPSHOT</version>
     </parent>
 
-    <artifactId>domain-archetype</artifactId>
+    <artifactId>batch-archetype</artifactId>
     <packaging>maven-archetype</packaging>
 
     <build>

@@ -60,7 +60,7 @@
             <artifactId>logback-classic</artifactId>
         </dependency>
 
-        <!-- TEST  -->
+        <!-- Testing  -->
         <dependency>
             <groupId>org.seedstack.seed</groupId>
             <artifactId>seed-unittest-support</artifactId>
