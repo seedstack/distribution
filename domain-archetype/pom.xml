@@ -20,6 +20,7 @@
 
     <artifactId>domain-archetype</artifactId>
     <packaging>maven-archetype</packaging>
+    <description>SeedStack mono-module JAR for reusable domains</description>
 
     <build>
         <resources>

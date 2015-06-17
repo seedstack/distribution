@@ -20,6 +20,7 @@
 
     <artifactId>web-archetype</artifactId>
     <packaging>maven-archetype</packaging>
+    <description>SeedStack multi-module WAR project for classic Web applications</description>
 
     <build>
         <resources>

@@ -20,6 +20,7 @@
 
     <artifactId>batch-archetype</artifactId>
     <packaging>maven-archetype</packaging>
+    <description>SeedStack mono-module JAR integrating Spring Batch</description>
 
     <build>
         <resources>

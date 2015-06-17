@@ -20,6 +20,7 @@
 
     <artifactId>rest-archetype</artifactId>
     <packaging>maven-archetype</packaging>
+    <description>SeedStack mono-module WAR dedicated to REST-only projects, like micro-services</description>
 
     <build>
         <resources>
