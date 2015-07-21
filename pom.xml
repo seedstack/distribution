@@ -14,22 +14,23 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>parent</artifactId>
-        <version>2.0.0-M3</version>
+        <version>2.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>distribution</artifactId>
-    <version>15.7-M6-SNAPSHOT</version>
+    <version>15.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
-        <seed.version>2.0.0-M3</seed.version>
-        <seed-spring-extensions.version>2.0.0-M2</seed-spring-extensions.version>
-        <business.version>2.0.0-M3</business.version>
+        <seed.version>2.0.0-SNAPSHOT</seed.version>
+        <seed-spring-extensions.version>2.0.0-SNAPSHOT</seed-spring-extensions.version>
+        <business.version>2.0.0-SNAPSHOT</business.version>
 
-        <w20-function.version>2.0.0-M3</w20-function.version>
-        <io-function.version>2.0.0-M2</io-function.version>
-        <i18n-function.version>2.0.0-M3</i18n-function.version>
-        <batch-monitoring-function.version>2.0.0-M3</batch-monitoring-function.version>
+        <w20-function.version>2.0.0-SNAPSHOT</w20-function.version>
+        <io-function.version>2.0.0-SNAPSHOT</io-function.version>
+        <i18n-function.version>2.0.0-SNAPSHOT</i18n-function.version>
+        <audit-function.version>2.0.0-SNAPSHOT</audit-function.version>
+        <batch-monitoring-function.version>2.0.0-SNAPSHOT</batch-monitoring-function.version>
     </properties>
 
     <modules>

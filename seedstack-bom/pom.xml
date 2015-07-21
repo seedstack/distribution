@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>15.7-M6-SNAPSHOT</version>
+        <version>15.7-SNAPSHOT</version>
     </parent>
 
     <artifactId>seedstack-bom</artifactId>
@@ -57,6 +57,13 @@
                 <groupId>org.seedstack.functions.i18n</groupId>
                 <artifactId>i18n-function-bom</artifactId>
                 <version>${i18n-function.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.functions.audit</groupId>
+                <artifactId>audit-function-bom</artifactId>
+                <version>${audit-function.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
