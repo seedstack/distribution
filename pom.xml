@@ -18,7 +18,7 @@
     </parent>
 
     <artifactId>distribution</artifactId>
-    <version>15.7-SNAPSHOT</version>
+    <version>15.7</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -65,7 +65,7 @@
         <url>https://github.com/seedstack/distribution</url>
         <connection>scm:git:git://github.com/seedstack/distribution.git</connection>
         <developerConnection>scm:git:git@github.com:seedstack/distribution.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v15.7</tag>
     </scm>
 
     <repositories>
