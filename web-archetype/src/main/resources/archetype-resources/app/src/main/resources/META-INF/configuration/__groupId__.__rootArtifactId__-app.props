@@ -1,5 +1,5 @@
-[org.seedstack.seed.core]
-application-id = ${rootArtifactId}
+[org.seedstack.seed]
+core.application-id = ${rootArtifactId}
 
 # The following section is used by ConfigurationRealm, the default security realm, which should be replaced by a
 # more useful one like LdapRealm.

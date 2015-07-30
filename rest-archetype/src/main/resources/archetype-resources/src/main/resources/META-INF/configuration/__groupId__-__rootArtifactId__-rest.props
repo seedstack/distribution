@@ -1,5 +1,7 @@
-[org.seedstack.seed.core]
-application-id = ${rootArtifactId}
+[org.seedstack.seed]
+core.application-id = ${rootArtifactId}
+# The following property exposes REST resources on / instead of the /rest default
+rest.path =
 
 # The following section is used by ConfigurationRealm, the default security realm, which should be replaced by a
 # more useful one like LdapRealm.
