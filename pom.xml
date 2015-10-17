@@ -13,8 +13,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.seedstack</groupId>
-        <artifactId>parent</artifactId>
-        <version>2.0.1-SNAPSHOT</version>
+        <artifactId>parent-internal</artifactId>
+        <version>2.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>distribution</artifactId>
@@ -23,14 +23,29 @@
 
     <properties>
         <seed.version>2.1.0-M1-SNAPSHOT</seed.version>
-        <seed-spring-extensions.version>2.0.0</seed-spring-extensions.version>
-        <business.version>2.0.0</business.version>
+        <business.version>2.1.0-M1-SNAPSHOT</business.version>
 
-        <w20-function.version>2.0.0</w20-function.version>
-        <io-function.version>2.0.0</io-function.version>
-        <i18n-function.version>2.0.0</i18n-function.version>
-        <audit-function.version>2.0.0</audit-function.version>
-        <batch-monitoring-function.version>2.0.0</batch-monitoring-function.version>
+        <account-management-addon.version>2.1.0-M1-SNAPSHOT</account-management-addon.version>
+        <audit-addon.version>2.1.0-M1-SNAPSHOT</audit-addon.version>
+        <batch-monitoring-addon.version>2.1.0-M1-SNAPSHOT</batch-monitoring-addon.version>
+        <elasticsearch-addon.version>2.1.0-M1-SNAPSHOT</elasticsearch-addon.version>
+        <i18n-addon.version>2.1.0-M1-SNAPSHOT</i18n-addon.version>
+        <io-addon.version>2.1.0-M1-SNAPSHOT</io-addon.version>
+        <javamail-addon.version>2.1.0-M1-SNAPSHOT</javamail-addon.version>
+        <jcache-addon.version>2.1.0-M1-SNAPSHOT</jcache-addon.version>
+        <jdbc-addon.version>2.1.0-M1-SNAPSHOT</jdbc-addon.version>
+        <jms-addon.version>2.1.0-M1-SNAPSHOT</jms-addon.version>
+        <jpa-addon.version>2.1.0-M1-SNAPSHOT</jpa-addon.version>
+        <ldap-addon.version>2.1.0-M1-SNAPSHOT</ldap-addon.version>
+        <mongodb-addon.version>2.1.0-M1-SNAPSHOT</mongodb-addon.version>
+        <neo4j-addon.version>2.1.0-M1-SNAPSHOT</neo4j-addon.version>
+        <redis-addon.version>2.1.0-M1-SNAPSHOT</redis-addon.version>
+        <scheduling-addon.version>2.1.0-M1-SNAPSHOT</scheduling-addon.version>
+        <solr-addon.version>2.1.0-M1-SNAPSHOT</solr-addon.version>
+        <spring-bridge-addon.version>2.1.0-M1-SNAPSHOT</spring-bridge-addon.version>
+        <validation-addon.version>2.1.0-M1-SNAPSHOT</validation-addon.version>
+        <w20-bridge-addon.version>2.1.0-M1-SNAPSHOT</w20-bridge-addon.version>
+        <web-services-addon.version>2.1.0-M1-SNAPSHOT</web-services-addon.version>
     </properties>
 
     <modules>
@@ -68,18 +83,23 @@
         <tag>HEAD</tag>
     </scm>
 
-    <repositories>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Nexus Staging</name>
-            <url>https://oss.sonatype.org/content/groups/staging</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Nexus Staging</name>
-            <url>https://oss.sonatype.org/content/groups/staging</url>
-        </pluginRepository>
-    </pluginRepositories>
+    <profiles>
+        <profile>
+            <id>staging</id>
+            <repositories>
+                <repository>
+                    <id>sonatype-nexus-staging</id>
+                    <name>Sonatype Nexus Staging</name>
+                    <url>https://oss.sonatype.org/content/groups/staging</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>sonatype-nexus-staging</id>
+                    <name>Sonatype Nexus Staging</name>
+                    <url>https://oss.sonatype.org/content/groups/staging</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
 </project>

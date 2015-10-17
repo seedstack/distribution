@@ -23,35 +23,30 @@
    <dependencies>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-web-support-core</artifactId>
+           <artifactId>seed-web-core</artifactId>
            <version>${seed.version}</version>
        </dependency>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-web-support-security</artifactId>
+           <artifactId>seed-web-security</artifactId>
            <version>${seed.version}</version>
        </dependency>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-rest-support-core</artifactId>
+           <artifactId>seed-rest-jersey1</artifactId>
            <version>${seed.version}</version>
        </dependency>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-integrationtest-support-web</artifactId>
+           <artifactId>seed-testing</artifactId>
            <version>${seed.version}</version>
+           <scope>test</scope>
        </dependency>
 
        <dependency>
-           <groupId>org.seedstack.business</groupId>
-           <artifactId>business-web</artifactId>
-           <version>${business.version}</version>
-       </dependency>
-
-       <dependency>
-           <groupId>org.seedstack.functions.w20</groupId>
-           <artifactId>w20-function-web</artifactId>
-           <version>${w20-function.version}</version>
+           <groupId>org.seedstack.addons</groupId>
+           <artifactId>w20-bridge-web</artifactId>
+           <version>${w20-bridge-addon.version}</version>
        </dependency>
    </dependencies>
 </project>

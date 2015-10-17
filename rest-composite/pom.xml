@@ -23,32 +23,32 @@
    <dependencies>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-core-support-core</artifactId>
+           <artifactId>seed-core</artifactId>
            <version>${seed.version}</version>
        </dependency>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-security-support-core</artifactId>
+           <artifactId>seed-security-core</artifactId>
            <version>${seed.version}</version>
        </dependency>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-shell-support</artifactId>
+           <artifactId>seed-shell</artifactId>
            <version>${seed.version}</version>
        </dependency>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-web-support-core</artifactId>
+           <artifactId>seed-web-core</artifactId>
            <version>${seed.version}</version>
        </dependency>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-web-support-security</artifactId>
+           <artifactId>seed-web-security</artifactId>
            <version>${seed.version}</version>
        </dependency>
        <dependency>
            <groupId>org.seedstack.seed</groupId>
-           <artifactId>seed-rest-support-core</artifactId>
+           <artifactId>seed-rest-jersey1</artifactId>
            <version>${seed.version}</version>
        </dependency>
 

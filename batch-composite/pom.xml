@@ -23,13 +23,13 @@
     <dependencies>
         <dependency>
             <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-core-support-core</artifactId>
+            <artifactId>seed-core</artifactId>
             <version>${seed.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-springbatch-support</artifactId>
-            <version>${seed-spring-extensions.version}</version>
+            <groupId>org.seedstack.addons</groupId>
+            <artifactId>spring-bridge-batch</artifactId>
+            <version>${spring-bridge-addon.version}</version>
         </dependency>
     </dependencies>
 </project>
