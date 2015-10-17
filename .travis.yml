@@ -13,8 +13,8 @@ cache:
 
 install: /bin/true
 
-script: mvn -B -T 4 install
+script: mvn -q -B -T 2 -U -Pstaging install
 
 after_success:
   - echo "<settings><servers><server><id>sonatype-nexus-snapshots</id><username>\${env.SONATYPE_USER}</username><password>\${env.SONATYPE_PASS}</password></server></servers></settings>" > ~/settings.xml
-  - "[[ $TRAVIS_PULL_REQUEST == \"false\" && $TRAVIS_BRANCH == \"master\" ]] && mvn deploy --settings ~/settings.xml -DskipTests=true -Dmaven.javadoc.skip=true"
+  - "[[ $TRAVIS_PULL_REQUEST == \"false\" && $TRAVIS_BRANCH == \"master\" ]] && mvn -q deploy --settings ~/settings.xml"
