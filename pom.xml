@@ -37,11 +37,11 @@
         <jms-addon.version>2.1.0-M1-SNAPSHOT</jms-addon.version>
         <jpa-addon.version>2.1.0-M1-SNAPSHOT</jpa-addon.version>
         <ldap-addon.version>2.1.0-M1-SNAPSHOT</ldap-addon.version>
-        <mongodb-addon.version>2.1.0-M1-SNAPSHOT</mongodb-addon.version>
-        <neo4j-addon.version>2.1.0-M1-SNAPSHOT</neo4j-addon.version>
-        <redis-addon.version>2.1.0-M1-SNAPSHOT</redis-addon.version>
+        <mongodb-addon.version>1.0.0-M1-SNAPSHOT</mongodb-addon.version>
+        <neo4j-addon.version>1.0.0-M1-SNAPSHOT</neo4j-addon.version>
+        <redis-addon.version>1.0.0-M1-SNAPSHOT</redis-addon.version>
         <scheduling-addon.version>2.1.0-M1-SNAPSHOT</scheduling-addon.version>
-        <solr-addon.version>2.1.0-M1-SNAPSHOT</solr-addon.version>
+        <solr-addon.version>1.0.0-M1-SNAPSHOT</solr-addon.version>
         <spring-bridge-addon.version>2.1.0-M1-SNAPSHOT</spring-bridge-addon.version>
         <validation-addon.version>2.1.0-M1-SNAPSHOT</validation-addon.version>
         <w20-bridge-addon.version>2.1.0-M1-SNAPSHOT</w20-bridge-addon.version>
@@ -59,6 +59,7 @@
         <module>web-archetype</module>
         <module>rest-composite</module>
         <module>rest-archetype</module>
+        <module>javadoc</module>
     </modules>
 
     <build>
