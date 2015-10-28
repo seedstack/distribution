@@ -10,11 +10,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.seedstack</groupId>
+        <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
         <version>2.1.0-SNAPSHOT</version>
     </parent>
 
+    <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
     <version>15.11-M1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -27,7 +28,7 @@
 
         <account-management-addon.version>2.1.0-M1-SNAPSHOT</account-management-addon.version>
         <audit-addon.version>2.1.0-M1-SNAPSHOT</audit-addon.version>
-        <batch-monitoring-addon.version>2.1.0-M1-SNAPSHOT</batch-monitoring-addon.version>
+        <monitoring-addon.version>2.1.0-M1-SNAPSHOT</monitoring-addon.version>
         <elasticsearch-addon.version>2.1.0-M1-SNAPSHOT</elasticsearch-addon.version>
         <i18n-addon.version>2.1.0-M1-SNAPSHOT</i18n-addon.version>
         <io-addon.version>2.1.0-M1-SNAPSHOT</io-addon.version>
@@ -52,13 +53,13 @@
         <module>seedstack-bom</module>
         <module>app-composite</module>
         <module>batch-composite</module>
-        <module>batch-archetype</module>
+        <!--<module>batch-archetype</module>-->
         <module>domain-composite</module>
-        <module>domain-archetype</module>
+        <!--<module>domain-archetype</module>-->
         <module>web-composite</module>
-        <module>web-archetype</module>
+        <!--<module>web-archetype</module>-->
         <module>rest-composite</module>
-        <module>rest-archetype</module>
+        <!--<module>rest-archetype</module>-->
         <module>javadoc</module>
     </modules>
 

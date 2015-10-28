@@ -137,75 +137,58 @@
 
             <!-- Audit add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.audit</groupId>
                 <artifactId>audit-specs</artifactId>
                 <version>${audit-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.audit</groupId>
                 <artifactId>audit-core</artifactId>
                 <version>${audit-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.audit</groupId>
                 <artifactId>audit-logback</artifactId>
                 <version>${audit-addon.version}</version>
             </dependency>
 
-            <!-- Batch monitoring add-on -->
-            <dependency>
-                <groupId>org.seedstack.addons</groupId>
-                <artifactId>batch-monitoring-core</artifactId>
-                <version>${batch-monitoring-addon.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.addons</groupId>
-                <artifactId>batch-monitoring-rest</artifactId>
-                <version>${batch-monitoring-addon.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.addons</groupId>
-                <artifactId>batch-monitoring-web</artifactId>
-                <version>${batch-monitoring-addon.version}</version>
-            </dependency>
-
             <!-- ElasticSearch add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.elasticsearch</groupId>
                 <artifactId>elasticsearch</artifactId>
                 <version>${elasticsearch-addon.version}</version>
             </dependency>
 
             <!-- I18n add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.i18n</groupId>
                 <artifactId>i18n-specs</artifactId>
                 <version>${i18n-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.i18n</groupId>
                 <artifactId>i18n-core</artifactId>
                 <version>${i18n-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.i18n</groupId>
                 <artifactId>i18n-rest</artifactId>
                 <version>${i18n-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.i18n</groupId>
                 <artifactId>i18n-web</artifactId>
                 <version>${i18n-addon.version}</version>
             </dependency>
 
             <!-- IO add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.io</groupId>
                 <artifactId>io-specs</artifactId>
                 <version>${io-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.io</groupId>
                 <artifactId>io-core</artifactId>
                 <version>${io-addon.version}</version>
             </dependency>
@@ -215,152 +198,169 @@
                 <version>${io-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.io</groupId>
                 <artifactId>io-supercsv</artifactId>
                 <version>${io-addon.version}</version>
             </dependency>
 
             <!-- Javamail add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.javamail</groupId>
                 <artifactId>javamail</artifactId>
                 <version>${javamail-addon.version}</version>
             </dependency>
 
             <!-- JCache add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.jcache</groupId>
                 <artifactId>jcache</artifactId>
                 <version>${jcache-addon.version}</version>
             </dependency>
 
             <!-- JDBC add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.jdbc</groupId>
                 <artifactId>jdbc</artifactId>
                 <version>${jdbc-addon.version}</version>
             </dependency>
 
             <!-- JMS add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.jms</groupId>
                 <artifactId>jms-core</artifactId>
                 <version>${jms-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.jms</groupId>
                 <artifactId>jms-specs</artifactId>
                 <version>${jms-addon.version}</version>
             </dependency>
 
             <!-- JPA add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.jpa</groupId>
                 <artifactId>jpa</artifactId>
                 <version>${jpa-addon.version}</version>
             </dependency>
 
             <!-- LDAP add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.ldap</groupId>
                 <artifactId>ldap</artifactId>
                 <version>${ldap-addon.version}</version>
             </dependency>
 
             <!-- MongoDB add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
-                <artifactId>mongodb</artifactId>
+                <groupId>org.seedstack.addons.mongodb</groupId>
+                <artifactId>mongodb-core</artifactId>
                 <version>${mongodb-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.mongodb</groupId>
+                <artifactId>mongodb-morphia</artifactId>
+                <version>${mongodb-addon.version}</version>
+            </dependency>
+
+            <!-- Monitoring add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.s</groupId>
+                <artifactId>monitoring-batch</artifactId>
+                <version>${monitoring-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.monitoring</groupId>
+                <artifactId>monitoring-web</artifactId>
+                <version>${monitoring-addon.version}</version>
             </dependency>
 
             <!-- Neo4j add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.neo4j</groupId>
                 <artifactId>neo4j</artifactId>
                 <version>${neo4j-addon.version}</version>
             </dependency>
 
             <!-- Redis add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.redis</groupId>
                 <artifactId>redis</artifactId>
                 <version>${redis-addon.version}</version>
             </dependency>
 
             <!-- Scheduling add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.scheduling</groupId>
                 <artifactId>scheduling</artifactId>
                 <version>${scheduling-addon.version}</version>
             </dependency>
 
             <!-- Solr add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.solr</groupId>
                 <artifactId>solr</artifactId>
                 <version>${solr-addon.version}</version>
             </dependency>
 
             <!-- Spring bridge add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.spring</groupId>
                 <artifactId>spring-bridge-core</artifactId>
                 <version>${spring-bridge-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.spring</groupId>
                 <artifactId>spring-bridge-batch</artifactId>
                 <version>${spring-bridge-addon.version}</version>
             </dependency>
 
             <!-- Validation add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.validation</groupId>
                 <artifactId>validation</artifactId>
                 <version>${validation-addon.version}</version>
             </dependency>
 
             <!-- W20 bridge add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.w20</groupId>
                 <artifactId>w20-bridge-specs</artifactId>
                 <version>${w20-bridge-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.w20</groupId>
                 <artifactId>w20-bridge-rest</artifactId>
                 <version>${w20-bridge-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.w20</groupId>
                 <artifactId>w20-bridge-web</artifactId>
                 <version>${w20-bridge-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.w20</groupId>
                 <artifactId>w20-bridge-web-simple-theme</artifactId>
                 <version>${w20-bridge-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.w20</groupId>
                 <artifactId>w20-bridge-web-business-theme</artifactId>
                 <version>${w20-bridge-addon.version}</version>
             </dependency>
 
             <!--  Web-services add-on -->
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.web-services</groupId>
                 <artifactId>web-services-core</artifactId>
                 <version>${web-services-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.web-services</groupId>
                 <artifactId>web-services-jms</artifactId>
                 <version>${web-services-addon.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.seedstack.addons</groupId>
+                <groupId>org.seedstack.addons.web-services</groupId>
                 <artifactId>web-services-web</artifactId>
                 <version>${web-services-addon.version}</version>
             </dependency>
