@@ -368,12 +368,6 @@
             <!-- Composites -->
             <dependency>
                 <groupId>org.seedstack</groupId>
-                <artifactId>arquillian-composite</artifactId>
-                <version>${poms.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack</groupId>
                 <artifactId>batch-composite</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
