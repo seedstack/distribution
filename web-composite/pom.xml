@@ -42,7 +42,13 @@
        </dependency>
 
        <dependency>
-           <groupId>org.seedstack.addons</groupId>
+           <groupId>org.seedstack.business</groupId>
+           <artifactId>business-web</artifactId>
+           <version>${business.version}</version>
+       </dependency>
+
+       <dependency>
+           <groupId>org.seedstack.addons.w20</groupId>
            <artifactId>w20-bridge-web</artifactId>
            <version>${w20-bridge-addon.version}</version>
        </dependency>

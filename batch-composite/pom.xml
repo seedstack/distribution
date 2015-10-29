@@ -25,7 +25,7 @@
             <version>${seed.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seedstack.addons</groupId>
+            <groupId>org.seedstack.addons.spring</groupId>
             <artifactId>spring-bridge-batch</artifactId>
             <version>${spring-bridge-addon.version}</version>
         </dependency>

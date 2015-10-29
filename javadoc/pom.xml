@@ -267,7 +267,7 @@
             <version>${io-addon.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seedstack.addons</groupId>
+            <groupId>org.seedstack.addons.io</groupId>
             <artifactId>io-jasper</artifactId>
             <version>${io-addon.version}</version>
         </dependency>
