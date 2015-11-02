@@ -1,0 +1,11 @@
+Exclude = "target|.settings|.git|.svn|.idea"
+
+[[Transformations]]
+  Filter = "pom.xml"
+
+  [[Transformations.Proc]]
+    Name = "ReplaceMavenDependency"
+    Params = [
+        "org.seedstack:seedstack-bom:15.7",
+        "org.seedstack:seed-bom:15.11-M1-SNAPSHOT"
+	]
