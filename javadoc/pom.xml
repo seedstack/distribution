@@ -404,17 +404,17 @@
 
         <!--  Web-services add-on -->
         <dependency>
-            <groupId>org.seedstack.addons.web-services</groupId>
+            <groupId>org.seedstack.addons.ws</groupId>
             <artifactId>web-services-core</artifactId>
             <version>${web-services-addon.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seedstack.addons.web-services</groupId>
+            <groupId>org.seedstack.addons.ws</groupId>
             <artifactId>web-services-jms</artifactId>
             <version>${web-services-addon.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seedstack.addons.web-services</groupId>
+            <groupId>org.seedstack.addons.ws</groupId>
             <artifactId>web-services-web</artifactId>
             <version>${web-services-addon.version}</version>
         </dependency>
