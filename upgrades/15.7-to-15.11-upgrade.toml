@@ -218,6 +218,8 @@ Exclude = "target|.settings|.git|.svn|.idea"
 [[Transformations]]
   Filter = "*.java"
 
+# Seed
+
   [[Transformations.Proc]]
     Name = "Replace"
     Params = [
@@ -267,5 +269,35 @@ Exclude = "target|.settings|.git|.svn|.idea"
 	"org.seedstack.seed.web.listener.DelegateServletContextListenerImpl",
 
 	"org.seedstack.seed.web.SeedServletContextListener",
-	"org.seedstack.seed.web.listener.SeedServletContextListener",
+	"org.seedstack.seed.web.listener.SeedServletContextListener"
+	]
+
+# Business
+
+  [[Transformations.Proc]]
+    Name = "Replace"
+    Params = [
+    	"org.seedstack.business.api.interfaces.assembler.ModelMapperAssembler",
+    	"org.seedstack.business.assembler.modelmapper.ModelMapperAssembler",
+
+    	"org.seedstack.business.api.interfaces.assembler.ModelMapperTupleAssembler",
+    	"org.seedstack.business.assembler.modelmapper.ModelMapperTupleAssembler",
+
+        "org.seedstack.business.api.domain",
+        "org.seedstack.business",
+
+        "org.seedstack.business.api.interfaces.assembler",
+        "org.seedstack.business.assembler",
+
+        "org.seedstack.business.api.interfaces.finder",
+        "org.seedstack.business.finder",
+
+        "org.seedstack.business.api.interfaces.view",
+        "org.seedstack.business.view",
+
+        "org.seedstack.business.api",
+        "org.seedstack.business",
+
+	"org.seedstack.business.test.event",
+	"org.seedstack.business.test"
 	]
