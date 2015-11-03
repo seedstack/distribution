@@ -6,6 +6,211 @@ Exclude = "target|.settings|.git|.svn|.idea"
   [[Transformations.Proc]]
     Name = "ReplaceMavenDependency"
     Params = [
+        # Distribution
+        # ============
+
         "org.seedstack:seedstack-bom:15.7",
-        "org.seedstack:seed-bom:15.11-M1-SNAPSHOT"
+        "org.seedstack:seedstack-bom:15.11-M1-SNAPSHOT",
+
+        # Seed
+        # ====
+
+        "org.seedstack.seed:seed-core-support-specs",
+        "org.seedstack.seed:seed-specs",
+
+        "org.seedstack.seed:seed-core-support-core",
+        "org.seedstack.seed:seed-core",
+
+        "org.seedstack.seed:seed-el-support",
+        "org.seedstack.seed:seed-el",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-integrationtest-support-core",
+        "org.seedstack.seed:seed-testing",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-integrationtest-support-web",
+        "org.seedstack.seed:seed-testing",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-unittest-support",
+        "org.seedstack.seed:seed-testing",
+
+        "org.seedstack.seed:seed-persistence-support-elasticsearch",
+        "org.seedstack.addons.elasticsearch:elasticsearch",
+
+        "org.seedstack.seed:seed-persistence-support-jdbc",
+        "org.seedstack.addons.jdbc:jdbc",
+
+        "org.seedstack.seed:seed-persistence-support-jpa",
+        "org.seedstack.addons.jpa:jpa",
+
+        "org.seedstack.seed:seed-rest-support-specs",
+        "org.seedstack.seed:seed-rest-specs",
+
+        "org.seedstack.seed:seed-rest-support-core",
+        "org.seedstack.seed:seed-rest-jersey1",
+
+        "org.seedstack.seed:seed-crypto-support",
+        "org.seedstack.seed:seed-crypto",
+
+        "org.seedstack.seed:seed-security-support-specs",
+        "org.seedstack.seed:seed-security-specs",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-security-support-core",
+        "org.seedstack.seed:seed-security-core",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-security-support-test",
+        "org.seedstack.seed:seed-security-core",
+
+        "org.seedstack.seed:seed-security-support-ldap",
+        "org.seedstack.addons.ldap:ldap",
+
+        "org.seedstack.seed:seed-transaction-support",
+        "org.seedstack.seed:seed-transaction",
+
+        "org.seedstack.seed:seed-web-support-core",
+        "org.seedstack.seed:seed-web-core",
+
+        "org.seedstack.seed:seed-web-support-security",
+        "org.seedstack.seed:seed-web-security",
+
+        "org.seedstack.seed:seed-web-support-specs",
+        "org.seedstack.seed:seed-web-specs",
+
+        "org.seedstack.seed:seed-web-support-websocket",
+        "org.seedstack.seed:seed-web-websocket",
+
+        "org.seedstack.seed:seed-cache-support",
+        "org.seedstack.addons.jcache:jcache",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-cli-support-core",
+        "org.seedstack.seed:seed-cli",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-cli-support-test",
+        "org.seedstack.seed:seed-cli",
+
+        "org.seedstack.seed:seed-jms-support-core",
+        "org.seedstack.addons.jms:jms-core",
+
+        "org.seedstack.seed:seed-jms-support-specs",
+        "org.seedstack.addons.jms:jms-specs",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-mail-support-core",
+        "org.seedstack.addons.javamail:javamail",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-mail-support-test",
+        "org.seedstack.addons.javamail:javamail",
+
+        "org.seedstack.seed:seed-metrics-support",
+        "org.seedstack.seed:seed-metrics",
+
+        "org.seedstack.seed:seed-scheduling-support",
+        "org.seedstack.addons.scheduling:scheduling",
+
+        "org.seedstack.seed:seed-shell-support",
+        "org.seedstack.seed:seed-shell",
+
+        "org.seedstack.seed:seed-ws-support-core",
+        "org.seedstack.addons.ws:web-services-core",
+
+        "org.seedstack.seed:seed-ws-support-jms",
+        "org.seedstack.addons.ws:web-services-jms",
+
+        "org.seedstack.seed:seed-ws-support-web",
+        "org.seedstack.addons.ws:web-services-web",
+
+        "org.seedstack.seed:seed-validation-support",
+        "org.seedstack.addons.validation:validation",
+
+        # Business
+        # ========
+
+        # >>> The dependency below could use a "split dependency" feature
+        "org.seedstack.business:business-jpa",
+        "org.seedstack.addons.jpa:jpa",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.business:business-test",
+        "org.seedstack.business:business-core",
+
+        # W20 function
+        # ============
+
+        "org.seedstack.functions.w20:w20-function-specs",
+        "org.seedstack.addons.w20:w20-bridge-specs",
+
+        "org.seedstack.functions.w20:w20-function-rest",
+        "org.seedstack.addons.w20:w20-bridge-rest",
+
+        "org.seedstack.functions.w20:w20-function-web",
+        "org.seedstack.addons.w20:w20-bridge-web",
+
+        "org.seedstack.functions.w20:w20-function-web-business-theme",
+        "org.seedstack.addons.w20:w20-bridge-web-business-theme",
+
+        "org.seedstack.functions.w20:w20-function-web-simple-theme",
+        "org.seedstack.addons.w20:w20-bridge-web-simple-theme",
+
+        # IO function
+        # ===========
+
+        "org.seedstack.functions.io:io-function-specs",
+        "org.seedstack.addons.io:io-specs",
+
+        "org.seedstack.functions.io:io-function-core",
+        "org.seedstack.addons.io:io-core",
+
+        "org.seedstack.functions.io:io-function-jasper",
+        "org.seedstack.addons.io:io-jasper",
+
+        "org.seedstack.functions.io:io-function-supercsv",
+        "org.seedstack.addons.io:io-supercsv",
+
+        # I18n function
+        # =============
+
+        "org.seedstack.functions.i18n:i18n-function-specs",
+        "org.seedstack.addons.i18n:i18n-specs",
+
+        "org.seedstack.functions.i18n:i18n-function-core",
+        "org.seedstack.addons.i18n:i18n-core",
+
+        "org.seedstack.functions.i18n:i18n-function-rest",
+        "org.seedstack.addons.i18n:i18n-rest",
+
+        "org.seedstack.functions.i18n:i18n-function-web",
+        "org.seedstack.addons.i18n:i18n-web",
+
+        # Audit function
+        # ==============
+
+        "org.seedstack.functions.audit:audit-function-specs",
+        "org.seedstack.addons.audit:audit-specs",
+
+        "org.seedstack.functions.audit:audit-function-core",
+        "org.seedstack.addons.audit:audit-core",
+
+        "org.seedstack.functions.audit:audit-function-logback",
+        "org.seedstack.addons.audit:audit-logback",
+
+        # Batch monitoring function
+        # =========================
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.functions.batch-monitoring:batch-monitoring-function-core",
+        "org.seedstack.addons.monitoring:monitoring-batch",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.functions.batch-monitoring:batch-monitoring-function-rest",
+        "org.seedstack.addons.monitoring:monitoring-batch",
+
+        "org.seedstack.functions.batch-monitoring:batch-monitoring-function-web",
+        "org.seedstack.addons.monitoring:monitoring-web"
 	]
