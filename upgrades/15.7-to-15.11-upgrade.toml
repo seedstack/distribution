@@ -9,3 +9,58 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack:seedstack-bom:15.7",
         "org.seedstack:seed-bom:15.11-M1-SNAPSHOT"
 	]
+
+[[Transformations]]
+  Filter = "*.java"
+
+  [[Transformations.Proc]]
+    Name = "Replace"
+    Params = [
+        "org.seedstack.seed.core.api",
+        "org.seedstack.seed",
+
+        "org.seedstack.seed.core.api",
+        "org.seedstack.seed",
+
+        "org.seedstack.seed.cli.api",
+        "org.seedstack.seed.cli",
+
+        "org.seedstack.seed.crypto.api",
+        "org.seedstack.seed.crypto",
+
+        "org.seedstack.seed.el.api",
+        "org.seedstack.seed.el",
+	
+	"org.seedstack.seed.metrics.api",
+	"org.seedstack.seed.metrics",
+
+	"org.seedstack.seed.rest.api",	
+	"org.seedstack.seed.rest",
+
+	"org.seedstack.seed.security.api.annotations",
+	"org.seedstack.seed.security",
+
+	"org.seedstack.seed.security.api.exceptions",
+	"org.seedstack.seed.security",
+
+	"org.seedstack.seed.security.api",
+	"org.seedstack.seed.security",
+
+	"org.seedstack.seed.it.api",
+	"org.seedstack.seed.it",
+
+	"org.seedstack.seed.transaction.api",
+	"org.seedstack.seed.transaction",
+
+	"org.seedstack.seed.transaction.utils",
+	"org.seedstack.seed.transaction.spi",
+
+	"org.seedstack.seed.web.api",
+	"org.seedstack.seed.web",
+
+	"org.seedstack.seed.web.DelegateServletContextListenerImpl",
+	"org.seedstack.seed.web.listener.DelegateServletContextListenerImpl",
+
+	"org.seedstack.seed.web.SeedServletContextListener",
+	"org.seedstack.seed.web.listener.SeedServletContextListener",
+	]
