@@ -301,3 +301,18 @@ Exclude = "target|.settings|.git|.svn|.idea"
 	"org.seedstack.business.test.event",
 	"org.seedstack.business.test"
 	]
+
+# Addons
+
+  [[Transformations.Proc]]
+    Name = "Replace"
+    Params = [
+        "org.seedstack.audit.api",
+        "org.seedstack.audit",
+
+        "org.seedstack.audit.infrastructure.logback",
+        "org.seedstack.audit.logback"
+
+        "org.seedstack.seed.cache",
+        "org.seedstack.jcache"
+        ]
