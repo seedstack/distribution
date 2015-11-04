@@ -218,7 +218,8 @@ Exclude = "target|.settings|.git|.svn|.idea"
 [[Transformations]]
   Filter = "*.java"
 
-# Seed
+  # Seed
+  # ====
 
   [[Transformations.Proc]]
     Name = "Replace"
@@ -238,41 +239,42 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.seed.el.api",
         "org.seedstack.seed.el",
 	
-	"org.seedstack.seed.metrics.api",
-	"org.seedstack.seed.metrics",
+    	"org.seedstack.seed.metrics.api",
+    	"org.seedstack.seed.metrics",
 
-	"org.seedstack.seed.rest.api",	
-	"org.seedstack.seed.rest",
+    	"org.seedstack.seed.rest.api",	
+    	"org.seedstack.seed.rest",
 
-	"org.seedstack.seed.security.api.annotations",
-	"org.seedstack.seed.security",
+    	"org.seedstack.seed.security.api.annotations",
+    	"org.seedstack.seed.security",
 
-	"org.seedstack.seed.security.api.exceptions",
-	"org.seedstack.seed.security",
+    	"org.seedstack.seed.security.api.exceptions",
+    	"org.seedstack.seed.security",
 
-	"org.seedstack.seed.security.api",
-	"org.seedstack.seed.security",
+    	"org.seedstack.seed.security.api",
+    	"org.seedstack.seed.security",
 
-	"org.seedstack.seed.it.api",
-	"org.seedstack.seed.it",
+    	"org.seedstack.seed.it.api",
+    	"org.seedstack.seed.it",
 
-	"org.seedstack.seed.transaction.api",
-	"org.seedstack.seed.transaction",
+    	"org.seedstack.seed.transaction.api",
+    	"org.seedstack.seed.transaction",
 
-	"org.seedstack.seed.transaction.utils",
-	"org.seedstack.seed.transaction.spi",
+    	"org.seedstack.seed.transaction.utils",
+    	"org.seedstack.seed.transaction.spi",
 
-	"org.seedstack.seed.web.api",
-	"org.seedstack.seed.web",
+    	"org.seedstack.seed.web.api",
+    	"org.seedstack.seed.web",
 
-	"org.seedstack.seed.web.DelegateServletContextListenerImpl",
-	"org.seedstack.seed.web.listener.DelegateServletContextListenerImpl",
+    	"org.seedstack.seed.web.DelegateServletContextListenerImpl",
+    	"org.seedstack.seed.web.listener.DelegateServletContextListenerImpl",
 
-	"org.seedstack.seed.web.SeedServletContextListener",
-	"org.seedstack.seed.web.listener.SeedServletContextListener"
+    	"org.seedstack.seed.web.SeedServletContextListener",
+    	"org.seedstack.seed.web.listener.SeedServletContextListener"
 	]
 
-# Business
+  # Business
+  # ========
 
   [[Transformations.Proc]]
     Name = "Replace"
@@ -298,21 +300,47 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.business.api",
         "org.seedstack.business",
 
-	"org.seedstack.business.test.event",
-	"org.seedstack.business.test"
+    	"org.seedstack.business.test.event",
+    	"org.seedstack.business.test"
 	]
 
-# Addons
+  # Addons
+  # ======
 
   [[Transformations.Proc]]
     Name = "Replace"
     Params = [
+        # Audit
+        # =====
+
         "org.seedstack.audit.api",
         "org.seedstack.audit",
 
         "org.seedstack.audit.infrastructure.logback",
         "org.seedstack.audit.logback"
 
+        # JCache
+        # ======
+
         "org.seedstack.seed.cache",
-        "org.seedstack.jcache"
-        ]
+        "org.seedstack.jcache",
+
+        # Javamail
+        # ========
+
+        "org.seedstack.seed.mail.api",
+        "org.seedstack.javamail.test",
+
+        "org.seedstack.seed.mail.assertions",
+        "org.seedstack.javamail.test",
+
+        "org.seedstack.seed.mail.spi",
+        "org.seedstack.javamail.spi",
+
+        # IO
+        # ==
+
+        "org.seedstack.io.api",
+        "org.seedstack.io",
+    ]
+
