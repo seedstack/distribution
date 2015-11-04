@@ -342,5 +342,11 @@ Exclude = "target|.settings|.git|.svn|.idea"
 
         "org.seedstack.io.api",
         "org.seedstack.io",
+
+        "org.seedstack.io.spi.template",
+        "org.seedstack.io.spi",
+
+        "org.seedstack.io.spi.templateloader",
+        "org.seedstack.io.spi",
     ]
 
