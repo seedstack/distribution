@@ -215,8 +215,25 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.addons.monitoring:monitoring-web"
 	]
 
+# Web.xml
+
 [[Transformations]]
-  Filter = "*.java"
+  Filter = "*.xml|*.md"
+
+# Seed
+
+  [[Transformations.Proc]]
+    Name = "Replace"
+    Params = [
+      "org.seedstack.seed.web.SeedServletContextListener",
+      "org.seedstack.seed.web.listener.SeedServletContextListener",
+
+      "org.seedstack.seed.spring",
+      "org.seedstack.spring"
+    ]
+
+[[Transformations]]
+  Filter = "*.java|*.props|*.properties|*.md"
 
   # Seed
   # ====
@@ -242,7 +259,7 @@ Exclude = "target|.settings|.git|.svn|.idea"
     	"org.seedstack.seed.metrics.api",
     	"org.seedstack.seed.metrics",
 
-    	"org.seedstack.seed.rest.api",	
+    	"org.seedstack.seed.rest.api",
     	"org.seedstack.seed.rest",
 
     	"org.seedstack.seed.security.api.annotations",
@@ -269,8 +286,11 @@ Exclude = "target|.settings|.git|.svn|.idea"
     	"org.seedstack.seed.web.DelegateServletContextListenerImpl",
     	"org.seedstack.seed.web.listener.DelegateServletContextListenerImpl",
 
-    	"org.seedstack.seed.web.SeedServletContextListener",
-    	"org.seedstack.seed.web.listener.SeedServletContextListener"
+        "org.seedstack.seed.web.SeedServletContextListener",
+        "org.seedstack.seed.web.listener.SeedServletContextListener",
+
+        "org.seedstack.seed.core.spi.data",
+        "org.seedstack.seed.data"
 	]
 
   # Business
@@ -286,7 +306,10 @@ Exclude = "target|.settings|.git|.svn|.idea"
     	"org.seedstack.business.assembler.modelmapper.ModelMapperTupleAssembler",
 
         "org.seedstack.business.api.domain",
-        "org.seedstack.business",
+        "org.seedstack.business.domain",
+
+        "org.seedstack.business.domain.stereotypes",
+        "org.seedstack.business.domain",
 
         "org.seedstack.business.api.interfaces.assembler",
         "org.seedstack.business.assembler",
@@ -310,23 +333,14 @@ Exclude = "target|.settings|.git|.svn|.idea"
   [[Transformations.Proc]]
     Name = "Replace"
     Params = [
-        # Audit
-        # =====
-
         "org.seedstack.audit.api",
         "org.seedstack.audit",
 
         "org.seedstack.audit.infrastructure.logback",
-        "org.seedstack.audit.logback"
-
-        # JCache
-        # ======
+        "org.seedstack.audit.logback",
 
         "org.seedstack.seed.cache",
         "org.seedstack.jcache",
-
-        # Javamail
-        # ========
 
         "org.seedstack.seed.mail.api",
         "org.seedstack.javamail.test",
@@ -337,9 +351,6 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.seed.mail.spi",
         "org.seedstack.javamail.spi",
 
-        # IO
-        # ==
-
         "org.seedstack.io.api",
         "org.seedstack.io",
 
@@ -348,5 +359,80 @@ Exclude = "target|.settings|.git|.svn|.idea"
 
         "org.seedstack.io.spi.templateloader",
         "org.seedstack.io.spi",
+
+        "org.seedstack.seed.jms.api",
+        "org.seedstack.jms",
+
+        "org.seedstack.seed.jms.spi",
+        "org.seedstack.jms.spi",
+
+        "org.seedstack.seed.jms.SimpleMessagePoller",
+        "org.seedstack.jms.pollers.SimpleMessagePoller",
+
+        "org.seedstack.seed.jms",
+        "org.seedstack.jms",
+
+        "org.seedstack.seed.persistence.jdbc",
+        "org.seedstack.jdbc",
+
+        "org.seedstack.jdbc.api",
+        "org.seedstack.jdbc",
+
+        "org.seedstack.jdbc.api",
+        "org.seedstack.jdbc",
+
+        "org.seedstack.seed.spring",
+        "org.seedstack.spring",
+
+        "org.seedstack.spring.api",
+        "org.seedstack.spring",
+
+        "org.seedstack.seed.persistence.jpa",
+        "org.seedstack.jpa",
+
+        "org.seedstack.business.jpa",
+        "org.seedstack.jpa",
+
+        "org.seedstack.jpa.api",
+        "org.seedstack.jpa",
+
+        "org.seedstack.seed.validation",
+        "org.seedstack.validation",
+
+        "org.seedstack.validation.api",
+        "org.seedstack.validation",
+
+        "org.seedstack.seed.security.ldap",
+        "org.seedstack.ldap",
+
+        "org.seedstack.ldap.api",
+        "org.seedstack.ldap",
+
+        "org.seedstack.ldap.LDAPSupport",
+        "org.seedstack.ldap.LDAPService",
+
+        "org.seedstack.ldap.LDAP",
+        "org.seedstack.ldap.Ldap",
+
+        "org.seedstack.seed.scheduler",
+        "org.seedstack.scheduler",
+
+        "org.seedstack.scheduler.api",
+        "org.seedstack.scheduler",
+
+        "org.seedstack.seed.ws",
+        "org.seedstack.ws",
+
+        "org.seedstack.ws.adapters",
+        "org.seedstack.ws",
+
+        "org.seedstack.ws.handlers.client",
+        "org.seedstack.ws",
+
+        "org.seedstack.ws.handlers.server",
+        "org.seedstack.ws",
+
+        "org.seedstack.ws.tools.WSTools",
+        "org.seedstack.ws.WSUtils",
     ]
 
