@@ -418,5 +418,8 @@ Exclude = "target|.settings|.git|.svn|.idea"
 
         "org.seedstack.i18n.api",
         "org.seedstack.i18n",
+
+        "org.seedstack.w20.api",
+        "org.seedstack.w20"
     ]
 
