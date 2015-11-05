@@ -1,19 +1,16 @@
 Exclude = "target|.settings|.git|.svn|.idea"
 
+# Poms
+# ====
+
 [[Transformations]]
   Filter = "pom.xml"
 
   [[Transformations.Proc]]
     Name = "ReplaceMavenDependency"
     Params = [
-        # Distribution
-        # ============
-
         "org.seedstack:seedstack-bom:15.7",
         "org.seedstack:seedstack-bom:15.11-M1-SNAPSHOT",
-
-        # Seed
-        # ====
 
         "org.seedstack.seed:seed-core-support-specs",
         "org.seedstack.seed:seed-specs",
@@ -129,9 +126,6 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.seed:seed-validation-support",
         "org.seedstack.addons.validation:validation",
 
-        # Business
-        # ========
-
         # >>> The dependency below could use a "split dependency" feature
         "org.seedstack.business:business-jpa",
         "org.seedstack.addons.jpa:jpa",
@@ -139,9 +133,6 @@ Exclude = "target|.settings|.git|.svn|.idea"
         # >>> The dependency below could use a "merge dependencies" feature
         "org.seedstack.business:business-test",
         "org.seedstack.business:business-core",
-
-        # W20 function
-        # ============
 
         "org.seedstack.functions.w20:w20-function-specs",
         "org.seedstack.addons.w20:w20-bridge-specs",
@@ -158,9 +149,6 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.functions.w20:w20-function-web-simple-theme",
         "org.seedstack.addons.w20:w20-bridge-web-simple-theme",
 
-        # IO function
-        # ===========
-
         "org.seedstack.functions.io:io-function-specs",
         "org.seedstack.addons.io:io-specs",
 
@@ -172,9 +160,6 @@ Exclude = "target|.settings|.git|.svn|.idea"
 
         "org.seedstack.functions.io:io-function-supercsv",
         "org.seedstack.addons.io:io-supercsv",
-
-        # I18n function
-        # =============
 
         "org.seedstack.functions.i18n:i18n-function-specs",
         "org.seedstack.addons.i18n:i18n-specs",
@@ -188,9 +173,6 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.functions.i18n:i18n-function-web",
         "org.seedstack.addons.i18n:i18n-web",
 
-        # Audit function
-        # ==============
-
         "org.seedstack.functions.audit:audit-function-specs",
         "org.seedstack.addons.audit:audit-specs",
 
@@ -199,9 +181,6 @@ Exclude = "target|.settings|.git|.svn|.idea"
 
         "org.seedstack.functions.audit:audit-function-logback",
         "org.seedstack.addons.audit:audit-logback",
-
-        # Batch monitoring function
-        # =========================
 
         # >>> The dependency below could use a "merge dependencies" feature
         "org.seedstack.functions.batch-monitoring:batch-monitoring-function-core",
@@ -216,11 +195,10 @@ Exclude = "target|.settings|.git|.svn|.idea"
 	]
 
 # Web.xml
+# =======
 
 [[Transformations]]
   Filter = "*.xml|*.md"
-
-# Seed
 
   [[Transformations.Proc]]
     Name = "Replace"
@@ -231,6 +209,9 @@ Exclude = "target|.settings|.git|.svn|.idea"
       "org.seedstack.seed.spring",
       "org.seedstack.spring"
     ]
+
+# Code
+# ====
 
 [[Transformations]]
   Filter = "*.java|*.props|*.properties|*.md"
@@ -290,7 +271,7 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.seed.web.listener.SeedServletContextListener",
 
         "org.seedstack.seed.core.spi.data",
-        "org.seedstack.seed.data"
+        "org.seedstack.seed"
 	]
 
   # Business
@@ -327,7 +308,7 @@ Exclude = "target|.settings|.git|.svn|.idea"
     	"org.seedstack.business.test"
 	]
 
-  # Addons
+  # Add-ons
   # ======
 
   [[Transformations.Proc]]
@@ -354,10 +335,10 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.io.api",
         "org.seedstack.io",
 
-        "org.seedstack.io.spi.template",
+        "org.seedstack.io.spi.templateloader",
         "org.seedstack.io.spi",
 
-        "org.seedstack.io.spi.templateloader",
+        "org.seedstack.io.spi.template",
         "org.seedstack.io.spi",
 
         "org.seedstack.seed.jms.api",
@@ -434,5 +415,8 @@ Exclude = "target|.settings|.git|.svn|.idea"
 
         "org.seedstack.ws.tools.WSTools",
         "org.seedstack.ws.WSUtils",
+
+        "org.seedstack.i18n.api",
+        "org.seedstack.i18n",
     ]
 
