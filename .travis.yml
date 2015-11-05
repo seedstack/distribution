@@ -8,15 +8,10 @@ notifications:
   irc: "chat.freenode.net#seedstack-dev"
 
 cache:
-  directories:
-    - "$HOME/.m2/repository"
+  directories: "$HOME/.m2/repository"
 
 install:
   - rm ~/.m2/settings.xml
   - if [ $TRAVIS_PULL_REQUEST = false ] && [ $TRAVIS_BRANCH = master ]; then GOAL=deploy; else GOAL=install; fi
 
-script:
-  - mvn -q -U -T 2 -Pcompatibility,snapshots,javadoc $GOAL jacoco:report
-  - if [ $TRAVIS_PULL_REQUEST = false ] && [ $TRAVIS_BRANCH = master ]; then chmod +x deploy-javadoc.sh && ./deploy-javadoc.sh; fi
-
-after_success: mvn -q coveralls:report -DrepoToken=$COVERALLS_TOKEN
+script: mvn -q -U -T 2 -Psnapshots $GOAL

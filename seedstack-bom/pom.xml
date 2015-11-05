@@ -264,7 +264,7 @@
 
             <!-- Monitoring add-on -->
             <dependency>
-                <groupId>org.seedstack.addons.s</groupId>
+                <groupId>org.seedstack.addons.monitoring</groupId>
                 <artifactId>monitoring-batch</artifactId>
                 <version>${monitoring-addon.version}</version>
             </dependency>

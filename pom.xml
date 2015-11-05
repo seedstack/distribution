@@ -60,7 +60,6 @@
         <!--<module>web-archetype</module>-->
         <module>rest-composite</module>
         <!--<module>rest-archetype</module>-->
-        <module>javadoc</module>
     </modules>
 
     <build>
