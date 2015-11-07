@@ -51,6 +51,7 @@
 
     <modules>
         <module>seedstack-bom</module>
+        <module>seedstack-parent</module>
         <module>app-composite</module>
         <module>batch-composite</module>
         <!--<module>batch-archetype</module>-->

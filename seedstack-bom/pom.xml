@@ -339,6 +339,36 @@
             </dependency>
             <dependency>
                 <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-bootstrap-2</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-bootstrap-3</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-components</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-dataviz</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-extras</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-material</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
                 <artifactId>w20-bridge-web-simple-theme</artifactId>
                 <version>${w20-bridge-addon.version}</version>
             </dependency>
