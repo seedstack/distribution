@@ -7,7 +7,8 @@
     file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.seedstack.poms</groupId>
@@ -51,16 +52,15 @@
 
     <modules>
         <module>seedstack-bom</module>
-        <module>seedstack-parent</module>
         <module>app-composite</module>
         <module>batch-composite</module>
-        <!--<module>batch-archetype</module>-->
+        <module>batch-archetype</module>
         <module>domain-composite</module>
-        <!--<module>domain-archetype</module>-->
+        <module>domain-archetype</module>
         <module>web-composite</module>
-        <!--<module>web-archetype</module>-->
+        <module>web-archetype</module>
         <module>rest-composite</module>
-        <!--<module>rest-archetype</module>-->
+        <module>rest-archetype</module>
     </modules>
 
     <build>
@@ -74,16 +74,20 @@
                         <escapeString>\</escapeString>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.jfrog.buildinfo</groupId>
+                    <artifactId>artifactory-maven-plugin</artifactId>
+                    <version>2.4.0</version>
+                    <executions>
+                        <execution>
+                            <id>build-info</id>
+                            <phase>none</phase>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
-
-    <scm>
-        <url>https://github.com/seedstack/distribution</url>
-        <connection>scm:git:git://github.com/seedstack/distribution.git</connection>
-        <developerConnection>scm:git:git@github.com:seedstack/distribution.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
 
     <pluginRepositories>
         <pluginRepository>
@@ -95,6 +99,13 @@
             <url>http://dl.bintray.com/jfrog/jfrog-jars</url>
         </pluginRepository>
     </pluginRepositories>
+
+    <scm>
+        <url>https://github.com/seedstack/distribution</url>
+        <connection>scm:git:git://github.com/seedstack/distribution.git</connection>
+        <developerConnection>scm:git:git@github.com:seedstack/distribution.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
     <profiles>
         <profile>
@@ -114,4 +125,17 @@
             </repositories>
         </profile>
     </profiles>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <name>Nexus Release Repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>

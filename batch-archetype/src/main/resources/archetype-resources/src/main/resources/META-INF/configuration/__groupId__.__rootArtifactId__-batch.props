@@ -1,5 +1,0 @@
-[org.seedstack.seed]
-core.application-id = ${rootArtifactId}
-
-# The following section resets to properties without prefix
-[]

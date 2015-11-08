@@ -22,17 +22,13 @@
         <!-- Testing  -->
         <dependency>
             <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-unittest-support</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-integrationtest-support-core</artifactId>
+            <artifactId>seed-testing</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

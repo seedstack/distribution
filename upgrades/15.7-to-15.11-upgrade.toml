@@ -191,7 +191,18 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.addons.monitoring:monitoring-batch",
 
         "org.seedstack.functions.batch-monitoring:batch-monitoring-function-web",
-        "org.seedstack.addons.monitoring:monitoring-web"
+        "org.seedstack.addons.monitoring:monitoring-web",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-spring-support-test",
+        "org.seedstack.addons.spring:spring-bridge-core",
+
+        # >>> The dependency below could use a "merge dependencies" feature
+        "org.seedstack.seed:seed-spring-support-core",
+        "org.seedstack.addons.spring:spring-bridge-core",
+
+        "org.seedstack.seed:seed-springbatch-support",
+        "org.seedstack.addons.spring:spring-bridge-batch"
 	]
 
 # Web.xml

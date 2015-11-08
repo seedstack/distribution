@@ -6,11 +6,12 @@
     <groupId>\${groupId}</groupId>
     <artifactId>\${artifactId}</artifactId>
     <version>\${version}</version>
-    <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <logback.version>1.1.3</logback.version>
     </properties>
 
     <build>
@@ -61,11 +62,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.2.11.v20150529</version>
-            </plugin>
         </plugins>
     </build>
 
@@ -82,41 +78,24 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- Rest composite provides main features -->
         <dependency>
             <groupId>org.seedstack</groupId>
             <artifactId>rest-composite</artifactId>
             <type>pom</type>
         </dependency>
-
-        <!-- Server API -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-web-undertow</artifactId>
         </dependency>
-
-        <!-- Logger -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
         </dependency>
 
-        <!-- Testing  -->
         <dependency>
             <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-unittest-support</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-integrationtest-support-core</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-integrationtest-support-web</artifactId>
+            <artifactId>seed-testing</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

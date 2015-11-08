@@ -10,65 +10,39 @@
     </parent>
 
     <artifactId>${rootArtifactId}-web</artifactId>
-    <packaging>war</packaging>
 
-    <properties>
-        <webContent>${project.basedir}/src/main/webapp</webContent>
-    </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.2.11.v20150529</version>
-            </plugin>
-        </plugins>  
-    </build>      
-    
     <dependencies>
         <dependency>
             <groupId>${groupId}</groupId>
             <artifactId>${rootArtifactId}-app</artifactId>
             <version>${project.version}</version>
         </dependency>
-
-        <!-- Web composite provides basic web features -->
         <dependency>
             <groupId>org.seedstack</groupId>
             <artifactId>web-composite</artifactId>
             <type>pom</type>
         </dependency>
-
-        <!-- W20 theme -->
         <dependency>
-            <groupId>org.seedstack.functions.w20</groupId>
-            <artifactId>w20-function-web-business-theme</artifactId>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-web-undertow</artifactId>
         </dependency>
-
-        <!-- Server API -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>provided</scope>
+            <groupId>org.seedstack.addons.w20</groupId>
+            <artifactId>w20-bridge-web-bootstrap-3</artifactId>
         </dependency>
-
-        <!-- Logger -->
+        <dependency>
+            <groupId>org.seedstack.addons.w20</groupId>
+            <artifactId>w20-bridge-web-business-theme</artifactId>
+        </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
         </dependency>
 
-        <!-- Testing  -->
         <dependency>
             <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-unittest-support</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-integrationtest-support-web</artifactId>
+            <artifactId>seed-testing</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
