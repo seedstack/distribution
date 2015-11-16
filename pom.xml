@@ -167,6 +167,9 @@
                                 <goals>
                                     <goal>sign</goal>
                                 </goals>
+                                <configuration>
+                                    <keyname>release@seedstack.org</keyname>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
