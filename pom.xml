@@ -89,7 +89,7 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.5.1</version>
                     <configuration>
-                        <pushChanges>false</pushChanges>
+                        <pushChanges>true</pushChanges>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix>[ci skip][release]:</scmCommentPrefix>
                         <tagNameFormat>v@{project.version}</tagNameFormat>
