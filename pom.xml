@@ -93,7 +93,8 @@
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <scmCommentPrefix>[ci skip][release]:</scmCommentPrefix>
                         <tagNameFormat>v@{project.version}</tagNameFormat>
-                        <releaseProfiles>release</releaseProfiles>
+                        <useReleaseProfile>false</useReleaseProfile>
+                        <arguments>-Pdistribution-release</arguments>
                     </configuration>
                 </plugin>
             </plugins>
@@ -152,7 +153,7 @@
             </repositories>
         </profile>
         <profile>
-            <id>release</id>
+            <id>distribution-release</id>
             <build>
                 <plugins>
                     <plugin>
