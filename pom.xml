@@ -94,7 +94,7 @@
                         <scmCommentPrefix>[ci skip][release]:</scmCommentPrefix>
                         <tagNameFormat>v@{project.version}</tagNameFormat>
                         <useReleaseProfile>false</useReleaseProfile>
-                        <arguments>-Pdistribution-release</arguments>
+                        <arguments>-Pbintray,javadoc,distribution-release</arguments>
                     </configuration>
                 </plugin>
             </plugins>
