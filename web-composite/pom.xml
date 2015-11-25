@@ -12,7 +12,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>15.11-M2-SNAPSHOT</version>
+        <version>15.11-SNAPSHOT</version>
     </parent>
 
 	<artifactId>web-composite</artifactId>
