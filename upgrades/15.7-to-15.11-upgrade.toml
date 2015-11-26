@@ -10,7 +10,7 @@ Exclude = "target|.settings|.git|.svn|.idea"
     Name = "ReplaceMavenDependency"
     Params = [
         "org.seedstack:seedstack-bom:15.7",
-        "org.seedstack:seedstack-bom:15.11-M1-SNAPSHOT",
+        "org.seedstack:seedstack-bom:15.11",
 
         "org.seedstack.seed:seed-core-support-specs",
         "org.seedstack.seed:seed-specs",
