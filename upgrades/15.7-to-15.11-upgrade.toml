@@ -434,3 +434,14 @@ Exclude = "target|.settings|.git|.svn|.idea"
         "org.seedstack.w20"
     ]
 
+# W20
+
+[[Transformations]]
+  Filter = "*.js"
+
+  [[Transformations.Proc]]
+    Name = "Replace"
+    Params = [
+        "{w20-ui}/modules/ui",
+        "{w20-core}/modules/ui"
+	]
