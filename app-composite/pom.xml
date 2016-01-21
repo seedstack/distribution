@@ -29,11 +29,6 @@
             <artifactId>seed-security-core</artifactId>
             <version>${seed.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-shell</artifactId>
-            <version>${seed.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.seedstack.business</groupId>

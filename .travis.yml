@@ -4,15 +4,13 @@ language: java
 
 jdk: oraclejdk8
 
-notifications:
-  irc: "chat.freenode.net#seedstack-dev"
-
 cache:
   directories: "$HOME/.m2/repository"
 
 install:
-  - rm ~/.m2/settings.xml
-  - echo "<settings><servers><server><id>sonatype-nexus-snapshots</id><username>\${env.SONATYPE_USER}</username><password>\${env.SONATYPE_PASS}</password></server></servers></settings>" > ~/.m2/settings.xml
-  - if [ $TRAVIS_PULL_REQUEST = false ] && [ $TRAVIS_BRANCH = master ]; then GOAL=deploy; else GOAL=install; fi
+  - echo "<settings><servers><server><id>sonatype-nexus-snapshots</id><username>\${env.SONATYPE_USER}</username><password>\${env.SONATYPE_PASS}</password></server><server><id>bintray</id><username>\${env.BINTRAY_USER}</username><password>\${env.BINTRAY_KEY}</password></server></servers></settings>" > ~/.m2/settings.xml
+  - if [[ $TRAVIS_PULL_REQUEST = false ]] && [[ $TRAVIS_BRANCH = master ]] || [[ $TRAVIS_TAG = v* ]]; then GOAL=deploy; else GOAL=install; fi
+  - if [[ $TRAVIS_TAG = v* ]]; then ADDITIONAL_PROFILES=release; mvn -q -U org.seedstack:seedstack-maven-plugin:release; else ADDITIONAL_PROFILES=snapshots; fi
 
-script: mvn -q -U -Pbuild-number,bintray,snapshots,javadoc $GOAL
+script: mvn -q -U -T 2 -Pbuild-number,bintray,javadoc,$ADDITIONAL_PROFILES $GOAL
+

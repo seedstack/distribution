@@ -24,7 +24,7 @@
         <poms.version>2.3.0</poms.version>
 
         <seed.version>2.2.0-SNAPSHOT</seed.version>
-        <business.version>2.1.0</business.version>
+        <business.version>2.2.0-SNAPSHOT</business.version>
 
         <audit-addon.version>2.1.0</audit-addon.version>
         <monitoring-addon.version>2.1.0</monitoring-addon.version>
@@ -33,9 +33,9 @@
         <io-addon.version>2.1.0</io-addon.version>
         <javamail-addon.version>2.1.0</javamail-addon.version>
         <jcache-addon.version>2.1.0</jcache-addon.version>
-        <jdbc-addon.version>2.1.1</jdbc-addon.version>
-        <jms-addon.version>2.1.0</jms-addon.version>
-        <jpa-addon.version>2.1.1</jpa-addon.version>
+        <jdbc-addon.version>2.1.2-SNAPSHOT</jdbc-addon.version>
+        <jms-addon.version>2.1.1-SNAPSHOT</jms-addon.version>
+        <jpa-addon.version>2.1.2-SNAPSHOT</jpa-addon.version>
         <ldap-addon.version>2.1.0</ldap-addon.version>
         <mongodb-addon.version>1.0.0</mongodb-addon.version>
         <neo4j-addon.version>1.0.0</neo4j-addon.version>
@@ -43,10 +43,10 @@
         <scheduling-addon.version>2.1.0</scheduling-addon.version>
         <solr-addon.version>1.0.0</solr-addon.version>
         <spring-bridge-addon.version>2.2.0</spring-bridge-addon.version>
-        <validation-addon.version>2.2.0-SNAPSHOT</validation-addon.version>
-        <w20-bridge-addon.version>2.1.2-SNAPSHOT</w20-bridge-addon.version>
-        <web-services-addon.version>2.1.1</web-services-addon.version>
         <swagger-addon.version>1.0.0-SNAPSHOT</swagger-addon.version>
+        <validation-addon.version>2.2.0-SNAPSHOT</validation-addon.version>
+        <w20-bridge-addon.version>2.2.0-SNAPSHOT</w20-bridge-addon.version>
+        <web-services-addon.version>2.1.1</web-services-addon.version>
     </properties>
 
     <modules>
@@ -83,19 +83,6 @@
                             <phase>none</phase>
                         </execution>
                     </executions>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.1</version>
-                    <configuration>
-                        <pushChanges>true</pushChanges>
-                        <autoVersionSubmodules>true</autoVersionSubmodules>
-                        <scmCommentPrefix>[ci skip][release]:</scmCommentPrefix>
-                        <tagNameFormat>v@{project.version}</tagNameFormat>
-                        <useReleaseProfile>false</useReleaseProfile>
-                        <arguments>-Pbintray,javadoc,distribution-release</arguments>
-                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -135,6 +122,13 @@
                     <url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
                 </repository>
             </repositories>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>sonatype-nexus-snapshots</id>
+                    <name>Sonatype Nexus Snapshots</name>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                </snapshotRepository>
+            </distributionManagement>
         </profile>
         <profile>
             <id>bintray</id>
@@ -152,42 +146,5 @@
                 </repository>
             </repositories>
         </profile>
-        <profile>
-            <id>distribution-release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                                <configuration>
-                                    <keyname>release@seedstack.org</keyname>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
     </profiles>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 </project>

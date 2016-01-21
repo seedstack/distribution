@@ -1,7 +1,8 @@
 # SeedStack distribution 
 [![Build status](https://travis-ci.org/seedstack/distribution.svg?branch=master)](https://travis-ci.org/seedstack/distribution) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.seedstack/distribution/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/org.seedstack/distribution)
 
-Distribution of the whole stack (dependency management, project archetypes, composite dependencies, ...). 
+Open-Source reference distribution of the whole stack (dependency management, project archetypes, composite dependencies, ...).
+More information [here](http://seedstack.org/getting-started/distribution/).
 
 # Copyright and license
 
