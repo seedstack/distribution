@@ -122,13 +122,6 @@
                     <url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
                 </repository>
             </repositories>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>sonatype-nexus-snapshots</id>
-                    <name>Sonatype Nexus Snapshots</name>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-                </snapshotRepository>
-            </distributionManagement>
         </profile>
         <profile>
             <id>bintray</id>
@@ -140,11 +133,19 @@
                     <releases>
                         <enabled>true</enabled>
                     </releases>
-                    <id>bintray-seedstack-jars</id>
+                    <id>bintray</id>
                     <name>bintray</name>
                     <url>http://dl.bintray.com/seedstack/jars</url>
                 </repository>
             </repositories>
         </profile>
     </profiles>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss-jfrog-artifactory</id>
+            <name>oss-jfrog-artifactory-snapshots</name>
+            <url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
