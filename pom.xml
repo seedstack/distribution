@@ -47,6 +47,8 @@
         <validation-addon.version>2.2.0</validation-addon.version>
         <w20-bridge-addon.version>2.2.0</w20-bridge-addon.version>
         <web-services-addon.version>2.1.1</web-services-addon.version>
+
+        <bintray.package>distribution</bintray.package>
     </properties>
 
     <modules>
