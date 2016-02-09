@@ -30,4 +30,4 @@
 
 # Version 15.7 (2015-07-28)
 
-* First public stable release of SeedStack.
+* [new] First public stable release of SeedStack.
