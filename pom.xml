@@ -17,7 +17,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>15.11.1-SNAPSHOT</version>
+    <version>15.11.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -37,15 +37,15 @@
         <jms-addon.version>2.1.1</jms-addon.version>
         <jpa-addon.version>2.1.2</jpa-addon.version>
         <ldap-addon.version>2.1.0</ldap-addon.version>
-        <mongodb-addon.version>1.0.0</mongodb-addon.version>
-        <neo4j-addon.version>1.0.0</neo4j-addon.version>
-        <redis-addon.version>1.0.0</redis-addon.version>
+        <mongodb-addon.version>1.0.1</mongodb-addon.version>
+        <neo4j-addon.version>1.0.1</neo4j-addon.version>
+        <redis-addon.version>1.0.1</redis-addon.version>
         <scheduling-addon.version>2.1.0</scheduling-addon.version>
-        <solr-addon.version>1.0.0</solr-addon.version>
+        <solr-addon.version>1.0.1</solr-addon.version>
         <spring-bridge-addon.version>2.2.0</spring-bridge-addon.version>
         <swagger-addon.version>1.0.0</swagger-addon.version>
         <validation-addon.version>2.2.0</validation-addon.version>
-        <w20-bridge-addon.version>2.2.0</w20-bridge-addon.version>
+        <w20-bridge-addon.version>2.2.1</w20-bridge-addon.version>
         <web-services-addon.version>2.1.1</web-services-addon.version>
 
         <bintray.package>distribution</bintray.package>
