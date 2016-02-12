@@ -16,9 +16,9 @@
         <version>15.11.3-SNAPSHOT</version>
     </parent>
 
-    <artifactId>batch-archetype</artifactId>
+    <artifactId>cli-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <description>SeedStack mono-module JAR integrating Spring Batch</description>
+    <description>SeedStack single JAR for CLI applications</description>
 
     <build>
         <resources>
