@@ -12,7 +12,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>15.11.2-SNAPSHOT</version>
+        <version>15.11.3-SNAPSHOT</version>
     </parent>
 
     <artifactId>seedstack-bom</artifactId>
@@ -132,11 +132,6 @@
             <dependency>
                 <groupId>org.seedstack.business</groupId>
                 <artifactId>business-core</artifactId>
-                <version>${business.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.business</groupId>
-                <artifactId>business-web</artifactId>
                 <version>${business.version}</version>
             </dependency>
 

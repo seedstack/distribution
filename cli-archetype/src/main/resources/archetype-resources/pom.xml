@@ -58,7 +58,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>            
         </plugins>
     </build>
 
@@ -76,13 +76,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.seedstack</groupId>
-            <artifactId>rest-composite</artifactId>
-            <type>pom</type>
-        </dependency>
-        <dependency>
             <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-web-undertow</artifactId>
+            <artifactId>seed-cli</artifactId>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
