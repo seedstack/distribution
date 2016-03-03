@@ -1,3 +1,10 @@
+# Version 15.11.3 (2016-03-03)
+
+* [chg] Updates w20-bridge to [2.2.2](https://github.com/seedstack/w20-bridge-addon/releases/tag/v2.2.2).
+* [new] New command-line archetype
+* [chg] Simpler Web archetype (mono-module)
+* [chg] Add sample classes to domain archetype
+
 # Version 15.11.2 (2016-02-09)
 
 * [chg] Updates mongodb to [1.0.1](https://github.com/seedstack/mongodb-addon/releases/tag/v1.0.1).
