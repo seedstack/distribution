@@ -24,7 +24,7 @@
         <poms.version>2.3.0</poms.version>
 
         <seed.version>2.2.0</seed.version>
-        <business.version>2.2.1</business.version>
+        <business.version>2.2.0</business.version>
 
         <audit-addon.version>2.1.0</audit-addon.version>
         <monitoring-addon.version>2.1.0</monitoring-addon.version>
