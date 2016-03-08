@@ -17,14 +17,14 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>15.11.3-SNAPSHOT</version>
+    <version>16.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <poms.version>2.3.0</poms.version>
 
         <seed.version>2.2.0</seed.version>
-        <business.version>2.2.0</business.version>
+        <business.version>2.3.0-SNAPSHOT</business.version>
 
         <audit-addon.version>2.1.0</audit-addon.version>
         <monitoring-addon.version>2.1.0</monitoring-addon.version>
@@ -37,14 +37,14 @@
         <jms-addon.version>2.1.1</jms-addon.version>
         <jpa-addon.version>2.1.2</jpa-addon.version>
         <ldap-addon.version>2.1.0</ldap-addon.version>
-        <mongodb-addon.version>1.0.1</mongodb-addon.version>
+        <mongodb-addon.version>1.1.0-SNAPSHOT</mongodb-addon.version>
         <neo4j-addon.version>1.0.1</neo4j-addon.version>
         <redis-addon.version>1.0.1</redis-addon.version>
         <scheduling-addon.version>2.1.0</scheduling-addon.version>
         <solr-addon.version>1.0.1</solr-addon.version>
         <spring-bridge-addon.version>2.2.0</spring-bridge-addon.version>
         <swagger-addon.version>1.0.0</swagger-addon.version>
-        <validation-addon.version>2.2.0</validation-addon.version>
+        <validation-addon.version>2.3.0-SNAPSHOT</validation-addon.version>
         <w20-bridge-addon.version>2.2.2</w20-bridge-addon.version>
         <web-services-addon.version>2.1.1</web-services-addon.version>
 
