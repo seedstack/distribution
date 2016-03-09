@@ -45,7 +45,7 @@
         <spring-bridge-addon.version>2.2.0</spring-bridge-addon.version>
         <swagger-addon.version>1.0.0</swagger-addon.version>
         <validation-addon.version>2.3.0-SNAPSHOT</validation-addon.version>
-        <w20-bridge-addon.version>2.2.2</w20-bridge-addon.version>
+        <w20-bridge-addon.version>2.3.0-SNAPSHOT</w20-bridge-addon.version>
         <web-services-addon.version>2.1.1</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
