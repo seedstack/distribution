@@ -23,7 +23,7 @@
     <properties>
         <poms.version>2.3.0</poms.version>
 
-        <seed.version>2.2.0</seed.version>
+        <seed.version>2.3.0-SNAPSHOT</seed.version>
         <business.version>2.3.0-SNAPSHOT</business.version>
 
         <audit-addon.version>2.1.0</audit-addon.version>
