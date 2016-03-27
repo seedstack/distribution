@@ -1,0 +1,21 @@
+{
+  "id": "demo",
+
+  "modules": {
+    "demo": {
+      "path": "{demo}/modules/demo",
+      "autoload": true
+    }
+  },
+
+  "routes": {
+    "components": {
+      "templateUrl": "{demo}/views/components.html"
+    }
+  },
+
+  "i18n": {
+    "fr": [ "{demo}/i18n/messages-fr.json" ],
+    "en": [ "{demo}/i18n/messages-en.json" ]
+  }
+}
