@@ -38,6 +38,7 @@
         <ldap-addon.version>2.1.1-SNAPSHOT</ldap-addon.version>
         <mongodb-addon.version>1.1.0-SNAPSHOT</mongodb-addon.version>
         <monitoring-addon.version>2.1.1-SNAPSHOT</monitoring-addon.version>
+        <mqtt-addon.version>1.0.0-SNAPSHOT</mqtt-addon.version>
         <neo4j-addon.version>1.0.2-SNAPSHOT</neo4j-addon.version>
         <redis-addon.version>1.0.2-SNAPSHOT</redis-addon.version>
         <scheduling-addon.version>2.1.1-SNAPSHOT</scheduling-addon.version>

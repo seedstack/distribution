@@ -274,6 +274,13 @@
                 <version>${monitoring-addon.version}</version>
             </dependency>
 
+            <!-- Mqtt add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.mqtt</groupId>
+                <artifactId>mqtt</artifactId>
+                <version>${mqtt-addon.version}</version>
+            </dependency>
+
             <!-- Neo4j add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.neo4j</groupId>
