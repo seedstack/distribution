@@ -3,13 +3,6 @@
     "modules": {
       "application": {
         "home": "/demo/components"
-      },
-      "culture": {
-        "available": [
-          "en-US",
-          "fr-FR"
-        ],
-        "default": "en-US"
       }
     }
   },
