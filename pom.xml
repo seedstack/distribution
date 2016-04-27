@@ -26,20 +26,20 @@
         <seed.version>2.3.0</seed.version>
         <business.version>2.3.0</business.version>
 
-        <audit-addon.version>2.1.1-SNAPSHOT</audit-addon.version>
-        <elasticsearch-addon.version>2.1.1-SNAPSHOT</elasticsearch-addon.version>
+        <audit-addon.version>2.1.1</audit-addon.version>
+        <elasticsearch-addon.version>2.1.1</elasticsearch-addon.version>
         <i18n-addon.version>2.2.1-SNAPSHOT</i18n-addon.version>
-        <io-addon.version>2.1.1-SNAPSHOT</io-addon.version>
-        <javamail-addon.version>2.1.1-SNAPSHOT</javamail-addon.version>
-        <jcache-addon.version>2.1.1-SNAPSHOT</jcache-addon.version>
-        <jdbc-addon.version>2.1.3-SNAPSHOT</jdbc-addon.version>
-        <jms-addon.version>2.1.2-SNAPSHOT</jms-addon.version>
+        <io-addon.version>2.1.1</io-addon.version>
+        <javamail-addon.version>2.1.1</javamail-addon.version>
+        <jcache-addon.version>2.1.1</jcache-addon.version>
+        <jdbc-addon.version>2.1.3</jdbc-addon.version>
+        <jms-addon.version>2.1.2</jms-addon.version>
         <jpa-addon.version>2.1.3-SNAPSHOT</jpa-addon.version>
-        <ldap-addon.version>2.1.1-SNAPSHOT</ldap-addon.version>
+        <ldap-addon.version>2.1.1</ldap-addon.version>
         <mongodb-addon.version>1.1.0-SNAPSHOT</mongodb-addon.version>
         <monitoring-addon.version>2.1.1-SNAPSHOT</monitoring-addon.version>
-        <mqtt-addon.version>1.0.0-SNAPSHOT</mqtt-addon.version>
-        <neo4j-addon.version>1.0.2-SNAPSHOT</neo4j-addon.version>
+        <mqtt-addon.version>1.0.0</mqtt-addon.version>
+        <neo4j-addon.version>1.0.2</neo4j-addon.version>
         <redis-addon.version>1.0.2-SNAPSHOT</redis-addon.version>
         <scheduling-addon.version>2.1.1-SNAPSHOT</scheduling-addon.version>
         <solr-addon.version>1.0.2-SNAPSHOT</solr-addon.version>
@@ -50,10 +50,10 @@
         <web-services-addon.version>2.2.2-SNAPSHOT</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.2.1</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.2.2</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
-        <logback.version>1.1.3</logback.version>
+        <logback.version>1.1.6</logback.version>
         <!-- end -->
 
         <bintray.package>distribution</bintray.package>
