@@ -117,11 +117,6 @@
                 <artifactId>seed-web-undertow</artifactId>
                 <version>${seed.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.seedstack.seed</groupId>
-                <artifactId>seed-web-websocket</artifactId>
-                <version>${seed.version}</version>
-            </dependency>
 
             <!-- Business -->
             <dependency>
@@ -389,6 +384,11 @@
             <dependency>
                 <groupId>org.seedstack.addons.w20</groupId>
                 <artifactId>w20-bridge-web-business-theme</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-material-theme</artifactId>
                 <version>${w20-bridge-addon.version}</version>
             </dependency>
 
