@@ -28,7 +28,7 @@
 
         <audit-addon.version>2.1.1</audit-addon.version>
         <elasticsearch-addon.version>2.1.1</elasticsearch-addon.version>
-        <i18n-addon.version>2.2.1-SNAPSHOT</i18n-addon.version>
+        <i18n-addon.version>2.2.1</i18n-addon.version>
         <io-addon.version>2.1.1</io-addon.version>
         <javamail-addon.version>2.1.1</javamail-addon.version>
         <jcache-addon.version>2.1.1</jcache-addon.version>
