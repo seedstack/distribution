@@ -1,3 +1,10 @@
+# Version 16.7 (2016-07-29)
+
+* [chg] business: **[2.3.1](https://github.com/seedstack/business/releases/tag/v2.3.1)**
+* [chg] i18n-addon: **[2.2.2](https://github.com/seedstack/i18n-addon/releases/tag/v2.2.2)**
+* [chg] mqtt-addon: **[1.1.0](https://github.com/seedstack/mqtt-addon/releases/tag/v1.1.0)**
+* [chg] w20-bridge-addon: **[2.3.2](https://github.com/seedstack/w20-bridge-addon/releases/tag/v2.3.2)**
+
 # Version 16.4 (2016-04-28)
 
 * [new] MQTT add-on.
