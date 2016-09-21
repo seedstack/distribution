@@ -1,3 +1,12 @@
+# Version 16.7.1 (2016-09-21)
+
+* [chg] seed: **[2.3.1](https://github.com/seedstack/seed/releases/tag/v2.3.1)**
+* [chg] business: **[2.3.4](https://github.com/seedstack/business/releases/tag/v2.3.4)**
+* [chg] scheduling-addon: **[2.2.0](https://github.com/seedstack/scheduling-addon/releases/tag/v2.2.0)**
+* [chg] w20-bridge-addon: **[2.3.3](https://github.com/seedstack/w20-bridge-addon/releases/tag/v2.3.3)**
+* [chg] w20-simple-theme: **[3.2.1](https://github.com/seedstack/w20-simple-theme/releases/tag/v3.2.1)**
+* [chg] w20-business-theme: **[1.2.1](https://github.com/seedstack/w20-business-theme/releases/tag/v1.2.1)**
+
 # Version 16.7 (2016-07-29)
 
 * [chg] business: **[2.3.1](https://github.com/seedstack/business/releases/tag/v2.3.1)**

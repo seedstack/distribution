@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>16.7-SNAPSHOT</version>
+        <version>16.7.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>web-composite</artifactId>

@@ -7,7 +7,8 @@
     file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.seedstack.poms</groupId>
@@ -17,14 +18,14 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>16.7-SNAPSHOT</version>
+    <version>16.7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <poms.version>2.4.0</poms.version>
 
-        <seed.version>2.3.0</seed.version>
-        <business.version>2.3.1</business.version>
+        <seed.version>2.3.1</seed.version>
+        <business.version>2.3.4</business.version>
 
         <audit-addon.version>2.1.1</audit-addon.version>
         <elasticsearch-addon.version>2.1.1</elasticsearch-addon.version>
@@ -41,12 +42,12 @@
         <mqtt-addon.version>1.1.0</mqtt-addon.version>
         <neo4j-addon.version>1.0.2</neo4j-addon.version>
         <redis-addon.version>1.0.2</redis-addon.version>
-        <scheduling-addon.version>2.1.1</scheduling-addon.version>
+        <scheduling-addon.version>2.2.0</scheduling-addon.version>
         <solr-addon.version>1.0.2</solr-addon.version>
         <spring-bridge-addon.version>2.2.1</spring-bridge-addon.version>
         <swagger-addon.version>1.0.1</swagger-addon.version>
         <validation-addon.version>2.3.0</validation-addon.version>
-        <w20-bridge-addon.version>2.3.2</w20-bridge-addon.version>
+        <w20-bridge-addon.version>2.3.3</w20-bridge-addon.version>
         <web-services-addon.version>2.2.2</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
@@ -71,6 +72,17 @@
         <module>rest-archetype</module>
         <module>cli-archetype</module>
     </modules>
+
+    <!-- Override jansi for 16.7 only -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.fusesource.jansi</groupId>
+                <artifactId>jansi</artifactId>
+                <version>1.13</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>
