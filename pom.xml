@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>16.7.1-SNAPSHOT</version>
+    <version>16.7.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -47,7 +47,7 @@
         <spring-bridge-addon.version>2.2.1</spring-bridge-addon.version>
         <swagger-addon.version>1.0.1</swagger-addon.version>
         <validation-addon.version>2.3.0</validation-addon.version>
-        <w20-bridge-addon.version>2.3.3</w20-bridge-addon.version>
+        <w20-bridge-addon.version>2.3.4</w20-bridge-addon.version>
         <web-services-addon.version>2.2.2</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
@@ -70,6 +70,7 @@
         <module>web-archetype</module>
         <module>rest-composite</module>
         <module>rest-archetype</module>
+        <module>cli-composite</module>
         <module>cli-archetype</module>
     </modules>
 

@@ -76,8 +76,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-cli</artifactId>
+            <groupId>org.seedstack</groupId>
+            <artifactId>cli-composite</artifactId>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.seedstack.business</groupId>
+            <artifactId>business-core</artifactId>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>

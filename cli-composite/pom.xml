@@ -15,7 +15,7 @@
         <version>16.7.2-SNAPSHOT</version>
     </parent>
 
-	<artifactId>batch-composite</artifactId>
+	<artifactId>cli-composite</artifactId>
     <packaging>pom</packaging>
 
     <dependencies>
@@ -25,9 +25,9 @@
             <version>${seed.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.seedstack.addons.spring</groupId>
-            <artifactId>spring-bridge-batch</artifactId>
-            <version>${spring-bridge-addon.version}</version>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-cli</artifactId>
+            <version>${seed.version}</version>
         </dependency>
     </dependencies>
 </project>

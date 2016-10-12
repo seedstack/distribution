@@ -1,3 +1,12 @@
+# Version 16.7.2 (2016-10-12)
+
+* [new] Adds full package structure to archetypes with README files.
+* [new] Adds CLI composite.
+* [chg] REST resources are now served on `/api/*` by default in the Web archetype.
+* [chg] w20-simple-theme: **[3.2.2](https://github.com/seedstack/w20-simple-theme/releases/tag/v3.2.2)**
+* [chg] w20-business-theme: **[1.2.2](https://github.com/seedstack/w20-business-theme/releases/tag/v1.2.2)**
+* [chg] w20-bridge-addon: **[2.3.4](https://github.com/seedstack/w20-bridge-addon/releases/tag/v2.3.4)**
+
 # Version 16.7.1 (2016-09-21)
 
 * [chg] seed: **[2.3.1](https://github.com/seedstack/seed/releases/tag/v2.3.1)**
@@ -6,6 +15,7 @@
 * [chg] w20-bridge-addon: **[2.3.3](https://github.com/seedstack/w20-bridge-addon/releases/tag/v2.3.3)**
 * [chg] w20-simple-theme: **[3.2.1](https://github.com/seedstack/w20-simple-theme/releases/tag/v3.2.1)**
 * [chg] w20-business-theme: **[1.2.1](https://github.com/seedstack/w20-business-theme/releases/tag/v1.2.1)**
+* [chg] w20-bridge-addon: **[2.3.3](https://github.com/seedstack/w20-bridge-addon/releases/tag/v2.3.3)**
 
 # Version 16.7 (2016-07-29)
 
