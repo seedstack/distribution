@@ -18,13 +18,13 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>16.7.2-SNAPSHOT</version>
+    <version>16.7.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <poms.version>2.4.0</poms.version>
 
-        <seed.version>2.3.1</seed.version>
+        <seed.version>2.3.2</seed.version>
         <business.version>2.3.4</business.version>
 
         <audit-addon.version>2.1.1</audit-addon.version>
@@ -73,17 +73,6 @@
         <module>cli-composite</module>
         <module>cli-archetype</module>
     </modules>
-
-    <!-- Override jansi for 16.7 only -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.fusesource.jansi</groupId>
-                <artifactId>jansi</artifactId>
-                <version>1.13</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <pluginManagement>

@@ -1,3 +1,7 @@
+# Version 16.7.3 (2016-11-09)
+
+* [chg] seed: **[2.3.2](https://github.com/seedstack/seed/releases/tag/v2.3.2)**
+
 # Version 16.7.2 (2016-10-12)
 
 * [new] Adds full package structure to archetypes with README files.
