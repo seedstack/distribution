@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>\${groupId}</groupId>
+    <artifactId>\${artifactId}</artifactId>
+    <version>\${version}</version>
+
+    <properties>
+        <maven.compiler.source>${java-compiler.version}</maven.compiler.source>
+        <maven.compiler.target>${java-compiler.version}</maven.compiler.target>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <seed.version>${seed.version}</seed.version>
+        <logback.version>${logback.version}</logback.version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.seedstack</groupId>
+                    <artifactId>seedstack-maven-plugin</artifactId>
+                    <version>${seedstack-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${maven-failsafe-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>failsafe-integration-test</id>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>failsafe-verify</id>
+                        <goals>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-core</artifactId>
+            <version>\${seed.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-testing</artifactId>
+            <version>\${seed.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>\${logback.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

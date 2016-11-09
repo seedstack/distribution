@@ -24,7 +24,7 @@
     <properties>
         <poms.version>3.0.0</poms.version>
 
-        <seed.version>3.0.3</seed.version>
+        <seed.version>3.0.4-SNAPSHOT</seed.version>
         <business.version>3.0.1</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
@@ -54,7 +54,7 @@
         <web-services-addon.version>3.0.0</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.3.1</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.3.2</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <logback.version>1.1.6</logback.version>
@@ -75,6 +75,7 @@
         <module>rest-archetype</module>
         <module>cli-composite</module>
         <module>cli-archetype</module>
+        <module>addon-archetype</module>
     </modules>
 
     <build>
