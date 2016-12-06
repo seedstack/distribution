@@ -12,7 +12,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>16.7.3-SNAPSHOT</version>
+        <version>16.11-SNAPSHOT</version>
     </parent>
 
     <artifactId>seedstack-bom</artifactId>
@@ -147,6 +147,13 @@
                 <version>${audit-addon.version}</version>
             </dependency>
 
+            <!-- Data-security add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.datasecurity</groupId>
+                <artifactId>data-security</artifactId>
+                <version>${data-security-addon.version}</version>
+            </dependency>
+
             <!-- ElasticSearch add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.elasticsearch</groupId>
@@ -222,12 +229,7 @@
             <!-- JMS add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.jms</groupId>
-                <artifactId>jms-core</artifactId>
-                <version>${jms-addon.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.addons.jms</groupId>
-                <artifactId>jms-specs</artifactId>
+                <artifactId>jms</artifactId>
                 <version>${jms-addon.version}</version>
             </dependency>
 
