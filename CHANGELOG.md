@@ -1,3 +1,25 @@
+# Version 16.11 (2016-12-??)
+
+* [chg] poms: **[3.0.0](https://github.com/seedstack/poms/releases/tag/v3.0.0)**
+* [chg] seed: **[3.0.0](https://github.com/seedstack/seed/releases/tag/v3.0.0)**
+* [chg] business: **[3.0.0](https://github.com/seedstack/business/releases/tag/v3.0.0)**
+* [chg] w20: **[2.3.3](https://github.com/seedstack/w20/releases/tag/v2.3.3)**
+* [chg] jdbc-addon: **[3.0.0](https://github.com/seedstack/jdbc-addon/releases/tag/v3.0.0)**
+* [chg] jms-addon: **[3.0.0](https://github.com/seedstack/jms-addon/releases/tag/v3.0.0)**
+* [chg] jpa-addon: **[3.0.0](https://github.com/seedstack/jpa-addon/releases/tag/v3.0.0)**
+* [chg] swagger-addon: **[2.0.0](https://github.com/seedstack/swagger-addon/releases/tag/v2.0.0)**
+* [chg] validation-addon is now part of `seed-core` module in `seed` and automatically enabled.
+* [chg] w20-bridge-addon: **[3.0.0](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.0.0)**
+* [nfo] w20-extras: 2.2.0
+* [nfo] w20-dataviz: 2.2.0
+* [nfo] w20-material: 2.1.5
+* [nfo] w20-components: 2.2.1
+* [nfo] w20-bootstrap-2: 2.1.2
+* [nfo] w20-bootstrap-3: 2.2.0
+* [nfo] w20-simple-theme: 3.2.2
+* [nfo] w20-business-theme: 1.2.2
+* [chg] w20-material-theme: **[1.0.3](https://github.com/seedstack/w20-material-theme/releases/tag/v1.0.3)**
+
 # Version 16.7.3 (2016-11-09)
 
 * [chg] seed: **[2.3.2](https://github.com/seedstack/seed/releases/tag/v2.3.2)**

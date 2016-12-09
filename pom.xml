@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>16.11-SNAPSHOT</version>
+    <version>16.11-M1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -27,32 +27,31 @@
         <seed.version>3.0.0-SNAPSHOT</seed.version>
         <business.version>3.0.0-SNAPSHOT</business.version>
 
-        <audit-addon.version>2.1.1</audit-addon.version>
+        <!--<audit-addon.version>2.1.1</audit-addon.version>-->
         <data-security-addon.version>1.0.0-SNAPSHOT</data-security-addon.version>
-        <elasticsearch-addon.version>2.1.1</elasticsearch-addon.version>
-        <i18n-addon.version>2.2.2</i18n-addon.version>
-        <io-addon.version>2.1.1</io-addon.version>
-        <javamail-addon.version>2.1.1</javamail-addon.version>
-        <jcache-addon.version>2.1.1</jcache-addon.version>
+        <!--<elasticsearch-addon.version>2.1.1</elasticsearch-addon.version>-->
+        <!--<i18n-addon.version>2.2.2</i18n-addon.version>-->
+        <!--<io-addon.version>2.1.1</io-addon.version>-->
+        <!--<javamail-addon.version>2.1.1</javamail-addon.version>-->
+        <!--<jcache-addon.version>2.1.1</jcache-addon.version>-->
         <jdbc-addon.version>3.0.0-SNAPSHOT</jdbc-addon.version>
         <jms-addon.version>3.0.0-SNAPSHOT</jms-addon.version>
         <jpa-addon.version>3.0.0-SNAPSHOT</jpa-addon.version>
-        <ldap-addon.version>2.1.1</ldap-addon.version>
-        <mongodb-addon.version>1.1.0</mongodb-addon.version>
-        <monitoring-addon.version>2.1.1</monitoring-addon.version>
-        <mqtt-addon.version>1.1.0</mqtt-addon.version>
-        <neo4j-addon.version>1.0.2</neo4j-addon.version>
-        <redis-addon.version>1.0.2</redis-addon.version>
-        <scheduling-addon.version>2.2.0</scheduling-addon.version>
-        <solr-addon.version>1.0.2</solr-addon.version>
-        <spring-bridge-addon.version>2.2.1</spring-bridge-addon.version>
-        <swagger-addon.version>1.0.1</swagger-addon.version>
-        <validation-addon.version>2.3.0</validation-addon.version>
+        <!--<ldap-addon.version>2.1.1</ldap-addon.version>-->
+        <!--<mongodb-addon.version>1.1.0</mongodb-addon.version>-->
+        <!--<monitoring-addon.version>2.1.1</monitoring-addon.version>-->
+        <!--<mqtt-addon.version>1.1.0</mqtt-addon.version>-->
+        <!--<neo4j-addon.version>1.0.2</neo4j-addon.version>-->
+        <!--<redis-addon.version>1.0.2</redis-addon.version>-->
+        <!--<scheduling-addon.version>2.2.0</scheduling-addon.version>-->
+        <!--<solr-addon.version>1.0.2</solr-addon.version>-->
+        <spring-bridge-addon.version>3.0.0-SNAPSHOT</spring-bridge-addon.version>
+        <swagger-addon.version>2.0.0-SNAPSHOT</swagger-addon.version>
         <w20-bridge-addon.version>3.0.0-SNAPSHOT</w20-bridge-addon.version>
-        <web-services-addon.version>2.2.2</web-services-addon.version>
+/        <web-services-addon.version>2.2.2</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.2.4</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.3.0-SNAPSHOT</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <logback.version>1.1.6</logback.version>
