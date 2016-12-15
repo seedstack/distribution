@@ -301,6 +301,13 @@
 
             <!-- Solr add-on -->
             <dependency>
+                <groupId>org.seedstack.addons.shell</groupId>
+                <artifactId>shell</artifactId>
+                <version>${shell-addon.version}</version>
+            </dependency>
+
+            <!-- Solr add-on -->
+            <dependency>
                 <groupId>org.seedstack.addons.solr</groupId>
                 <artifactId>solr</artifactId>
                 <version>${solr-addon.version}</version>

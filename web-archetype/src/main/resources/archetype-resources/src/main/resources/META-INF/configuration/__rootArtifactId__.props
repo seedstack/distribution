@@ -1,8 +1,0 @@
-# Put configuration in this file
-
-[org.seedstack.seed]
-core.application-id = ${rootArtifactId}
-rest.path = /api
-
-# This empty section resets to keys without prefix
-[]

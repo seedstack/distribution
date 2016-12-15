@@ -1,0 +1,5 @@
+# Put the main configuration in this file
+
+application:
+  id: ${rootArtifactId}
+  basePackages: [ ${package} ]

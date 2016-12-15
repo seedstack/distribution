@@ -1,0 +1,4 @@
+# Put the main configuration in this file
+
+application:
+  basePackages: [ ${package} ]
