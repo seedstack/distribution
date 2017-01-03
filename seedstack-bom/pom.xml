@@ -285,6 +285,18 @@
                 <version>${neo4j-addon.version}</version>
             </dependency>
 
+            <!-- Netflix add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.netflix</groupId>
+                <artifactId>netflix-feign</artifactId>
+                <version>${netflix-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.netflix</groupId>
+                <artifactId>netflix-hystrix</artifactId>
+                <version>${netflix-addon.version}</version>
+            </dependency>
+
             <!-- Redis add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.redis</groupId>

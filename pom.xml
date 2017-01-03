@@ -30,20 +30,21 @@
         <!--<audit-addon.version>2.1.1</audit-addon.version>-->
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <!--<elasticsearch-addon.version>2.1.1</elasticsearch-addon.version>-->
-        <!--<i18n-addon.version>2.2.2</i18n-addon.version>-->
-        <!--<io-addon.version>2.1.1</io-addon.version>-->
+        <i18n-addon.version>3.0.0</i18n-addon.version>
+        <io-addon.version>3.0.0</io-addon.version>
         <!--<javamail-addon.version>2.1.1</javamail-addon.version>-->
-        <!--<jcache-addon.version>2.1.1</jcache-addon.version>-->
+        <jcache-addon.version>3.0.0</jcache-addon.version>
         <jdbc-addon.version>3.0.0</jdbc-addon.version>
         <jms-addon.version>3.0.0</jms-addon.version>
         <jpa-addon.version>3.0.0</jpa-addon.version>
+        <netflix-addon.version>1.0.0</netflix-addon.version>
         <!--<ldap-addon.version>2.1.1</ldap-addon.version>-->
         <!--<mongodb-addon.version>1.1.0</mongodb-addon.version>-->
         <!--<monitoring-addon.version>2.1.1</monitoring-addon.version>-->
         <!--<mqtt-addon.version>1.1.0</mqtt-addon.version>-->
         <!--<neo4j-addon.version>1.0.2</neo4j-addon.version>-->
         <!--<redis-addon.version>1.0.2</redis-addon.version>-->
-        <!--<scheduling-addon.version>2.2.0</scheduling-addon.version>-->
+        <scheduling-addon.version>3.0.0</scheduling-addon.version>
         <shell-addon.version>1.0.0</shell-addon.version>
         <!--<solr-addon.version>1.0.2</solr-addon.version>-->
         <spring-bridge-addon.version>3.0.0</spring-bridge-addon.version>
