@@ -25,7 +25,7 @@
         <poms.version>3.0.0</poms.version>
 
         <seed.version>3.0.1-SNAPSHOT</seed.version>
-        <business.version>3.0.0</business.version>
+        <business.version>3.0.1-SNAPSHOT</business.version>
 
         <audit-addon.version>3.0.0-SNAPSHOT</audit-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
