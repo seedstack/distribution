@@ -18,30 +18,30 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>16.11-M1-SNAPSHOT</version>
+    <version>16.11-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <poms.version>3.0.0</poms.version>
 
-        <seed.version>3.0.0</seed.version>
+        <seed.version>3.0.1-SNAPSHOT</seed.version>
         <business.version>3.0.0</business.version>
 
-        <!--<audit-addon.version>2.1.1</audit-addon.version>-->
+        <audit-addon.version>3.0.0-SNAPSHOT</audit-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <!--<elasticsearch-addon.version>2.1.1</elasticsearch-addon.version>-->
         <i18n-addon.version>3.0.0</i18n-addon.version>
         <io-addon.version>3.0.0</io-addon.version>
-        <!--<javamail-addon.version>2.1.1</javamail-addon.version>-->
+        <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
         <jdbc-addon.version>3.0.0</jdbc-addon.version>
         <jms-addon.version>3.0.0</jms-addon.version>
         <jpa-addon.version>3.0.0</jpa-addon.version>
         <netflix-addon.version>1.0.0</netflix-addon.version>
         <!--<ldap-addon.version>2.1.1</ldap-addon.version>-->
-        <!--<mongodb-addon.version>1.1.0</mongodb-addon.version>-->
+        <mongodb-addon.version>2.0.0-SNAPSHOT</mongodb-addon.version>
         <!--<monitoring-addon.version>2.1.1</monitoring-addon.version>-->
-        <!--<mqtt-addon.version>1.1.0</mqtt-addon.version>-->
+        <mqtt-addon.version>2.0.0</mqtt-addon.version>
         <!--<neo4j-addon.version>1.0.2</neo4j-addon.version>-->
         <!--<redis-addon.version>1.0.2</redis-addon.version>-->
         <scheduling-addon.version>3.0.0</scheduling-addon.version>
@@ -50,7 +50,7 @@
         <spring-bridge-addon.version>3.0.0</spring-bridge-addon.version>
         <swagger-addon.version>2.0.0</swagger-addon.version>
         <w20-bridge-addon.version>3.0.0</w20-bridge-addon.version>
-        <web-services-addon.version>2.2.2</web-services-addon.version>
+        <web-services-addon.version>3.0.0</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
         <seedstack-maven-plugin.version>2.3.0</seedstack-maven-plugin.version>
