@@ -6,3 +6,17 @@ application:
 
 rest:
   path: /api
+
+security:
+  users:
+    demo: demo
+  web:
+    urls:
+      -
+        # You can change the pattern below:
+        # - To /api/** to apply security to all REST resources
+        # - Or to /** to apply security to the whole application
+        #
+        # See http://seedstack.org/docs/seed/manual/web/#security for more information
+        pattern: /api/seed-w20/security/**
+        filters: authcBasic

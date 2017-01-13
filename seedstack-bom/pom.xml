@@ -33,27 +33,7 @@
             </dependency>
             <dependency>
                 <groupId>org.seedstack.seed</groupId>
-                <artifactId>seed-crypto</artifactId>
-                <version>${seed.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.seed</groupId>
-                <artifactId>seed-el</artifactId>
-                <version>${seed.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.seed</groupId>
-                <artifactId>seed-metrics</artifactId>
-                <version>${seed.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.seed</groupId>
                 <artifactId>seed-rest-core</artifactId>
-                <version>${seed.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.seed</groupId>
-                <artifactId>seed-rest-jersey1</artifactId>
                 <version>${seed.version}</version>
             </dependency>
             <dependency>
@@ -78,11 +58,6 @@
             </dependency>
             <dependency>
                 <groupId>org.seedstack.seed</groupId>
-                <artifactId>seed-shell</artifactId>
-                <version>${seed.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.seed</groupId>
                 <artifactId>seed-specs</artifactId>
                 <version>${seed.version}</version>
             </dependency>
@@ -91,11 +66,6 @@
                 <artifactId>seed-testing</artifactId>
                 <version>${seed.version}</version>
                 <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack.seed</groupId>
-                <artifactId>seed-transaction</artifactId>
-                <version>${seed.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.seedstack.seed</groupId>
@@ -247,6 +217,13 @@
                 <version>${ldap-addon.version}</version>
             </dependency>
 
+            <!-- Metrics add-on -->
+            <!--<dependency>-->
+                <!--<groupId>org.seedstack.addons.metrics</groupId>-->
+                <!--<artifactId>metrics</artifactId>-->
+                <!--<version>${metrics-addon.version}</version>-->
+            <!--</dependency>-->
+
             <!-- MongoDB add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.mongodb</groupId>
@@ -263,6 +240,11 @@
             <dependency>
                 <groupId>org.seedstack.addons.monitoring</groupId>
                 <artifactId>monitoring-batch</artifactId>
+                <version>${monitoring-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.monitoring</groupId>
+                <artifactId>monitoring-mqtt</artifactId>
                 <version>${monitoring-addon.version}</version>
             </dependency>
             <dependency>
@@ -311,7 +293,7 @@
                 <version>${scheduling-addon.version}</version>
             </dependency>
 
-            <!-- Solr add-on -->
+            <!-- Shell add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.shell</groupId>
                 <artifactId>shell</artifactId>

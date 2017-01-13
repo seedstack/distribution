@@ -3,6 +3,9 @@
     "modules": {
       "application": {
         "home": "/demo/components"
+      },
+      "security": {
+        "autoLogin": false
       }
     }
   },
