@@ -1,3 +1,7 @@
+# Version 16.11.1 (2017-01-16)
+
+* [chg] seed: **[3.0.3](https://github.com/seedstack/seed/releases/tag/v3.0.3)**
+
 # Version 16.11 (2017-01-13)
 
 * [chg] poms: **[3.0.1](https://github.com/seedstack/poms/releases/tag/v3.0.1)**

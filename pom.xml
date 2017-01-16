@@ -18,13 +18,13 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>16.11-SNAPSHOT</version>
+    <version>16.11.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <poms.version>3.0.0</poms.version>
 
-        <seed.version>3.0.2</seed.version>
+        <seed.version>3.0.3</seed.version>
         <business.version>3.0.1</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
@@ -103,6 +103,17 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- TODO: remove this when all components will reference shed 1.0.1+ -->
+            <dependency>
+                <groupId>org.seedstack.shed</groupId>
+                <artifactId>shed</artifactId>
+                <version>1.0.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <pluginRepositories>
         <pluginRepository>
