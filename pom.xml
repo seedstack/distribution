@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>16.11.1-SNAPSHOT</version>
+    <version>16.11.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -39,7 +39,7 @@
         <jpa-addon.version>3.0.0</jpa-addon.version>
         <netflix-addon.version>1.0.0</netflix-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
-        <!--<metrics-addon.version>1.0.0</metrics-addon.version>-->
+        <metrics-addon.version>1.0.0</metrics-addon.version>
         <mongodb-addon.version>2.0.0</mongodb-addon.version>
         <monitoring-addon.version>3.0.0</monitoring-addon.version>
         <mqtt-addon.version>2.0.0</mqtt-addon.version>
