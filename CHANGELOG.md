@@ -1,3 +1,8 @@
+# Version 16.11.2 (2017-02-06)
+
+* [new] An archetype to create add-ons from scratch is now provided.
+* [chg] seed: **[3.0.4](https://github.com/seedstack/seed/releases/tag/v3.0.4)**
+
 # Version 16.11.1 (2017-01-16)
 
 * [chg] seed: **[3.0.3](https://github.com/seedstack/seed/releases/tag/v3.0.3)**
