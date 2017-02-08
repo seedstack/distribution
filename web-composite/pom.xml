@@ -42,11 +42,6 @@
         </dependency>
         <dependency>
             <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-web-undertow</artifactId>
-            <version>${seed.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seedstack.seed</groupId>
             <artifactId>seed-rest-jersey2</artifactId>
             <version>${seed.version}</version>
         </dependency>
