@@ -1,3 +1,10 @@
+# Version 16.7.4 (2017-02-16)
+
+* [chg] seed: **[2.3.4](https://github.com/seedstack/seed/releases/tag/v2.3.4)**
+* [chg] mqtt-addon: **[1.2.0](https://github.com/seedstack/mqtt-addon/releases/tag/v1.2.0)**
+* [chg] monitoring-addon: **[2.2.1](https://github.com/seedstack/monitoring-addon/releases/tag/v2.2.1)**
+* [chg] w20-bridge-addon: **[2.3.5](https://github.com/seedstack/w20-bridge-addon/releases/tag/v2.3.5)**
+
 # Version 16.7.3 (2016-11-09)
 
 * [chg] seed: **[2.3.2](https://github.com/seedstack/seed/releases/tag/v2.3.2)**
