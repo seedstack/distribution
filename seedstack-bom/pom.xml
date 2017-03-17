@@ -326,6 +326,13 @@
                 <version>${swagger-addon.version}</version>
             </dependency>
 
+            <!-- Validation add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.validation</groupId>
+                <artifactId>validation</artifactId>
+                <version>${validation-addon.version}</version>
+            </dependency>
+
             <!-- W20 bridge add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.w20</groupId>
