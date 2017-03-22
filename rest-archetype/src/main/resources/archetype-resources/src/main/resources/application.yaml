@@ -3,3 +3,14 @@
 application:
   id: ${rootArtifactId}
   basePackages: [ ${package} ]
+
+security:
+  users:
+    # Demonstration credentials are demo / demo
+    demo: demo
+  web:
+    urls:
+      -
+        # See http://seedstack.org/docs/seed/manual/security/#http-access-control for more information
+        pattern: /**
+        filters: authcBasic

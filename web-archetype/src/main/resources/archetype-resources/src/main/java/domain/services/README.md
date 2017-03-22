@@ -21,4 +21,5 @@ infrastructure package.
 
 Additional information:
 
-* http://seedstack.org/docs/business/manual/model/
+* http://seedstack.org/docs/business/package-layout
+* http://seedstack.org/docs/business/manual/services

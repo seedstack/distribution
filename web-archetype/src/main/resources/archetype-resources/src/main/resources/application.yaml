@@ -9,14 +9,11 @@ rest:
 
 security:
   users:
+    # Demonstration credentials are demo / demo
     demo: demo
   web:
     urls:
       -
-        # You can change the pattern below:
-        # - To /api/** to apply security to all REST resources
-        # - Or to /** to apply security to the whole application
-        #
-        # See http://seedstack.org/docs/seed/manual/web/#security for more information
-        pattern: /api/seed-w20/security/**
+        # See http://seedstack.org/docs/seed/manual/security/#http-access-control for more information
+        pattern: /api/**
         filters: authcBasic

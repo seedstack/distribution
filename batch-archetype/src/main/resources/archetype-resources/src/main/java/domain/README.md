@@ -15,4 +15,5 @@ Rules:
 
 Additional information:
 
-* http://seedstack.org/docs/business/manual/
+* http://seedstack.org/docs/business/architecture
+* http://seedstack.org/docs/business/package-layout

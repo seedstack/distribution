@@ -24,9 +24,11 @@ relocated to the infrastructure package.
 
 Additional information:
 
-* http://seedstack.org/docs/business/manual/model/
-* http://seedstack.org/docs/business/manual/aggregates/
-* http://seedstack.org/docs/business/manual/repositories/
-* http://seedstack.org/docs/business/manual/factories/
-* http://seedstack.org/docs/business/manual/events/
-* http://seedstack.org/docs/business/manual/policies/
+* http://seedstack.org/docs/business/package-layout
+* http://seedstack.org/docs/business/manual/entities
+* http://seedstack.org/docs/business/manual/value-objects
+* http://seedstack.org/docs/business/manual/aggregates
+* http://seedstack.org/docs/business/manual/factories
+* http://seedstack.org/docs/business/manual/repositories
+* http://seedstack.org/docs/business/manual/events
+* http://seedstack.org/docs/business/manual/policies

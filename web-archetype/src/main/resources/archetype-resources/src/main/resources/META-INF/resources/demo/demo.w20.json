@@ -9,6 +9,10 @@
   },
 
   "routes": {
+    "home": {
+      "template": "<h1>Hello World!</h1>",
+      "hidden": true
+    },
     "components": {
       "templateUrl": "{demo}/views/components.html"
     }

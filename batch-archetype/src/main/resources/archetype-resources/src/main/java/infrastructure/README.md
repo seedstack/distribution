@@ -14,4 +14,5 @@ under a sub-package named after its technology (like "jpa", "mongodb", ...).
 
 Additional information:
 
-* http://seedstack.org/docs/business/manual/
+* http://seedstack.org/docs/business/architecture
+* http://seedstack.org/docs/business/package-layout

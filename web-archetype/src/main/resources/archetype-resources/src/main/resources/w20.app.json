@@ -2,10 +2,10 @@
   "w20-core": {
     "modules": {
       "application": {
-        "home": "/demo/components"
+        "home": "/demo/home"
       },
       "security": {
-        "autoLogin": false
+        "autoLogin": true
       }
     }
   },

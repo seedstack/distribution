@@ -11,7 +11,7 @@
     <batch:job id="helloWorldJob">
         <batch:step id="helloWorldStep">
             <batch:tasklet>
-                <bean class="${groupId}.batch.HelloWorldTasklet"/>
+                <bean class="${package}.interfaces.batch.HelloWorldTasklet"/>
             </batch:tasklet>
         </batch:step>
     </batch:job>
