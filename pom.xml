@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.0.0</version>
+        <version>3.0.1</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
@@ -22,10 +22,10 @@
     <packaging>pom</packaging>
 
     <properties>
-        <poms.version>3.0.0</poms.version>
+        <poms.version>3.0.1</poms.version>
 
-        <seed.version>3.1.1-SNAPSHOT</seed.version>
-        <business.version>3.1.0-SNAPSHOT</business.version>
+        <seed.version>3.2.0</seed.version>
+        <business.version>3.1.0</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
@@ -54,7 +54,7 @@
         <web-services-addon.version>3.0.0</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.4.1</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.4.2</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <logback.version>1.1.6</logback.version>
