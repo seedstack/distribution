@@ -7,7 +7,8 @@
     file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.seedstack</groupId>
@@ -20,6 +21,20 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Shed -->
+            <dependency>
+                <groupId>org.seedstack.shed</groupId>
+                <artifactId>shed</artifactId>
+                <version>${shed.version}</version>
+            </dependency>
+
+            <!-- Coffig -->
+            <dependency>
+                <groupId>org.seedstack.coffig</groupId>
+                <artifactId>coffig</artifactId>
+                <version>${coffig.version}</version>
+            </dependency>
+
             <!-- Seed -->
             <dependency>
                 <groupId>org.seedstack.seed</groupId>
@@ -131,6 +146,13 @@
                 <version>${elasticsearch-addon.version}</version>
             </dependency>
 
+            <!-- OpenFeign add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.feign</groupId>
+                <artifactId>feign</artifactId>
+                <version>${feign-addon.version}</version>
+            </dependency>
+
             <!-- I18n add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.i18n</groupId>
@@ -194,6 +216,18 @@
                 <groupId>org.seedstack.addons.jdbc</groupId>
                 <artifactId>jdbc</artifactId>
                 <version>${jdbc-addon.version}</version>
+            </dependency>
+
+            <!-- JMH add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${jmh-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.jmh</groupId>
+                <artifactId>jmh-launcher</artifactId>
+                <version>${jmh-addon.version}</version>
             </dependency>
 
             <!-- JMS add-on -->

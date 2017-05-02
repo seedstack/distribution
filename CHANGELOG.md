@@ -1,3 +1,22 @@
+# Version 17.4 (2017-05-02)
+
+* [new] jmh-addon: **[1.0.0](https://github.com/seedstack/jmh-addon/releases/tag/v1.0.0)**
+* [new] feign-addon: **[1.0.0](https://github.com/seedstack/feign-addon/releases/tag/v1.0.0)**
+* [chg] poms: **[3.0.1](https://github.com/seedstack/poms/releases/tag/v3.0.1)**
+* [chg] shed: **[1.0.2](https://github.com/seedstack/shed/releases/tag/v1.0.2)**
+* [chg] coffig: **[2.1.0](https://github.com/seedstack/coffig/releases/tag/v2.1.0)**
+* [chg] seed: **[3.2.0](https://github.com/seedstack/seed/releases/tag/v3.2.0)**
+* [chg] business: **[3.1.0](https://github.com/seedstack/business/releases/tag/v3.1.0)**
+* [chg] jdbc-addon: **[3.0.1](https://github.com/seedstack/jdbc-addon/releases/tag/v3.0.1)**
+* [chg] jms-addon: **[3.0.1](https://github.com/seedstack/jms-addon/releases/tag/v3.0.1)**
+* [chg] jpa-addon: **[3.0.1](https://github.com/seedstack/jpa-addon/releases/tag/v3.0.1)**
+* [chg] monitoring-addon: **[3.1.0](https://github.com/seedstack/monitoring-addon/releases/tag/v3.1.0)**
+* [chg] mqtt-addon: **[2.0.1](https://github.com/seedstack/mqtt-addon/releases/tag/v2.0.1)**
+* [chg] netflix-addon: **[1.0.1](https://github.com/seedstack/netflix-addon/releases/tag/v1.0.1)**
+* [chg] spring-bridge-addon: **[3.1.0](https://github.com/seedstack/spring-bridge-addon/releases/tag/v3.1.0)**
+* [chg] w20-bridge-addon: **[3.0.1](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.0.1)**
+* [chg] seedstack-maven-plugin: **[2.4.2](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.4.2)**
+
 # Version 16.11.2 (2017-02-16)
 
 * [new] An archetype to create add-ons from scratch is now provided.
@@ -9,7 +28,7 @@
 
 # Version 16.11 (2017-01-13)
 
-* [chg] poms: **[3.0.1](https://github.com/seedstack/poms/releases/tag/v3.0.1)**
+* [chg] poms: **[3.0.0](https://github.com/seedstack/poms/releases/tag/v3.0.0)**
 * [chg] seed: **[3.0.2](https://github.com/seedstack/seed/releases/tag/v3.0.2)**
 * [chg] business: **[3.0.1](https://github.com/seedstack/business/releases/tag/v3.0.1)**
 * [chg] audit-addon: **[3.0.0](https://github.com/seedstack/audit-addon/releases/tag/v3.0.0)**
