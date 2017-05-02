@@ -32,16 +32,16 @@
         <audit-addon.version>3.0.0</audit-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
-        <feign-addon.version>1.0.0-SNAPSHOT</feign-addon.version>
+        <feign-addon.version>1.0.0</feign-addon.version>
         <i18n-addon.version>3.0.0</i18n-addon.version>
         <io-addon.version>3.0.0</io-addon.version>
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
         <jdbc-addon.version>3.0.1</jdbc-addon.version>
-        <jmh-addon.version>1.0.0-SNAPSHOT</jmh-addon.version>
+        <jmh-addon.version>1.0.0</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
         <jpa-addon.version>3.0.1</jpa-addon.version>
-        <netflix-addon.version>1.0.1-SNAPSHOT</netflix-addon.version>
+        <netflix-addon.version>1.0.1</netflix-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
         <mongodb-addon.version>2.0.0</mongodb-addon.version>
@@ -58,7 +58,7 @@
         <web-services-addon.version>3.0.0</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.4.3-SNAPSHOT</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.4.3</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <logback.version>1.1.6</logback.version>

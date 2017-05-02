@@ -15,7 +15,7 @@
 * [chg] netflix-addon: **[1.0.1](https://github.com/seedstack/netflix-addon/releases/tag/v1.0.1)**
 * [chg] spring-bridge-addon: **[3.1.0](https://github.com/seedstack/spring-bridge-addon/releases/tag/v3.1.0)**
 * [chg] w20-bridge-addon: **[3.0.1](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.0.1)**
-* [chg] seedstack-maven-plugin: **[2.4.2](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.4.2)**
+* [chg] seedstack-maven-plugin: **[2.4.3](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.4.3)**
 
 # Version 16.11.2 (2017-02-16)
 
