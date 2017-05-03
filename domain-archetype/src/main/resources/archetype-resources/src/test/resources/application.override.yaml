@@ -1,3 +1,5 @@
 # This configuration file can override the main configuration for integration tests
 
-logging: INFO
+application:
+  # Domain base package will be scanned during integration tests
+  basePackages: [ ${package} ]

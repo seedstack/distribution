@@ -1,16 +1,23 @@
-# Put the main configuration in this file
+# Put main configuration in this file
+# See http://seedstack.org/docs/seed/configuration for more information
 
 application:
+  # Unique identifier of the application accross your organization
   id: ${rootArtifactId}
+  # Make sure all your application base packages are listed below
   basePackages: [ ${package} ]
 
 security:
+  # The security configuration realm uses the 'users' section below (replace it with a more useful realm later)
+  # See http://seedstack.org/docs/seed/manual/security/#realms for more information
+  realms: ConfigurationRealm
   users:
-    # Demonstration credentials are demo / demo
+    # A default 'demo' user is defined with password 'demo'
     demo: demo
   web:
+    # The 'urls' section below in used to secure HTTP requests
+    # See http://seedstack.org/docs/seed/manual/security/#http-access-control for more information
     urls:
-      -
-        # See http://seedstack.org/docs/seed/manual/security/#http-access-control for more information
-        pattern: /**
-        filters: authcBasic
+    #   -
+    #     pattern: /api/**
+    #     filters: authcBasic

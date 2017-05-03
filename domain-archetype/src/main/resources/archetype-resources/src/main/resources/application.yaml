@@ -1,4 +1,6 @@
-# Put the main configuration in this file
+# Put domain configuration in this file
+# See http://seedstack.org/docs/seed/configuration for more information about configuration
 
-application:
-  basePackages: [ ${package} ]
+# Class configuration is often needed for domain modules
+# See http://seedstack.org/docs/seed/configuration/#class-configuration for more information
+classes:
