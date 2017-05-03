@@ -1,6 +1,6 @@
 # Version 17.4 (2017-05-02)
 
-* [new] jmh-addon: **[1.0.0](https://github.com/seedstack/jmh-addon/releases/tag/v1.0.0)**
+* [new] jmh-addon: **[1.0.1](https://github.com/seedstack/jmh-addon/releases/tag/v1.0.1)**
 * [new] feign-addon: **[1.0.0](https://github.com/seedstack/feign-addon/releases/tag/v1.0.0)**
 * [chg] poms: **[3.0.1](https://github.com/seedstack/poms/releases/tag/v3.0.1)**
 * [chg] shed: **[1.0.2](https://github.com/seedstack/shed/releases/tag/v1.0.2)**
