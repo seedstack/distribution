@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>17.4-SNAPSHOT</version>
+        <version>17.4.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>seedstack-bom</artifactId>
@@ -302,11 +302,6 @@
             </dependency>
 
             <!-- Netflix add-on -->
-            <dependency>
-                <groupId>org.seedstack.addons.netflix</groupId>
-                <artifactId>netflix-feign</artifactId>
-                <version>${netflix-addon.version}</version>
-            </dependency>
             <dependency>
                 <groupId>org.seedstack.addons.netflix</groupId>
                 <artifactId>netflix-hystrix</artifactId>
