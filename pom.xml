@@ -13,21 +13,21 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.0.1</version>
+        <version>3.1.0-SNAPSHOT</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>17.4.1-SNAPSHOT</version>
+    <version>17.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
-        <poms.version>3.0.1</poms.version>
+        <poms.version>3.1.0-SNAPSHOT</poms.version>
 
-        <shed.version>1.0.2</shed.version>
-        <coffig.version>2.1.0</coffig.version>
-        <seed.version>3.2.1-SNAPSHOT</seed.version>
-        <business.version>3.1.0</business.version>
+        <shed.version>1.1.0-SNAPSHOT</shed.version>
+        <coffig.version>2.1.2-SNAPSHOT</coffig.version>
+        <seed.version>3.3.0-SNAPSHOT</seed.version>
+        <business.version>4.0.0-SNAPSHOT</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
@@ -40,7 +40,7 @@
         <jdbc-addon.version>3.0.1</jdbc-addon.version>
         <jmh-addon.version>1.0.1</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
-        <jpa-addon.version>3.0.1</jpa-addon.version>
+        <jpa-addon.version>4.0.0-SNAPSHOT</jpa-addon.version>
         <netflix-addon.version>1.0.1</netflix-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
