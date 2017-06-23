@@ -14,17 +14,79 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <maven-failsafe-plugin.version>${maven-failsafe-plugin.version}</maven-failsafe-plugin.version>
+        <seedstack-maven-plugin.version>${seedstack-maven-plugin.version}</seedstack-maven-plugin.version>
+        <docker-maven-plugin.version>${docker-maven-plugin.version}</docker-maven-plugin.version>
+
         <logback.version>${logback.version}</logback.version>
         <rest-assured.version>${rest-assured.version}</rest-assured.version>
     </properties>
 
     <build>
+        <finalName>\${artifactId}</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>\${maven-failsafe-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>failsafe-integration-test</id>
+                            <goals>
+                                <goal>integration-test</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>failsafe-verify</id>
+                            <goals>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
                     <groupId>org.seedstack</groupId>
                     <artifactId>seedstack-maven-plugin</artifactId>
-                    <version>${seedstack-maven-plugin.version}</version>
+                    <version>\${seedstack-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>build-capsule</id>
+                            <goals>
+                                <goal>package</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>\${docker-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>build-image</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>build</goal>
+                            </goals>
+                            <configuration>
+                                <dockerDirectory>\${project.basedir}/src/main/docker</dockerDirectory>
+                                <imageName>\${project.groupId}/\${project.artifactId}</imageName>
+                                <imageTags>
+                                    <imageTag>\${project.version}</imageTag>
+                                    <imageTag>latest</imageTag>
+                                </imageTags>
+                                <resources>
+                                    <resource>
+                                        <targetPath>/opt/bin</targetPath>
+                                        <directory>\${project.build.directory}</directory>
+                                        <include>\${project.build.finalName}-capsule.jar</include>
+                                    </resource>
+                                </resources>
+                                <skipDockerPush>true</skipDockerPush>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -32,33 +94,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>${maven-failsafe-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>failsafe-integration-test</id>
-                        <goals>
-                            <goal>integration-test</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>failsafe-verify</id>
-                        <goals>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.seedstack</groupId>
                 <artifactId>seedstack-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>build-capsule</id>
-                        <goals>
-                            <goal>package</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
@@ -109,8 +148,22 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>${rest-assured.version}</version>
+            <version>\${rest-assured.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>docker</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.spotify</groupId>
+                        <artifactId>docker-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
