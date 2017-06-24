@@ -13,13 +13,6 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-        <maven-failsafe-plugin.version>${maven-failsafe-plugin.version}</maven-failsafe-plugin.version>
-        <seedstack-maven-plugin.version>${seedstack-maven-plugin.version}</seedstack-maven-plugin.version>
-        <docker-maven-plugin.version>${docker-maven-plugin.version}</docker-maven-plugin.version>
-
-        <logback.version>${logback.version}</logback.version>
-        <rest-assured.version>${rest-assured.version}</rest-assured.version>
     </properties>
 
     <build>
@@ -29,7 +22,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>\${maven-failsafe-plugin.version}</version>
+                    <version>${maven-failsafe-plugin.version}</version>
                     <executions>
                         <execution>
                             <id>failsafe-integration-test</id>
@@ -48,7 +41,7 @@
                 <plugin>
                     <groupId>org.seedstack</groupId>
                     <artifactId>seedstack-maven-plugin</artifactId>
-                    <version>\${seedstack-maven-plugin.version}</version>
+                    <version>${seedstack-maven-plugin.version}</version>
                     <executions>
                         <execution>
                             <id>build-capsule</id>
@@ -58,10 +51,11 @@
                         </execution>
                     </executions>
                 </plugin>
+{% if docker.enabled %}
                 <plugin>
                     <groupId>com.spotify</groupId>
                     <artifactId>docker-maven-plugin</artifactId>
-                    <version>\${docker-maven-plugin.version}</version>
+                    <version>${docker-maven-plugin.version}</version>
                     <executions>
                         <execution>
                             <id>build-image</id>
@@ -88,6 +82,7 @@
                         </execution>
                     </executions>
                 </plugin>
+{% endif %}
             </plugins>
         </pluginManagement>
         <plugins>
@@ -131,8 +126,49 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>\${logback.version}</version>
+            <version>${logback.version}</version>
         </dependency>
+{% if persistence.type == "jpaHibernate" %}
+        <dependency>
+            <groupId>org.seedstack.addons.jpa</groupId>
+            <artifactId>jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.2.10.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>2.6.3</version>
+        </dependency>
+{% elseif persistence.type == "mongo" %}
+        <dependency>
+            <groupId>org.seedstack.addons.mongodb</groupId>
+            <artifactId>mongodb-morphia</artifactId>
+        </dependency>
+{% elseif persistence.type == "redis" %}
+        <dependency>
+            <groupId>org.seedstack.addons.redis</groupId>
+            <artifactId>redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+{% elseif persistence.type == "neo4j" %}
+        <dependency>
+            <groupId>org.seedstack.addons.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+            <version>3.1.5</version>
+        </dependency>
+{% endif %}
 
         <dependency>
             <groupId>org.seedstack.seed</groupId>
@@ -148,11 +184,20 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>\${rest-assured.version}</version>
+            <version>${rest-assured.version}</version>
             <scope>test</scope>
         </dependency>
+{% if persistence.type == "jpaHibernate" %}
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.196</version>
+            <scope>test</scope>
+        </dependency>
+{% endif %}
     </dependencies>
 
+{% if docker.enabled %}
     <profiles>
         <profile>
             <id>docker</id>
@@ -166,4 +211,5 @@
             </build>
         </profile>
     </profiles>
+{% endif %}
 </project>

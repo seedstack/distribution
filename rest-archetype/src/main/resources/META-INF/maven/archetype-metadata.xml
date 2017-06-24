@@ -18,6 +18,7 @@
         <fileSet filtered="true" packaged="false" encoding="UTF-8">
             <directory/>
             <includes>
+                <include>questions.json</include>
                 <include>docker-compose.yaml</include>
             </includes>
         </fileSet>

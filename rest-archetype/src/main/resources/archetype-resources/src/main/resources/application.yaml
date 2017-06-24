@@ -21,3 +21,21 @@ security:
     #   -
     #     pattern: /api/**
     #     filters: authcBasic
+
+{% if persistence.type == "jpaHibernate" %}
+jdbc:
+  datasources:
+    main:
+      provider: org.seedstack.jdbc.internal.datasource.HikariDataSourceProvider
+      url: ${env.DB_HOST}
+
+jpa:
+  units:
+    main:
+      datasource: main
+      properties:
+        hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+        hibernate.hbm2ddl.auto: update
+{% endif %}
+
+classes:

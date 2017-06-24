@@ -1,6 +1,26 @@
+{% if docker.enabled %}
 version: "2"
 services:
+{% if persistence.enabled %}
+  db:
+{% if persistence.type == "jpaHibernate" %}
+    image: postgres
+{% elseif persistence.type == "mongo" %}
+    image: mongo
+{% elseif persistence.type == "redis" %}
+    image: redis
+{% endif %}
+{% endif %}
   demo:
     image: ${groupId}/${artifactId}
+{% if persistence.enabled %}
+    links:
+      - db
+{% endif %}
     ports:
       - 8080:8080
+{% if persistence.enabled %}
+    environment:
+      - DB_HOST: db
+{% endif %}
+{% endif %}

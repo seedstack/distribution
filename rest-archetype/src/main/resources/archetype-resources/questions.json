@@ -1,0 +1,54 @@
+{
+  "docker": {
+    "label": "Docker",
+    "order": 1,
+    "questions": [
+      {
+        "name": "enabled",
+        "style": "confirm",
+        "message": "Enable Docker support ?"
+      }
+    ]
+  },
+  "persistence": {
+    "label": "Persistence",
+    "order": 2,
+    "questions": [
+      {
+        "name": "enabled",
+        "style": "confirm",
+        "message": "Enable persistence support ?"
+      },
+      {
+        "name": "type",
+        "conditions": [
+          {
+            "ref": "enabled",
+            "op": "eq",
+            "val": true
+          }
+        ],
+        "style": "list",
+        "message": "Choose your persistence type",
+        "values": [
+          {
+            "name": "jpaHibernate",
+            "label": "JPA with Hibernate"
+          },
+          {
+            "name": "mongo",
+            "label": "MongoDB"
+          },
+          {
+            "name": "redis",
+            "label": "Redis"
+          },
+          {
+            "name": "neo4j",
+            "label": "Neo4J"
+          }
+        ]
+      }
+    ]
+  }
+}
