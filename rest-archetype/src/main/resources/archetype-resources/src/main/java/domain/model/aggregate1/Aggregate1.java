@@ -1,4 +1,4 @@
-package ${package}.domain.model;
+package ${package}.domain.model.aggregate1;
 
 import org.seedstack.business.domain.BaseAggregateRoot;
 
@@ -11,10 +11,13 @@ import javax.persistence.Id;
 @Entity
 {% endif %}
 public class Aggregate1 extends BaseAggregateRoot<String> {
-    {% if persistence.type == "jpaHibernate" %}
+{% if persistence.type == "jpaHibernate" %}
     @Id
-    {% endif %}
+{% endif %}
     private String id;
+
+    private Aggregate1() {
+    }
 
     public Aggregate1(String id) {
         this.id = id;
