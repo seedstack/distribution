@@ -3,9 +3,10 @@
 
 application:
   # Unique identifier of the application accross your organization
-  id: ${rootArtifactId}
+  id: {{ project.artifactId }}
+
   # Make sure all your application base packages are listed below
-  basePackages: [ ${package} ]
+  basePackages: [ {{ project.groupId }} ]
 
 security:
   # The security configuration realm uses the 'users' section below (replace it with a more useful realm later)
@@ -27,7 +28,7 @@ jdbc:
   datasources:
     main:
       provider: org.seedstack.jdbc.internal.datasource.HikariDataSourceProvider
-      url: ${env.DB_HOST}
+      url: ${env.DB_URL}
 
 jpa:
   units:

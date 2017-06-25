@@ -1,10 +1,14 @@
 {% if docker.enabled %}
-version: "2"
+version: "3"
 services:
 {% if persistence.enabled %}
   db:
 {% if persistence.type == "jpaHibernate" %}
     image: postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
 {% elseif persistence.type == "mongo" %}
     image: mongo
 {% elseif persistence.type == "redis" %}
@@ -21,6 +25,8 @@ services:
       - 8080:8080
 {% if persistence.enabled %}
     environment:
-      - DB_HOST: db
+{% if persistence.type == "jpaHibernate" %}
+      DB_URL: jdbc:postgresql://db:5432/${DB_NAME}?user=${DB_USER}&password=${DB_PASSWORD}
+{% endif %}
 {% endif %}
 {% endif %}

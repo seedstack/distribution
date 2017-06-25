@@ -6,7 +6,8 @@
       {
         "name": "enabled",
         "style": "confirm",
-        "message": "Enable Docker support ?"
+        "message": "Enable Docker support ?",
+        "default": "yes"
       }
     ]
   },
@@ -17,7 +18,8 @@
       {
         "name": "enabled",
         "style": "confirm",
-        "message": "Enable persistence support ?"
+        "message": "Enable persistence support ?",
+        "default": "yes"
       },
       {
         "name": "type",
