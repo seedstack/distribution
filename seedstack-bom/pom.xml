@@ -132,6 +132,13 @@
                 <version>${audit-addon.version}</version>
             </dependency>
 
+            <!-- Consul add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.consul</groupId>
+                <artifactId>consul</artifactId>
+                <version>${consul-addon.version}</version>
+            </dependency>
+
             <!-- Data-security add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.datasecurity</groupId>
@@ -151,6 +158,13 @@
                 <groupId>org.seedstack.addons.feign</groupId>
                 <artifactId>feign</artifactId>
                 <version>${feign-addon.version}</version>
+            </dependency>
+
+            <!-- OpenFeign add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.flyway</groupId>
+                <artifactId>flyway</artifactId>
+                <version>${flyway-addon.version}</version>
             </dependency>
 
             <!-- I18n add-on -->
