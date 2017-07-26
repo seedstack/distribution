@@ -18,7 +18,7 @@
 
     <artifactId>web-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <description>SeedStack multi-module WAR project for classic Web applications</description>
+    <description>SeedStack Web project for serving REST API and other Web resources.</description>
 
     <build>
         <resources>
@@ -63,5 +63,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
 </project>

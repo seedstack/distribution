@@ -13,53 +13,93 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-        <logback.version>${logback.version}</logback.version>
-        <rest-assured.version>${rest-assured.version}</rest-assured.version>
     </properties>
 
     <build>
+        <finalName>\${artifactId}</finalName>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>${maven-failsafe-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>failsafe-integration-test</id>
+                            <goals>
+                                <goal>integration-test</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>failsafe-verify</id>
+                            <goals>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
                 <plugin>
                     <groupId>org.seedstack</groupId>
                     <artifactId>seedstack-maven-plugin</artifactId>
                     <version>${seedstack-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>build-capsule</id>
+                            <goals>
+                                <goal>package</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
+{% if docker.enabled %}
+                <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>${docker-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>build-image</id>
+                            <phase>install</phase>
+                            <goals>
+                                <goal>build</goal>
+                            </goals>
+                            <configuration>
+                                <dockerDirectory>\${project.basedir}/src/main/docker</dockerDirectory>
+                                <imageName>\${project.groupId}/\${project.artifactId}</imageName>
+                                <imageTags>
+                                    <imageTag>\${project.version}</imageTag>
+                                    <imageTag>latest</imageTag>
+                                </imageTags>
+                                <resources>
+                                    <resource>
+                                        <targetPath>/opt/bin</targetPath>
+                                        <directory>\${project.build.directory}</directory>
+                                        <include>\${project.build.finalName}-capsule.jar</include>
+                                    </resource>
+                                </resources>
+                                <skipDockerPush>true</skipDockerPush>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+{% endif %}
             </plugins>
         </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>${maven-failsafe-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>failsafe-integration-test</id>
-                        <goals>
-                            <goal>integration-test</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>failsafe-verify</id>
-                        <goals>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.seedstack</groupId>
                 <artifactId>seedstack-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>build-capsule</id>
-                        <goals>
-                            <goal>package</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
+{% if docker.enabled %}
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
+{% endif %}
         </plugins>
     </build>
 
@@ -90,14 +130,56 @@
             <artifactId>business-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.seedstack.addons.w20</groupId>
-            <artifactId>w20-bridge-web-business-theme</artifactId>
-        </dependency>
-        <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>\${logback.version}</version>
+            <version>${logback.version}</version>
         </dependency>
+{% if persistence.type == "jpaHibernate" %}
+        <dependency>
+            <groupId>org.seedstack.addons.jpa</groupId>
+            <artifactId>jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.2.10.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>2.6.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.1.1</version>
+        </dependency>
+{% elseif persistence.type == "mongo" %}
+        <dependency>
+            <groupId>org.seedstack.addons.mongodb</groupId>
+            <artifactId>mongodb-morphia</artifactId>
+        </dependency>
+{% elseif persistence.type == "redis" %}
+        <dependency>
+            <groupId>org.seedstack.addons.redis</groupId>
+            <artifactId>redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+{% elseif persistence.type == "neo4j" %}
+        <dependency>
+            <groupId>org.seedstack.addons.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+            <version>3.1.5</version>
+        </dependency>
+{% endif %}
 
         <dependency>
             <groupId>org.seedstack.seed</groupId>
@@ -116,5 +198,13 @@
             <version>${rest-assured.version}</version>
             <scope>test</scope>
         </dependency>
+{% if persistence.type == "jpaHibernate" %}
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.196</version>
+            <scope>test</scope>
+        </dependency>
+{% endif %}
     </dependencies>
 </project>

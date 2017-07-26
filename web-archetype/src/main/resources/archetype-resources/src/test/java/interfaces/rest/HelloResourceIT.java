@@ -29,7 +29,7 @@ public class HelloResourceIT extends AbstractSeedWebIT {
         Response response = given()
                 .auth().basic("demo", "demo")
                 .expect().statusCode(200)
-                .when().get(baseURL + "api/hello");
+                .when().get(baseURL + "hello");
 
         assertThat(response.body().asString()).isEqualTo("Hello World!");
     }

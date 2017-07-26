@@ -1,3 +1,17 @@
 # This configuration file can override main configuration for integration tests
 
 logging: INFO
+
+{% if persistence.type == "jpaHibernate" %}
+jdbc:
+  datasources:
+    main:
+      url: jdbc:h2:mem:test
+
+jpa:
+  units:
+    main:
+      properties:
+        hibernate.dialect: org.hibernate.dialect.H2Dialect
+        hibernate.hbm2ddl.auto: create
+{% endif %}
