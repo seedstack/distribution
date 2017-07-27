@@ -40,7 +40,7 @@
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
         <jdbc-addon.version>3.0.2-SNAPSHOT</jdbc-addon.version>
-        <jmh-addon.version>1.0.1</jmh-addon.version>
+        <jmh-addon.version>1.0.2-SNAPSHOT</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
         <jpa-addon.version>3.0.2-SNAPSHOT</jpa-addon.version>
         <netflix-addon.version>1.0.1</netflix-addon.version>
@@ -55,8 +55,8 @@
         <shell-addon.version>1.0.0</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.0</spring-bridge-addon.version>
-        <swagger-addon.version>2.0.0</swagger-addon.version>
-        <w20-bridge-addon.version>3.0.1</w20-bridge-addon.version>
+        <swagger-addon.version>2.0.1-SNAPSHOT</swagger-addon.version>
+        <w20-bridge-addon.version>3.1.0-SNAPSHOT</w20-bridge-addon.version>
         <web-services-addon.version>3.0.0</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->

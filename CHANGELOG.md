@@ -2,12 +2,19 @@
 
 * [new] consul-addon: **[1.0.0](https://github.com/seedstack/consul-addon/releases/tag/v1.0.0)**
 * [new] flyway-addon: **[1.0.0](https://github.com/seedstack/flyway-addon/releases/tag/v1.0.0)**
+* [new] web-bridge-addon: **[1.0.0](https://github.com/seedstack/web-bridge-addon/releases/tag/v1.0.0)**
+* [chg] Remove web-archetype, rest-archetype now becomes web-archetype 
+* [new] Dockerized web-archetype 
+* [new] Auto-configuration of persistence in web-archetype 
 * [chg] poms: **[3.1.0](https://github.com/seedstack/poms/releases/tag/v3.1.0)**
 * [chg] shed: **[1.1.0](https://github.com/seedstack/shed/releases/tag/v1.1.0)**
 * [chg] coffig: **[2.1.2](https://github.com/seedstack/coffig/releases/tag/v2.1.2)**
 * [chg] seed: **[3.3.0](https://github.com/seedstack/seed/releases/tag/v3.3.0)**
 * [chg] jdbc-addon: **[3.0.2](https://github.com/seedstack/jdbc-addon/releases/tag/v3.0.2)**
 * [chg] jpa-addon: **[3.0.2](https://github.com/seedstack/jpa-addon/releases/tag/v3.0.2)**
+* [chg] jmh-addon: **[1.0.2](https://github.com/seedstack/jmh-addon/releases/tag/v1.0.2)**
+* [chg] swagger-addon: **[2.0.1](https://github.com/seedstack/swagger-addon/releases/tag/v2.0.1)**
+* [chg] w20-bridge-addon: **[3.1.0](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.1.0)**
 
 # Version 17.4 (2017-05-02)
 
