@@ -431,6 +431,13 @@
                 <version>${w20-bridge-addon.version}</version>
             </dependency>
 
+            <!-- Web bridge add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.web</groupId>
+                <artifactId>web-bridge</artifactId>
+                <version>${web-bridge-addon.version}</version>
+            </dependency>
+
             <!--  Web-services add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.ws</groupId>
@@ -470,12 +477,6 @@
             <dependency>
                 <groupId>org.seedstack</groupId>
                 <artifactId>domain-composite</artifactId>
-                <version>${project.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack</groupId>
-                <artifactId>rest-composite</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
             </dependency>
