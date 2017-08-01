@@ -30,7 +30,7 @@
         <business.version>3.1.0</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
-        <consul-addon.version>1.0.0-SNAPSHOT</consul-addon.version>
+        <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
         <feign-addon.version>1.0.0</feign-addon.version>
@@ -40,9 +40,9 @@
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
         <jdbc-addon.version>3.0.2</jdbc-addon.version>
-        <jmh-addon.version>1.0.2-SNAPSHOT</jmh-addon.version>
+        <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
-        <jpa-addon.version>3.0.2-SNAPSHOT</jpa-addon.version>
+        <jpa-addon.version>3.0.2</jpa-addon.version>
         <netflix-addon.version>1.0.1</netflix-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
@@ -56,9 +56,9 @@
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.0</spring-bridge-addon.version>
         <swagger-addon.version>2.0.1</swagger-addon.version>
-        <w20-bridge-addon.version>3.1.0-SNAPSHOT</w20-bridge-addon.version>
-        <web-bridge-addon.version>1.0.0-SNAPSHOT</web-bridge-addon.version>
-        <web-services-addon.version>3.0.1-SNAPSHOT</web-services-addon.version>
+        <w20-bridge-addon.version>3.1.0</w20-bridge-addon.version>
+        <web-bridge-addon.version>1.0.0</web-bridge-addon.version>
+        <web-services-addon.version>3.0.1</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
         <seedstack-maven-plugin.version>2.4.3</seedstack-maven-plugin.version>
