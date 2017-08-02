@@ -132,6 +132,13 @@
                 <version>${audit-addon.version}</version>
             </dependency>
 
+            <!-- AWS add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.aws</groupId>
+                <artifactId>aws-lambda</artifactId>
+                <version>${aws-addon.version}</version>
+            </dependency>
+
             <!-- Consul add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.consul</groupId>

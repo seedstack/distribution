@@ -1,5 +1,6 @@
 # Version 17.7 (2017-07-31)
 
+* [new] aws-addon: **[1.0.0](https://github.com/seedstack/aws-addon/releases/tag/v1.0.0)**
 * [new] consul-addon: **[1.0.0](https://github.com/seedstack/consul-addon/releases/tag/v1.0.0)**
 * [new] flyway-addon: **[1.0.0](https://github.com/seedstack/flyway-addon/releases/tag/v1.0.0)**
 * [new] web-bridge-addon: **[1.0.0](https://github.com/seedstack/web-bridge-addon/releases/tag/v1.0.0)**

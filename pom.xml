@@ -30,6 +30,7 @@
         <business.version>3.1.0</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
+        <aws-addon.version>1.0.0-SNAPSHOT</aws-addon.version>
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
