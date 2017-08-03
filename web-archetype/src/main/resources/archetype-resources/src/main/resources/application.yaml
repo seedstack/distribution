@@ -1,12 +1,20 @@
 # Put main configuration in this file
 # See http://seedstack.org/docs/seed/configuration for more information
 
+logging:
+  level: INFO
+
 application:
   # Unique identifier of the application accross your organization
   id: {{ project.artifactId }}
 
   # Make sure all your application base packages are listed below
   basePackages: [ {{ project.groupId }} ]
+
+{% if w20.enabled %}
+rest:
+  path: /api
+{% endif %}
 
 security:
   # The security configuration realm uses the 'users' section below (replace it with a more useful realm later)
@@ -28,15 +36,27 @@ jdbc:
   datasources:
     main:
       provider: org.seedstack.jdbc.internal.datasource.HikariDataSourceProvider
-      url: ${env.DB_URL}
+      url: {% if docker.enabled %}${env.DB_URL}{% else %}jdbc:h2:mem:{{ project.lowerName }}{% endif %}
+
 
 jpa:
   units:
     main:
       datasource: main
       properties:
-        hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
         hibernate.hbm2ddl.auto: update
-{% endif %}
+        hibernate.dialect: {% if docker.enabled %}org.hibernate.dialect.PostgreSQLDialect{% else %}org.hibernate.dialect.H2Dialect{% endif %}
 
-classes:
+
+{{ yamlClassConfig("jpaUnit", "main") }}
+{% elseif persistence.type == "mongo" %}
+mongoDb:
+  clients:
+    main:
+      databases: {{ project.lowerName }}
+
+      uri: {% if docker.enabled %}${env.DB_URL}{% else %}mongodb://localhost/{{ project.lowerName }}{% endif %}
+
+
+{{ yamlClassConfig("mongoDbClient", "main", "mongoDbDatabase", project.lowerName) }}
+{% endif %}

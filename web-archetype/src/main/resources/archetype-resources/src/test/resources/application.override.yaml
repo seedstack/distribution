@@ -1,17 +1,33 @@
 # This configuration file can override main configuration for integration tests
 
-logging: INFO
+logging:
+  level: INFO
 
 {% if persistence.type == "jpaHibernate" %}
 jdbc:
   datasources:
     main:
-      url: jdbc:h2:mem:test
+      url: jdbc:h2:mem:{{ project.lowerName }}-test
+
 
 jpa:
   units:
     main:
       properties:
-        hibernate.dialect: org.hibernate.dialect.H2Dialect
         hibernate.hbm2ddl.auto: create
+        hibernate.dialect: org.hibernate.dialect.H2Dialect
+{% elseif persistence.type == "mongo" %}
+mongoDb:
+  clients:
+    main:
+      databases:
+        # In test mode, we substitute the {{ project.lowerName }} database with {{ project.lowerName }}-test aliased to the original name
+        # By doing this, we separate test data while retaining the original name when referenced from code
+        -{{ project.lowerName }}:
+        {{ project.lowerName }}-test:
+          alias: {{ project.lowerName }}
+
+      uri: mongodb://localhost/{{ project.lowerName }}-test
+
+
 {% endif %}

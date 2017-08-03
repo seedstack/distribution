@@ -149,35 +149,44 @@
             <artifactId>HikariCP</artifactId>
             <version>2.6.3</version>
         </dependency>
+{% if docker.enabled %}
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.1.1</version>
         </dependency>
+{% else %}
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.196</version>
+        </dependency>
+{% endif %}
 {% elseif persistence.type == "mongo" %}
         <dependency>
             <groupId>org.seedstack.addons.mongodb</groupId>
             <artifactId>mongodb-morphia</artifactId>
         </dependency>
-{% elseif persistence.type == "redis" %}
+{% endif %}
+{% if w20.theme == "w20BusinessTheme" %}
         <dependency>
-            <groupId>org.seedstack.addons.redis</groupId>
-            <artifactId>redis</artifactId>
+            <groupId>org.seedstack.addons.w20</groupId>
+            <artifactId>w20-bridge-web-business-theme</artifactId>
         </dependency>
+{% elseif w20.theme == "w20SimpleTheme" %}
         <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>2.9.0</version>
+            <groupId>org.seedstack.addons.w20</groupId>
+            <artifactId>w20-bridge-web-simple-theme</artifactId>
         </dependency>
-{% elseif persistence.type == "neo4j" %}
+{% elseif w20.theme == "w20MaterialTheme" %}
         <dependency>
-            <groupId>org.seedstack.addons.neo4j</groupId>
-            <artifactId>neo4j</artifactId>
+            <groupId>org.seedstack.addons.w20</groupId>
+            <artifactId>w20-bridge-web-material-theme</artifactId>
         </dependency>
+{% elseif w20.theme == "w20NoTheme" %}
         <dependency>
-            <groupId>org.neo4j</groupId>
-            <artifactId>neo4j</artifactId>
-            <version>3.1.5</version>
+            <groupId>org.seedstack.addons.w20</groupId>
+            <artifactId>w20-bridge-web-bootstrap-3</artifactId>
         </dependency>
 {% endif %}
 
@@ -198,7 +207,7 @@
             <version>${rest-assured.version}</version>
             <scope>test</scope>
         </dependency>
-{% if persistence.type == "jpaHibernate" %}
+{% if persistence.type == "jpaHibernate" and docker.enabled %}
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

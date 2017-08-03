@@ -1,4 +1,4 @@
-package ${package}.interfaces.rest;
+package {{ project.package }}.interfaces.rest;
 
 import io.restassured.response.Response;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -29,7 +29,7 @@ public class HelloResourceIT extends AbstractSeedWebIT {
         Response response = given()
                 .auth().basic("demo", "demo")
                 .expect().statusCode(200)
-                .when().get(baseURL + "hello");
+                .when().get(baseURL + "{% if w20.enabled %}api/{% endif %}hello");
 
         assertThat(response.body().asString()).isEqualTo("Hello World!");
     }

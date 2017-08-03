@@ -1,25 +1,13 @@
 {
-  "docker": {
-    "label": "Docker",
+  "persistence": {
+    "label": "Persistence",
     "order": 1,
     "questions": [
       {
         "name": "enabled",
         "style": "confirm",
-        "message": "Enable Docker support ?",
-        "default": "yes"
-      }
-    ]
-  },
-  "persistence": {
-    "label": "Persistence",
-    "order": 2,
-    "questions": [
-      {
-        "name": "enabled",
-        "style": "confirm",
         "message": "Enable persistence support ?",
-        "default": "yes"
+        "default": "no"
       },
       {
         "name": "type",
@@ -39,17 +27,63 @@
           },
           {
             "name": "mongo",
-            "label": "MongoDB"
-          },
-          {
-            "name": "redis",
-            "label": "Redis"
-          },
-          {
-            "name": "neo4j",
-            "label": "Neo4J"
+            "label": "MongoDB with Morphia"
           }
         ]
+      }
+    ]
+  },
+  "w20": {
+    "label": "W20",
+    "order": 2,
+    "questions": [
+      {
+        "name": "enabled",
+        "style": "confirm",
+        "message": "Add a W20 UI ?",
+        "default": "no"
+      },
+      {
+        "name": "theme",
+        "conditions": [
+          {
+            "ref": "enabled",
+            "op": "eq",
+            "val": true
+          }
+        ],
+        "style": "list",
+        "message": "Choose your W20 theme",
+        "values": [
+          {
+            "name": "w20BusinessTheme",
+            "label": "W20 business theme"
+          },
+          {
+            "name": "w20SimpleTheme",
+            "label": "W20 simple theme"
+          },
+          {
+            "name": "w20MaterialTheme",
+            "label": "W20 material theme"
+          },
+          {
+            "name": "w20NoTheme",
+            "label": "No theme"
+          }
+        ]
+      }
+    ]
+  },
+  "docker": {
+    "label": "Docker",
+    "order": 3,
+    "questions": [
+      {
+        "name": "enabled",
+        "style": "confirm",
+        "message": "Enable Docker support ?",
+        "default": "no"
       }
     ]
   }

@@ -11,12 +11,14 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
 {% elseif persistence.type == "mongo" %}
     image: mongo
-{% elseif persistence.type == "redis" %}
-    image: redis
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
 {% endif %}
 {% endif %}
-  demo:
-    image: ${groupId}/${artifactId}
+  app:
+    image: {{ project.groupId }}/{{ project.artifactId }}
+
 {% if persistence.enabled %}
     links:
       - db
@@ -27,6 +29,8 @@ services:
     environment:
 {% if persistence.type == "jpaHibernate" %}
       DB_URL: jdbc:postgresql://db:5432/${DB_NAME}?user=${DB_USER}&password=${DB_PASSWORD}
+{% elseif persistence.type == "mongo" %}
+      DB_URL: mongodb://db:27017/${DB_NAME}
 {% endif %}
 {% endif %}
 {% endif %}

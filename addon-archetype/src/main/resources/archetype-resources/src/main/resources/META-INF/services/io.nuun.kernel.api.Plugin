@@ -1,1 +1,1 @@
-${package}.internal.${classPrefix}Plugin
+${package}.internal.{{project.upperName}}Plugin

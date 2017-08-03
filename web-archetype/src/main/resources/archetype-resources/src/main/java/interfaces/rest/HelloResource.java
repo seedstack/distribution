@@ -1,4 +1,4 @@
-package ${package}.interfaces.rest;
+package {{ project.package }}.interfaces.rest;
 
 import org.seedstack.seed.rest.Rel;
 

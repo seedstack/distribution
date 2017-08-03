@@ -1,3 +1,6 @@
 # This configuration file can override main configuration for integration tests
 
 logging: INFO
+
+{{project.lowerName}}:
+  property: someValue

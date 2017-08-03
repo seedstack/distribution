@@ -25,7 +25,7 @@
         <poms.version>3.1.0</poms.version>
 
         <shed.version>1.1.0</shed.version>
-        <coffig.version>3.0.0</coffig.version>
+        <coffig.version>3.0.1</coffig.version>
         <seed.version>3.3.0</seed.version>
         <business.version>3.1.0</business.version>
 
@@ -62,10 +62,10 @@
         <web-services-addon.version>3.0.1</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.5.0</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.6.0</seedstack-maven-plugin.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
-        <logback.version>1.1.6</logback.version>
+        <logback.version>1.2.3</logback.version>
         <rest-assured.version>3.0.2</rest-assured.version>
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
         <!-- end -->
