@@ -30,7 +30,7 @@
         <business.version>3.1.0</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
-        <aws-addon.version>1.0.0-SNAPSHOT</aws-addon.version>
+        <aws-addon.version>1.0.0</aws-addon.version>
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
@@ -62,7 +62,7 @@
         <web-services-addon.version>3.0.1</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.4.3</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.5.0</seedstack-maven-plugin.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <logback.version>1.1.6</logback.version>

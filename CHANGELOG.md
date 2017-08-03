@@ -17,6 +17,7 @@
 * [chg] swagger-addon: **[2.0.1](https://github.com/seedstack/swagger-addon/releases/tag/v2.0.1)**
 * [chg] w20-bridge-addon: **[3.1.0](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.1.0)**
 * [chg] web-services-addon: **[3.0.1](https://github.com/seedstack/web-services-addon/releases/tag/v3.0.1)**
+* [chg] seedstack-maven-plugin: **[2.5.0](https://github.com/seedstack/web-services-addon/releases/tag/v2.5.0)**
 
 # Version 17.4 (2017-05-02)
 
