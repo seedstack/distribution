@@ -1,12 +1,11 @@
-# Version 17.7 (2017-07-31)
+# Version 17.7 (2017-08-03)
 
+* [new] Improved project generation with question/answers and templating.  
+* [new] Optional persistence, W20 UI and Docker generation in Web archetype. 
 * [new] aws-addon: **[1.0.0](https://github.com/seedstack/aws-addon/releases/tag/v1.0.0)**
 * [new] consul-addon: **[1.0.0](https://github.com/seedstack/consul-addon/releases/tag/v1.0.0)**
 * [new] flyway-addon: **[1.0.0](https://github.com/seedstack/flyway-addon/releases/tag/v1.0.0)**
 * [new] web-bridge-addon: **[1.0.0](https://github.com/seedstack/web-bridge-addon/releases/tag/v1.0.0)**
-* [chg] Remove web-archetype, rest-archetype now becomes web-archetype 
-* [new] Dockerized web-archetype 
-* [new] Auto-configuration of persistence in web-archetype 
 * [chg] poms: **[3.1.0](https://github.com/seedstack/poms/releases/tag/v3.1.0)**
 * [chg] shed: **[1.1.0](https://github.com/seedstack/shed/releases/tag/v1.1.0)**
 * [chg] coffig: **[3.0.0](https://github.com/seedstack/coffig/releases/tag/v3.0.0)**
@@ -18,6 +17,7 @@
 * [chg] w20-bridge-addon: **[3.1.0](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.1.0)**
 * [chg] web-services-addon: **[3.0.1](https://github.com/seedstack/web-services-addon/releases/tag/v3.0.1)**
 * [chg] seedstack-maven-plugin: **[2.5.0](https://github.com/seedstack/web-services-addon/releases/tag/v2.5.0)**
+* [chg] Removed REST archetype as the Web archetype now can do with or without UI. 
 
 # Version 17.4 (2017-05-02)
 
