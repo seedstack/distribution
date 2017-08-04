@@ -13,12 +13,12 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>17.7-SNAPSHOT</version>
+        <version>17.7.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>cli-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <description>SeedStack single JAR for CLI applications</description>
+    <description>SeedStack archetype for running command-line based applications.</description>
 
     <build>
         <resources>

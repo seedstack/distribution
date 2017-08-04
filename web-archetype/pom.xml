@@ -13,12 +13,12 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>17.7-SNAPSHOT</version>
+        <version>17.7.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>web-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <description>SeedStack Web project for serving REST API and other Web resources.</description>
+    <description>SeedStack archetype for serving REST API and other Web resources.</description>
 
     <build>
         <resources>

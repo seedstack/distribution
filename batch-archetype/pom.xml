@@ -13,12 +13,12 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>17.7-SNAPSHOT</version>
+        <version>17.7.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>batch-archetype</artifactId>
     <packaging>maven-archetype</packaging>
-    <description>SeedStack mono-module JAR integrating Spring Batch</description>
+    <description>SeedStack archetype for running Spring Batch jobs.</description>
 
     <build>
         <resources>
