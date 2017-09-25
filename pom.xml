@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>17.7.1-SNAPSHOT</version>
+    <version>17.11-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -26,8 +26,8 @@
 
         <shed.version>1.1.0</shed.version>
         <coffig.version>3.0.1</coffig.version>
-        <seed.version>3.3.0</seed.version>
-        <business.version>3.1.0</business.version>
+        <seed.version>3.3.2-SNAPSHOT</seed.version>
+        <business.version>4.0.0-SNAPSHOT</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
         <aws-addon.version>1.0.0</aws-addon.version>
@@ -40,14 +40,14 @@
         <io-addon.version>3.0.0</io-addon.version>
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
-        <jdbc-addon.version>3.0.2</jdbc-addon.version>
+        <jdbc-addon.version>4.0.0-SNAPSHOT</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
         <jpa-addon.version>3.0.2</jpa-addon.version>
         <netflix-addon.version>1.0.1</netflix-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
-        <mongodb-addon.version>2.0.0</mongodb-addon.version>
+        <mongodb-addon.version>3.0.0-SNAPSHOT</mongodb-addon.version>
         <monitoring-addon.version>3.1.0</monitoring-addon.version>
         <mqtt-addon.version>2.0.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
@@ -62,7 +62,7 @@
         <web-services-addon.version>3.0.1</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.6.0</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.6.2</seedstack-maven-plugin.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <logback.version>1.2.3</logback.version>
