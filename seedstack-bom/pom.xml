@@ -279,6 +279,13 @@
                 <version>${metrics-addon.version}</version>
             </dependency>
 
+            <!-- ModelMapper add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+                <version>${modelmapper-addon.version}</version>
+            </dependency>
+
             <!-- MongoDB add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.mongodb</groupId>

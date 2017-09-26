@@ -40,13 +40,14 @@
         <io-addon.version>3.0.0</io-addon.version>
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
-        <jdbc-addon.version>4.0.0-SNAPSHOT</jdbc-addon.version>
+        <jdbc-addon.version>3.0.2</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
-        <jpa-addon.version>3.0.2</jpa-addon.version>
+        <jpa-addon.version>4.0.0-SNAPSHOT</jpa-addon.version>
         <netflix-addon.version>1.0.1</netflix-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
+        <modelmapper-addon.version>1.0.0-SNAPSHOT</modelmapper-addon.version>
         <mongodb-addon.version>3.0.0-SNAPSHOT</mongodb-addon.version>
         <monitoring-addon.version>3.1.0</monitoring-addon.version>
         <mqtt-addon.version>2.0.1</mqtt-addon.version>
