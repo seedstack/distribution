@@ -114,6 +114,11 @@
                 <artifactId>business-core</artifactId>
                 <version>${business.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.seedstack.business</groupId>
+                <artifactId>business-migrate</artifactId>
+                <version>${business.version}</version>
+            </dependency>
 
             <!-- Audit add-on -->
             <dependency>
