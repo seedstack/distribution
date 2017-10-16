@@ -31,6 +31,7 @@
 
         <audit-addon.version>3.0.0</audit-addon.version>
         <aws-addon.version>1.0.0</aws-addon.version>
+        <cci-addon.version>1.0.0-SNAPSHOT</cci-addon.version>
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
@@ -45,6 +46,7 @@
         <jms-addon.version>3.0.1</jms-addon.version>
         <jpa-addon.version>4.0.0-SNAPSHOT</jpa-addon.version>
         <netflix-addon.version>1.0.1</netflix-addon.version>
+        <oauth-addon.version>1.0.0-SNAPSHOT</oauth-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
         <modelmapper-addon.version>1.0.0-SNAPSHOT</modelmapper-addon.version>

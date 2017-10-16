@@ -144,6 +144,13 @@
                 <version>${aws-addon.version}</version>
             </dependency>
 
+            <!-- CCI add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.cci</groupId>
+                <artifactId>cci</artifactId>
+                <version>${cci-addon.version}</version>
+            </dependency>
+
             <!-- Consul add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.consul</groupId>
@@ -339,6 +346,13 @@
                 <groupId>org.seedstack.addons.netflix</groupId>
                 <artifactId>netflix-hystrix</artifactId>
                 <version>${netflix-addon.version}</version>
+            </dependency>
+
+            <!-- OAuth add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.oauth</groupId>
+                <artifactId>oauth</artifactId>
+                <version>${auth-addon.version}</version>
             </dependency>
 
             <!-- Redis add-on -->
