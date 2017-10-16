@@ -30,7 +30,7 @@ public class Aggregate extends BaseAggregateRoot<String> {
     }
 
     @Override
-    public String getEntityId() {
+    public String getId() {
         return id;
     }
 }
