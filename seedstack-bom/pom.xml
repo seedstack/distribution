@@ -277,6 +277,13 @@
                 <version>${jpa-addon.version}</version>
             </dependency>
 
+            <!-- Kafka add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.kafka</groupId>
+                <artifactId>kafka</artifactId>
+                <version>${kafka-addon.version}</version>
+            </dependency>
+
             <!-- LDAP add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.ldap</groupId>

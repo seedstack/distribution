@@ -45,8 +45,7 @@
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
         <jpa-addon.version>4.0.0-SNAPSHOT</jpa-addon.version>
-        <netflix-addon.version>1.0.1</netflix-addon.version>
-        <oauth-addon.version>1.0.0-SNAPSHOT</oauth-addon.version>
+        <kafka-addon.version>1.0.0-SNAPSHOT</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
         <modelmapper-addon.version>1.0.0-SNAPSHOT</modelmapper-addon.version>
@@ -54,6 +53,8 @@
         <monitoring-addon.version>3.1.0</monitoring-addon.version>
         <mqtt-addon.version>2.0.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
+        <netflix-addon.version>1.0.1</netflix-addon.version>
+        <oauth-addon.version>1.0.0-SNAPSHOT</oauth-addon.version>
         <redis-addon.version>2.0.0</redis-addon.version>
         <scheduling-addon.version>3.0.0</scheduling-addon.version>
         <shell-addon.version>1.0.0</shell-addon.version>
