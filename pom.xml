@@ -1,6 +1,6 @@
 <!--
 
-    Copyright (c) 2013-2016, The SeedStack authors <http://seedstack.org>
+    Copyright © 2013-2017, The SeedStack authors <http://seedstack.org>
 
     This Source Code Form is subject to the terms of the Mozilla Public
     License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.1.0</version>
+        <version>3.1.1-SNAPSHOT</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
@@ -22,7 +22,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <poms.version>3.1.0</poms.version>
+        <poms.version>3.1.1-SNAPSHOT</poms.version>
 
         <shed.version>1.1.1-SNAPSHOT</shed.version>
         <coffig.version>3.0.1</coffig.version>
@@ -35,7 +35,7 @@
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
-        <feign-addon.version>1.0.0</feign-addon.version>
+        <feign-addon.version>1.1.0-SNAPSHOT</feign-addon.version>
         <flyway-addon.version>1.0.0</flyway-addon.version>
         <i18n-addon.version>3.0.0</i18n-addon.version>
         <io-addon.version>3.0.0</io-addon.version>
@@ -57,16 +57,16 @@
         <oauth-addon.version>1.0.0-SNAPSHOT</oauth-addon.version>
         <redis-addon.version>2.0.0</redis-addon.version>
         <scheduling-addon.version>3.0.0</scheduling-addon.version>
-        <shell-addon.version>1.0.0</shell-addon.version>
+        <shell-addon.version>1.0.1-SNAPSHOT</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.0</spring-bridge-addon.version>
         <swagger-addon.version>2.0.1</swagger-addon.version>
         <w20-bridge-addon.version>3.1.0</w20-bridge-addon.version>
         <web-bridge-addon.version>1.0.0</web-bridge-addon.version>
-        <web-services-addon.version>3.0.1</web-services-addon.version>
+        <web-services-addon.version>3.0.2-SNAPSHOT</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.6.2</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.7.0-SNAPSHOT</seedstack-maven-plugin.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <logback.version>1.2.3</logback.version>
