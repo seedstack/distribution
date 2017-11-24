@@ -35,7 +35,7 @@
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
-        <feign-addon.version>1.1.0-SNAPSHOT</feign-addon.version>
+        <feign-addon.version>1.1.0</feign-addon.version>
         <flyway-addon.version>1.0.0</flyway-addon.version>
         <i18n-addon.version>3.0.0</i18n-addon.version>
         <io-addon.version>3.0.0</io-addon.version>
@@ -53,8 +53,7 @@
         <monitoring-addon.version>3.1.0</monitoring-addon.version>
         <mqtt-addon.version>2.0.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
-        <netflix-addon.version>1.0.1</netflix-addon.version>
-        <oauth-addon.version>1.0.0-SNAPSHOT</oauth-addon.version>
+        <netflix-addon.version>1.1.0</netflix-addon.version>
         <redis-addon.version>2.0.0</redis-addon.version>
         <scheduling-addon.version>3.0.0</scheduling-addon.version>
         <shell-addon.version>1.0.1-SNAPSHOT</shell-addon.version>
