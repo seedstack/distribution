@@ -1,0 +1,512 @@
+<!--
+
+    Copyright © 2013-2017, The SeedStack authors <http://seedstack.org>
+
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.seedstack</groupId>
+        <artifactId>distribution</artifactId>
+        <version>17.11-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>seedstack-bom-compat</artifactId>
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Shed -->
+            <dependency>
+                <groupId>org.seedstack.shed</groupId>
+                <artifactId>shed</artifactId>
+                <version>${shed.version}</version>
+            </dependency>
+
+            <!-- Coffig -->
+            <dependency>
+                <groupId>org.seedstack.coffig</groupId>
+                <artifactId>coffig</artifactId>
+                <version>${coffig.version}</version>
+            </dependency>
+
+            <!-- Seed -->
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-cli</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-core</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-rest-core</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-rest-jersey2</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-rest-specs</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-security-core</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-security-specs</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-specs</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-testing</artifactId>
+                <version>${seed.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-web-core</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-web-security</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-web-specs</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.seed</groupId>
+                <artifactId>seed-web-undertow</artifactId>
+                <version>${seed.version}</version>
+            </dependency>
+
+            <!-- Business -->
+            <dependency>
+                <groupId>org.seedstack.business</groupId>
+                <artifactId>business-specs</artifactId>
+                <version>${compat.business.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.business</groupId>
+                <artifactId>business-core</artifactId>
+                <version>${compat.business.version}</version>
+            </dependency>
+
+            <!-- Audit add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.audit</groupId>
+                <artifactId>audit-specs</artifactId>
+                <version>${audit-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.audit</groupId>
+                <artifactId>audit-core</artifactId>
+                <version>${audit-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.audit</groupId>
+                <artifactId>audit-logback</artifactId>
+                <version>${audit-addon.version}</version>
+            </dependency>
+
+            <!-- AWS add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.aws</groupId>
+                <artifactId>aws-lambda</artifactId>
+                <version>${aws-addon.version}</version>
+            </dependency>
+
+            <!-- CCI add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.cci</groupId>
+                <artifactId>cci</artifactId>
+                <version>${cci-addon.version}</version>
+            </dependency>
+
+            <!-- Consul add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.consul</groupId>
+                <artifactId>consul</artifactId>
+                <version>${consul-addon.version}</version>
+            </dependency>
+
+            <!-- Data-security add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.datasecurity</groupId>
+                <artifactId>data-security</artifactId>
+                <version>${data-security-addon.version}</version>
+            </dependency>
+
+            <!-- ElasticSearch add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>${elasticsearch-addon.version}</version>
+            </dependency>
+
+            <!-- OpenFeign add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.feign</groupId>
+                <artifactId>feign</artifactId>
+                <version>${feign-addon.version}</version>
+            </dependency>
+
+            <!-- OpenFeign add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.flyway</groupId>
+                <artifactId>flyway</artifactId>
+                <version>${flyway-addon.version}</version>
+            </dependency>
+
+            <!-- I18n add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.i18n</groupId>
+                <artifactId>i18n-specs</artifactId>
+                <version>${i18n-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.i18n</groupId>
+                <artifactId>i18n-core</artifactId>
+                <version>${i18n-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.i18n</groupId>
+                <artifactId>i18n-rest</artifactId>
+                <version>${i18n-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.i18n</groupId>
+                <artifactId>i18n-web</artifactId>
+                <version>${i18n-addon.version}</version>
+            </dependency>
+
+            <!-- IO add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.io</groupId>
+                <artifactId>io-specs</artifactId>
+                <version>${io-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.io</groupId>
+                <artifactId>io-core</artifactId>
+                <version>${io-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.io</groupId>
+                <artifactId>io-jasper</artifactId>
+                <version>${io-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.io</groupId>
+                <artifactId>io-supercsv</artifactId>
+                <version>${io-addon.version}</version>
+            </dependency>
+
+            <!-- Javamail add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.javamail</groupId>
+                <artifactId>javamail</artifactId>
+                <version>${javamail-addon.version}</version>
+            </dependency>
+
+            <!-- JCache add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.jcache</groupId>
+                <artifactId>jcache</artifactId>
+                <version>${jcache-addon.version}</version>
+            </dependency>
+
+            <!-- JDBC add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.jdbc</groupId>
+                <artifactId>jdbc</artifactId>
+                <version>${jdbc-addon.version}</version>
+            </dependency>
+
+            <!-- JMH add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${jmh-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.jmh</groupId>
+                <artifactId>jmh-launcher</artifactId>
+                <version>${jmh-addon.version}</version>
+            </dependency>
+
+            <!-- JMS add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.jms</groupId>
+                <artifactId>jms</artifactId>
+                <version>${jms-addon.version}</version>
+            </dependency>
+
+            <!-- JPA add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.jpa</groupId>
+                <artifactId>jpa</artifactId>
+                <version>${compat.jpa-addon.version}</version>
+            </dependency>
+
+            <!-- Kafka add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.kafka</groupId>
+                <artifactId>kafka</artifactId>
+                <version>${kafka-addon.version}</version>
+            </dependency>
+
+            <!-- LDAP add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.ldap</groupId>
+                <artifactId>ldap</artifactId>
+                <version>${ldap-addon.version}</version>
+            </dependency>
+
+            <!-- Metrics add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.metrics</groupId>
+                <artifactId>metrics</artifactId>
+                <version>${metrics-addon.version}</version>
+            </dependency>
+
+            <!-- MongoDB add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.mongodb</groupId>
+                <artifactId>mongodb-core</artifactId>
+                <version>${compat.mongodb-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.mongodb</groupId>
+                <artifactId>mongodb-morphia</artifactId>
+                <version>${compat.mongodb-addon.version}</version>
+            </dependency>
+
+            <!-- Monitoring add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.monitoring</groupId>
+                <artifactId>monitoring-batch</artifactId>
+                <version>${monitoring-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.monitoring</groupId>
+                <artifactId>monitoring-mqtt</artifactId>
+                <version>${monitoring-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.monitoring</groupId>
+                <artifactId>monitoring-web</artifactId>
+                <version>${monitoring-addon.version}</version>
+            </dependency>
+
+            <!-- Mqtt add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.mqtt</groupId>
+                <artifactId>mqtt</artifactId>
+                <version>${mqtt-addon.version}</version>
+            </dependency>
+
+            <!-- Neo4j add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.neo4j</groupId>
+                <artifactId>neo4j</artifactId>
+                <version>${neo4j-addon.version}</version>
+            </dependency>
+
+            <!-- Netflix add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.netflix</groupId>
+                <artifactId>netflix-hystrix</artifactId>
+                <version>${netflix-addon.version}</version>
+            </dependency>
+
+            <!-- Redis add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.redis</groupId>
+                <artifactId>redis</artifactId>
+                <version>${redis-addon.version}</version>
+            </dependency>
+
+            <!-- Scheduling add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.scheduling</groupId>
+                <artifactId>scheduling</artifactId>
+                <version>${scheduling-addon.version}</version>
+            </dependency>
+
+            <!-- Shell add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.shell</groupId>
+                <artifactId>shell</artifactId>
+                <version>${shell-addon.version}</version>
+            </dependency>
+
+            <!-- Solr add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.solr</groupId>
+                <artifactId>solr</artifactId>
+                <version>${solr-addon.version}</version>
+            </dependency>
+
+            <!-- Spring bridge add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.spring</groupId>
+                <artifactId>spring-bridge-core</artifactId>
+                <version>${spring-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.spring</groupId>
+                <artifactId>spring-bridge-batch</artifactId>
+                <version>${spring-bridge-addon.version}</version>
+            </dependency>
+
+            <!-- Swagger add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.swagger</groupId>
+                <artifactId>swagger</artifactId>
+                <version>${swagger-addon.version}</version>
+            </dependency>
+
+            <!-- W20 bridge add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-specs</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-rest</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-bootstrap-2</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-bootstrap-3</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-components</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-dataviz</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-extras</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-material</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-simple-theme</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-business-theme</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.w20</groupId>
+                <artifactId>w20-bridge-web-material-theme</artifactId>
+                <version>${w20-bridge-addon.version}</version>
+            </dependency>
+
+            <!-- Web bridge add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.web</groupId>
+                <artifactId>web-bridge</artifactId>
+                <version>${web-bridge-addon.version}</version>
+            </dependency>
+
+            <!--  Web-services add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.ws</groupId>
+                <artifactId>web-services-core</artifactId>
+                <version>${web-services-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.ws</groupId>
+                <artifactId>web-services-jms</artifactId>
+                <version>${web-services-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.ws</groupId>
+                <artifactId>web-services-web</artifactId>
+                <version>${web-services-addon.version}</version>
+            </dependency>
+
+            <!-- Composites -->
+            <dependency>
+                <groupId>org.seedstack.poms</groupId>
+                <artifactId>arquillian-composite</artifactId>
+                <version>${poms.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack</groupId>
+                <artifactId>batch-composite</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack</groupId>
+                <artifactId>cli-composite</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack</groupId>
+                <artifactId>domain-composite</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack</groupId>
+                <artifactId>web-composite</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

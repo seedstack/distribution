@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.1.1-SNAPSHOT</version>
+        <version>3.1.1</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
@@ -22,9 +22,9 @@
     <packaging>pom</packaging>
 
     <properties>
-        <poms.version>3.1.1-SNAPSHOT</poms.version>
+        <poms.version>3.1.1</poms.version>
 
-        <shed.version>1.1.1-SNAPSHOT</shed.version>
+        <shed.version>1.1.1</shed.version>
         <coffig.version>3.0.1</coffig.version>
         <seed.version>3.4.0-SNAPSHOT</seed.version>
         <business.version>4.0.0-SNAPSHOT</business.version>
@@ -64,6 +64,12 @@
         <web-bridge-addon.version>1.0.0</web-bridge-addon.version>
         <web-services-addon.version>3.0.2-SNAPSHOT</web-services-addon.version>
 
+        <!-- Versions for compatibility BOM -->
+        <compat.business.version>3.1.0</compat.business.version>
+        <compat.jpa-addon.version>3.0.2</compat.jpa-addon.version>
+        <compat.mongodb-addon.version>2.0.0</compat.mongodb-addon.version>
+
+
         <!-- Variables used in archetype poms -->
         <seedstack-maven-plugin.version>2.7.0-SNAPSHOT</seedstack-maven-plugin.version>
         <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
@@ -78,6 +84,7 @@
 
     <modules>
         <module>seedstack-bom</module>
+        <module>seedstack-bom-compat</module>
         <module>batch-composite</module>
         <module>batch-archetype</module>
         <module>domain-composite</module>
