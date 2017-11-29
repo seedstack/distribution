@@ -26,7 +26,7 @@
 
         <shed.version>1.1.1</shed.version>
         <coffig.version>3.0.1</coffig.version>
-        <seed.version>3.4.0-SNAPSHOT</seed.version>
+        <seed.version>3.4.0</seed.version>
         <business.version>4.0.0-SNAPSHOT</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
@@ -56,19 +56,18 @@
         <netflix-addon.version>1.1.0</netflix-addon.version>
         <redis-addon.version>2.0.0</redis-addon.version>
         <scheduling-addon.version>3.0.0</scheduling-addon.version>
-        <shell-addon.version>1.0.1-SNAPSHOT</shell-addon.version>
+        <shell-addon.version>1.0.1</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.0</spring-bridge-addon.version>
         <swagger-addon.version>2.0.1</swagger-addon.version>
         <w20-bridge-addon.version>3.1.0</w20-bridge-addon.version>
         <web-bridge-addon.version>1.0.0</web-bridge-addon.version>
-        <web-services-addon.version>3.0.2-SNAPSHOT</web-services-addon.version>
+        <web-services-addon.version>3.0.2</web-services-addon.version>
 
         <!-- Versions for compatibility BOM -->
         <compat.business.version>3.1.0</compat.business.version>
         <compat.jpa-addon.version>3.0.2</compat.jpa-addon.version>
         <compat.mongodb-addon.version>2.0.0</compat.mongodb-addon.version>
-
 
         <!-- Variables used in archetype poms -->
         <seedstack-maven-plugin.version>2.7.0-SNAPSHOT</seedstack-maven-plugin.version>
