@@ -37,7 +37,7 @@
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
         <feign-addon.version>1.1.0</feign-addon.version>
         <flyway-addon.version>1.0.0</flyway-addon.version>
-        <i18n-addon.version>3.0.0</i18n-addon.version>
+        <i18n-addon.version>4.0.0</i18n-addon.version>
         <io-addon.version>3.0.0</io-addon.version>
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
