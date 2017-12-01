@@ -1,3 +1,21 @@
+# Version 17.11 (2017-11-30)
+
+* [new] modelmapper-addon: **[1.0.0](https://github.com/seedstack/modelmapper-addon/releases/tag/v1.0.0)**
+* [new] cci-addon: **[1.0.0](https://github.com/seedstack/cci-addon/releases/tag/v1.0.0)**
+* [new] kafka-addon: **[1.0.0](https://github.com/seedstack/kafka-addon/releases/tag/v1.0.0)**
+* [chg] poms: **[3.1.1](https://github.com/seedstack/poms/releases/tag/v3.1.1)**
+* [chg] shed: **[1.1.1](https://github.com/seedstack/shed/releases/tag/v1.1.1)**
+* [chg] coffig: **[3.0.1](https://github.com/seedstack/coffig/releases/tag/v3.0.1)**
+* [chg] seed: **[3.4.1](https://github.com/seedstack/seed/releases/tag/v3.4.1)**
+* [chg] business: **[4.1.0](https://github.com/seedstack/business/releases/tag/v4.1.0)**
+* [chg] feign-addon: **[1.1.0](https://github.com/seedstack/feign-addon/releases/tag/v1.1.0)**
+* [chg] jpa-addon: **[4.0.0](https://github.com/seedstack/jpa-addon/releases/tag/v4.0.0)**
+* [chg] i18n-addon: **[40.0](https://github.com/seedstack/i18n-addon/releases/tag/v4.0.0)**
+* [chg] mongodb-addon: **[3.0.0](https://github.com/seedstack/mongodb-addon/releases/tag/v3.0.0)**
+* [chg] netflix-addon: **[1.1.0](https://github.com/seedstack/netflix-addon/releases/tag/v1.1.0)**
+* [chg] shell-addon: **[1.0.1](https://github.com/seedstack/shell-addon/releases/tag/v1.0.1)**
+* [chg] web-services-addon: **[3.0.2](https://github.com/seedstack/web-services-addon/releases/tag/v3.0.2)**
+
 # Version 17.7 (2017-08-03)
 
 * [new] Improved project generation with question/answers and templating.  
