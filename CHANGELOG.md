@@ -1,5 +1,6 @@
 # Version 17.11.1 (2017-12-01)
 
+* [chg] business: **[4.1.1](https://github.com/seedstack/business/releases/tag/4.1.1)**
 * [chg] cci-addon: **[1.0.1](https://github.com/seedstack/cci-addon/releases/tag/v1.0.1)**
 
 # Version 17.11 (2017-11-30)
