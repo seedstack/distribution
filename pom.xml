@@ -27,11 +27,11 @@
         <shed.version>1.1.1</shed.version>
         <coffig.version>3.0.1</coffig.version>
         <seed.version>3.4.1</seed.version>
-        <business.version>4.1.1-SNAPSHOT</business.version>
+        <business.version>4.1.1</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
         <aws-addon.version>1.0.0</aws-addon.version>
-        <cci-addon.version>1.0.0</cci-addon.version>
+        <cci-addon.version>1.0.1</cci-addon.version>
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
