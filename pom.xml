@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>17.11.1-SNAPSHOT</version>
+    <version>17.11.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -68,6 +68,7 @@
         <compat.business.version>3.1.0</compat.business.version>
         <compat.jpa-addon.version>3.0.2</compat.jpa-addon.version>
         <compat.mongodb-addon.version>2.0.0</compat.mongodb-addon.version>
+        <compat.i18n-addon.version>3.0.0</compat.i18n-addon.version>
 
         <!-- Variables used in archetype poms -->
         <seedstack-maven-plugin.version>2.7.0</seedstack-maven-plugin.version>

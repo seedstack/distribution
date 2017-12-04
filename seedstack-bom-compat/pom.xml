@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>17.11.1-SNAPSHOT</version>
+        <version>17.11.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>seedstack-bom-compat</artifactId>
@@ -185,22 +185,22 @@
             <dependency>
                 <groupId>org.seedstack.addons.i18n</groupId>
                 <artifactId>i18n-specs</artifactId>
-                <version>${i18n-addon.version}</version>
+                <version>${compat.i18n-addon.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.seedstack.addons.i18n</groupId>
                 <artifactId>i18n-core</artifactId>
-                <version>${i18n-addon.version}</version>
+                <version>${compat.i18n-addon.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.seedstack.addons.i18n</groupId>
                 <artifactId>i18n-rest</artifactId>
-                <version>${i18n-addon.version}</version>
+                <version>${compat.i18n-addon.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.seedstack.addons.i18n</groupId>
                 <artifactId>i18n-web</artifactId>
-                <version>${i18n-addon.version}</version>
+                <version>${compat.i18n-addon.version}</version>
             </dependency>
 
             <!-- IO add-on -->
