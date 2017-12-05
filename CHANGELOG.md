@@ -1,3 +1,7 @@
+# Version 17.11.2 (2017-12-05)
+
+* [chg] business: **[4.2.0](https://github.com/seedstack/business/releases/tag/4.2.0)**
+
 # Version 17.11.1 (2017-12-01)
 
 * [chg] business: **[4.1.1](https://github.com/seedstack/business/releases/tag/4.1.1)**
