@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>17.11.2-SNAPSHOT</version>
+        <version>17.11.3-SNAPSHOT</version>
     </parent>
 
     <artifactId>addon-archetype</artifactId>
