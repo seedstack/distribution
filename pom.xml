@@ -44,7 +44,7 @@
         <jdbc-addon.version>3.0.2</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
-        <jpa-addon.version>4.0.0</jpa-addon.version>
+        <jpa-addon.version>4.0.1-SNAPSHOT</jpa-addon.version>
         <kafka-addon.version>1.0.0</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
