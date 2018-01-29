@@ -1,3 +1,12 @@
+# Version 17.11.3 (2018-02-28)
+
+* [chg] poms: **[3.2.0](https://github.com/seedstack/poms/releases/tag/v3.2.0)**
+* [chg] shed: **[1.1.2](https://github.com/seedstack/shed/releases/tag/v1.2.1)**
+* [chg] coffig: **[3.1.0](https://github.com/seedstack/coffig/releases/tag/v3.1.0)**
+* [chg] seed: **[3.5.0](https://github.com/seedstack/seed/releases/tag/v3.5.0)**
+* [chg] business: **[4.2.1](https://github.com/seedstack/business/releases/tag/v4.2.1)**
+* [chg] jpa-addon: **[4.0.1](https://github.com/seedstack/jpa-addon/releases/tag/v4.0.1)**
+
 # Version 17.11.2 (2017-12-05)
 
 * [chg] business: **[4.2.0](https://github.com/seedstack/business/releases/tag/4.2.0)**

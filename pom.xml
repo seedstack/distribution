@@ -1,6 +1,6 @@
 <!--
 
-    Copyright © 2013-2017, The SeedStack authors <http://seedstack.org>
+    Copyright © 2013-2018, The SeedStack authors <http://seedstack.org>
 
     This Source Code Form is subject to the terms of the Mozilla Public
     License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.1.1</version>
+        <version>3.2.0-SNAPSHOT</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
@@ -22,12 +22,12 @@
     <packaging>pom</packaging>
 
     <properties>
-        <poms.version>3.1.1</poms.version>
+        <poms.version>3.2.0-SNAPSHOT</poms.version>
 
         <shed.version>1.1.2-SNAPSHOT</shed.version>
         <coffig.version>3.1.0-SNAPSHOT</coffig.version>
-        <seed.version>3.4.2-SNAPSHOT</seed.version>
-        <business.version>4.2.0</business.version>
+        <seed.version>3.5.0-SNAPSHOT</seed.version>
+        <business.version>4.2.1-SNAPSHOT</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
         <aws-addon.version>1.0.0</aws-addon.version>
