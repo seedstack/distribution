@@ -1,3 +1,9 @@
+# Version 17.11.3 (2018-02-16)
+
+* [chg] shed: **[1.1.2](https://github.com/seedstack/shed/releases/tag/v1.2.1)**
+* [chg] coffig: **[3.1.0](https://github.com/seedstack/coffig/releases/tag/v3.1.0)**
+* [chg] seed: **[3.4.2](https://github.com/seedstack/seed/releases/tag/v3.4.2)**
+
 # Version 17.11.2 (2017-12-05)
 
 * [chg] business: **[4.2.0](https://github.com/seedstack/business/releases/tag/4.2.0)**

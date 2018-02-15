@@ -24,8 +24,8 @@
     <properties>
         <poms.version>3.1.1</poms.version>
 
-        <shed.version>1.1.2-SNAPSHOT</shed.version>
-        <coffig.version>3.1.0-SNAPSHOT</coffig.version>
+        <shed.version>1.1.2</shed.version>
+        <coffig.version>3.1.0</coffig.version>
         <seed.version>3.4.2-SNAPSHOT</seed.version>
         <business.version>4.2.0</business.version>
 
@@ -44,7 +44,7 @@
         <jdbc-addon.version>3.0.2</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
-        <jpa-addon.version>4.0.1-SNAPSHOT</jpa-addon.version>
+        <jpa-addon.version>4.0.0</jpa-addon.version>
         <kafka-addon.version>1.0.0</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
