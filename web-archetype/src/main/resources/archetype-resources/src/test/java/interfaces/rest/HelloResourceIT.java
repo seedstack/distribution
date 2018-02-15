@@ -1,35 +1,27 @@
 package {{ project.package }}.interfaces.rest;
 
-import io.restassured.response.Response;
-import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.container.test.api.RunAsClient;
-import org.jboss.arquillian.test.api.ArquillianResource;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.spec.WebArchive;
-import org.junit.Test;
-import org.seedstack.seed.it.AbstractSeedWebIT;
-
-import java.net.URL;
-
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class HelloResourceIT extends AbstractSeedWebIT {
-    @ArquillianResource
-    private URL baseURL;
+import io.restassured.response.Response;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.seedstack.seed.Configuration;
+import org.seedstack.seed.testing.junit4.SeedITRunner;
+import org.seedstack.seed.undertow.LaunchWithUndertow;
 
-    @Deployment
-    public static WebArchive createDeployment() {
-        return ShrinkWrap.create(WebArchive.class);
-    }
+@RunWith(SeedITRunner.class)
+@LaunchWithUndertow
+public class HelloResourceIT {
+    @Configuration("web.runtime.baseUrl")
+    private String baseUrl;
 
     @Test
-    @RunAsClient
     public void testHelloWorld() throws Exception {
         Response response = given()
                 .auth().basic("demo", "demo")
                 .expect().statusCode(200)
-                .when().get(baseURL + "{% if w20.enabled %}api/{% endif %}hello");
+                .when().get(baseUrl + "{% if w20.enabled %}api/{% endif %}hello");
 
         assertThat(response.body().asString()).isEqualTo("Hello World!");
     }

@@ -15,6 +15,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <logback.version>${logback.version}</logback.version>
+        <assertj.version>${assertj.version}</assertj.version>
     </properties>
 
     <build>
@@ -96,7 +97,13 @@
 
         <dependency>
             <groupId>org.seedstack.seed</groupId>
-            <artifactId>seed-testing</artifactId>
+            <artifactId>seed-testing-junit4</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>\${assertj.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

@@ -13,19 +13,17 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.2.0-SNAPSHOT</version>
+        <version>3.2.0</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>17.11.3-SNAPSHOT</version>
+    <version>18.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
-        <poms.version>3.2.0-SNAPSHOT</poms.version>
-
-        <shed.version>1.1.2-SNAPSHOT</shed.version>
-        <coffig.version>3.1.0-SNAPSHOT</coffig.version>
+        <shed.version>1.1.2</shed.version>
+        <coffig.version>3.1.0</coffig.version>
         <seed.version>3.5.0-SNAPSHOT</seed.version>
         <business.version>4.2.1-SNAPSHOT</business.version>
 
@@ -44,7 +42,7 @@
         <jdbc-addon.version>3.0.2</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
-        <jpa-addon.version>4.0.1-SNAPSHOT</jpa-addon.version>
+        <jpa-addon.version>4.0.0</jpa-addon.version>
         <kafka-addon.version>1.0.0</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
@@ -72,11 +70,12 @@
 
         <!-- Variables used in archetype poms -->
         <seedstack-maven-plugin.version>2.7.0</seedstack-maven-plugin.version>
-        <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
-        <logback.version>1.2.3</logback.version>
-        <rest-assured.version>3.0.2</rest-assured.version>
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
+        <hibernate.version>5.2.10.Final</hibernate.version>
+        <hikari.version>2.6.3</hikari.version>
+        <postgresql.version>42.1.1</postgresql.version>
+        <h2.version>1.4.196</h2.version>
         <!-- end -->
 
         <bintray.package>distribution</bintray.package>
