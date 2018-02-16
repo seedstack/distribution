@@ -64,6 +64,11 @@
         <web-bridge-addon.version>1.0.0</web-bridge-addon.version>
         <web-services-addon.version>3.0.2</web-services-addon.version>
 
+        <!-- TODO: remove after Java 9 full compatibility (18.4+) -->
+        <javax.activation.version>1.1.1</javax.activation.version>
+        <jaxb.version>2.3.0</jaxb.version>
+        <!-- end -->
+
         <!-- Versions for compatibility BOM -->
         <compat.business.version>3.1.0</compat.business.version>
         <compat.jpa-addon.version>3.0.2</compat.jpa-addon.version>
@@ -77,7 +82,6 @@
         <logback.version>1.2.3</logback.version>
         <rest-assured.version>3.0.2</rest-assured.version>
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
-        <!-- end -->
 
         <bintray.package>distribution</bintray.package>
     </properties>

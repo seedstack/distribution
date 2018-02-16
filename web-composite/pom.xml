@@ -45,5 +45,17 @@
             <artifactId>seed-rest-jersey2</artifactId>
             <version>${seed.version}</version>
         </dependency>
+        <!-- TODO: remove after Java 9 full compatibility (18.4+) -->
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-jxc-jdk9</artifactId>
+            <version>${jaxb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>${javax.activation.version}</version>
+        </dependency>
+        <!-- end -->
     </dependencies>
 </project>
