@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.1</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
@@ -24,7 +24,7 @@
     <properties>
         <shed.version>1.1.2</shed.version>
         <coffig.version>3.1.0</coffig.version>
-        <seed.version>3.5.0-SNAPSHOT</seed.version>
+        <seed.version>3.5.1-SNAPSHOT</seed.version>
         <business.version>4.2.1-SNAPSHOT</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
@@ -33,7 +33,7 @@
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
-        <feign-addon.version>1.1.0</feign-addon.version>
+        <feign-addon.version>1.2.0-SNAPSHOT</feign-addon.version>
         <flyway-addon.version>1.0.0</flyway-addon.version>
         <i18n-addon.version>4.0.0</i18n-addon.version>
         <io-addon.version>3.0.0</io-addon.version>
@@ -42,7 +42,7 @@
         <jdbc-addon.version>3.0.2</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
-        <jpa-addon.version>4.0.0</jpa-addon.version>
+        <jpa-addon.version>4.0.1</jpa-addon.version>
         <kafka-addon.version>1.0.0</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
@@ -51,15 +51,15 @@
         <monitoring-addon.version>3.1.0</monitoring-addon.version>
         <mqtt-addon.version>2.0.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
-        <netflix-addon.version>1.1.0</netflix-addon.version>
+        <netflix-addon.version>1.2.0-SNAPSHOT</netflix-addon.version>
         <redis-addon.version>2.0.0</redis-addon.version>
-        <scheduling-addon.version>3.0.0</scheduling-addon.version>
+        <scheduling-addon.version>3.1.0-SNAPSHOT</scheduling-addon.version>
         <shell-addon.version>1.0.1</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.0</spring-bridge-addon.version>
-        <swagger-addon.version>2.0.1</swagger-addon.version>
-        <w20-bridge-addon.version>3.1.0</w20-bridge-addon.version>
-        <web-bridge-addon.version>1.0.0</web-bridge-addon.version>
+        <swagger-addon.version>2.0.2-SNAPSHOT</swagger-addon.version>
+        <w20-bridge-addon.version>3.2.0-SNAPSHOT</w20-bridge-addon.version>
+        <web-bridge-addon.version>1.0.1-SNAPSHOT</web-bridge-addon.version>
         <web-services-addon.version>3.0.2</web-services-addon.version>
 
         <!-- Versions for compatibility BOM -->
