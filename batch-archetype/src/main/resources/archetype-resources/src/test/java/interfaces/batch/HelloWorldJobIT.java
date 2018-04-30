@@ -1,14 +1,17 @@
 package ${package}.interfaces.batch;
 
 import org.junit.Test;
-import org.seedstack.seed.cli.WithCommandLine;
-import org.seedstack.seed.it.AbstractSeedIT;
+import org.junit.runner.RunWith;
+import org.seedstack.seed.cli.WithCliCommand;
+import org.seedstack.seed.testing.Arguments;
+import org.seedstack.seed.testing.junit4.internal.JUnit4Runner;
 
-public class HelloWorldJobIT extends AbstractSeedIT {
-
+@RunWith(JUnit4Runner.class)
+public class HelloWorldJobIT {
 	@Test
-	@WithCommandLine(command = "run-job", args = {"--job","helloWorldJob"}, expectedExitCode = 0)
+	@WithCliCommand(command = "run-job", expectedStatusCode = 0)
+	@Arguments({"--job", "helloWorldJob"})
 	public void helloWorld() throws Exception {
+		// assert job execution outcome here
 	}
-
 }
