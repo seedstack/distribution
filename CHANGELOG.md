@@ -1,6 +1,17 @@
 # Version 18.4 (2018-04-30)
 
-* [chg] seed: **[3.5.0](https://github.com/seedstack/seed/releases/tag/v3.5.0)**
+* [new] oauth-addon: **[1.0.0](https://github.com/seedstack/oauth-addon/releases/tag/v1.0.0)**
+* [chg] shed: **[1.1.3](https://github.com/seedstack/shed/releases/tag/v1.1.3)**
+* [chg] seed: **[3.5.1](https://github.com/seedstack/seed/releases/tag/v3.5.1)**
+* [chg] business: **[4.2.1](https://github.com/seedstack/business/releases/tag/4.2.1)**
+* [chg] cci-addon: **[1.1.0](https://github.com/seedstack/cci-addon/releases/tag/v1.1.0)**
+* [chg] feign-addon: **[1.2.0](https://github.com/seedstack/feign-addon/releases/tag/v1.2.0)**
+* [chg] jpa-addon: **[4.0.1](https://github.com/seedstack/jpa-addon/releases/tag/v4.0.1)**
+* [chg] netflix-addon: **[1.2.0](https://github.com/seedstack/netflix-addon/releases/tag/v1.2.0)**
+* [chg] scheduling-addon: **[3.1.0](https://github.com/seedstack/scheduling-addon/releases/tag/v3.1.0)**
+* [chg] swagger-addon: **[2.0.2](https://github.com/seedstack/swagger-addon/releases/tag/v2.0.2)**
+* [chg] w20-bridge-addon: **[3.2.0](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.2.0)**
+* [chg] web-bridge-addon: **[1.0.1](https://github.com/seedstack/web-bridge-addon/releases/tag/v1.0.1)**
 
 # Version 17.11.2 (2017-12-05)
 
