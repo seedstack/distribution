@@ -22,7 +22,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <shed.version>1.1.2</shed.version>
+        <shed.version>1.1.3-SNAPSHOT</shed.version>
         <coffig.version>3.1.0</coffig.version>
         <seed.version>3.5.1-SNAPSHOT</seed.version>
         <business.version>4.2.1-SNAPSHOT</business.version>
