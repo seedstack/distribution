@@ -1,6 +1,7 @@
 # Version 18.4 (2018-04-30)
 
 * [new] oauth-addon: **[1.0.0](https://github.com/seedstack/oauth-addon/releases/tag/v1.0.0)**
+* [new] crud-addon: **[1.0.0](https://github.com/seedstack/crud-addon/releases/tag/v1.0.0)**
 * [chg] shed: **[1.1.3](https://github.com/seedstack/shed/releases/tag/v1.1.3)**
 * [chg] seed: **[3.5.1](https://github.com/seedstack/seed/releases/tag/v3.5.1)**
 * [chg] business: **[4.2.1](https://github.com/seedstack/business/releases/tag/4.2.1)**

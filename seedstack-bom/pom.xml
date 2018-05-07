@@ -169,6 +169,18 @@
                 <version>${cci-addon.version}</version>
             </dependency>
 
+            <!-- CRUD add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.crud</groupId>
+                <artifactId>crud</artifactId>
+                <version>${crud-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.crud</groupId>
+                <artifactId>crud-rest</artifactId>
+                <version>${crud-addon.version}</version>
+            </dependency>
+
             <!-- Consul add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.consul</groupId>
@@ -371,6 +383,13 @@
                 <groupId>org.seedstack.addons.netflix</groupId>
                 <artifactId>netflix-hystrix</artifactId>
                 <version>${netflix-addon.version}</version>
+            </dependency>
+
+            <!-- OAuth add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.oauth</groupId>
+                <artifactId>oauth</artifactId>
+                <version>${oauth-addon.version}</version>
             </dependency>
 
             <!-- Redis add-on -->

@@ -361,6 +361,13 @@
                 <version>${netflix-addon.version}</version>
             </dependency>
 
+            <!-- OAuth add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.oauth</groupId>
+                <artifactId>oauth</artifactId>
+                <version>${oauth-addon.version}</version>
+            </dependency>
+
             <!-- Redis add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.redis</groupId>
