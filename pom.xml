@@ -13,12 +13,12 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.2.1</version>
+        <version>3.3.1</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>18.4-SNAPSHOT</version>
+    <version>18.4.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -71,7 +71,7 @@
         <compat.i18n-addon.version>3.0.0</compat.i18n-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.7.0</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.7.1</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
         <hibernate.version>5.2.10.Final</hibernate.version>

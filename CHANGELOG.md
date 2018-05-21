@@ -1,3 +1,7 @@
+# Version 18.4.1 (2018-05-21)
+
+* [chg] seedstack-maven-plugin: **[2.7.1](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.7.1)**
+
 # Version 18.4 (2018-05-07)
 
 * [new] oauth-addon: **[1.0.0](https://github.com/seedstack/oauth-addon/releases/tag/v1.0.0)**
