@@ -1,3 +1,8 @@
+# Version 18.4.2 (2018-06-06)
+
+* [chg] seed: **[3.6.1](https://github.com/seedstack/seed/releases/tag/v3.6.1)**
+* [chg] w20-bridge-addon: **[3.2.2](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.2.2)**
+
 # Version 18.4.1 (2018-05-21)
 
 * [chg] seedstack-maven-plugin: **[2.7.1](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.7.1)**
@@ -7,7 +12,7 @@
 * [new] oauth-addon: **[1.0.0](https://github.com/seedstack/oauth-addon/releases/tag/v1.0.0)**
 * [new] crud-addon: **[1.0.0](https://github.com/seedstack/crud-addon/releases/tag/v1.0.0)**
 * [chg] shed: **[1.1.3](https://github.com/seedstack/shed/releases/tag/v1.1.3)**
-* [chg] seed: **[3.5.1](https://github.com/seedstack/seed/releases/tag/v3.5.1)**
+* [chg] seed: **[3.6.0](https://github.com/seedstack/seed/releases/tag/v3.6.0)**
 * [chg] business: **[4.2.1](https://github.com/seedstack/business/releases/tag/4.2.1)**
 * [chg] cci-addon: **[1.1.0](https://github.com/seedstack/cci-addon/releases/tag/v1.1.0)**
 * [chg] feign-addon: **[1.2.0](https://github.com/seedstack/feign-addon/releases/tag/v1.2.0)**
@@ -17,6 +22,12 @@
 * [chg] swagger-addon: **[2.0.2](https://github.com/seedstack/swagger-addon/releases/tag/v2.0.2)**
 * [chg] w20-bridge-addon: **[3.2.1](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.2.1)**
 * [chg] web-bridge-addon: **[1.0.1](https://github.com/seedstack/web-bridge-addon/releases/tag/v1.0.1)**
+
+# Version 17.11.3 (2018-02-16)
+
+* [chg] shed: **[1.1.2](https://github.com/seedstack/shed/releases/tag/v1.1.2)**
+* [chg] coffig: **[3.1.0](https://github.com/seedstack/coffig/releases/tag/v3.1.0)**
+* [chg] seed: **[3.4.2](https://github.com/seedstack/seed/releases/tag/v3.4.2)**
 
 # Version 17.11.2 (2017-12-05)
 
