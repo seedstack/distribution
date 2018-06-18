@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>18.4.2-SNAPSHOT</version>
+        <version>18.4.3-SNAPSHOT</version>
     </parent>
 
     <artifactId>batch-archetype</artifactId>

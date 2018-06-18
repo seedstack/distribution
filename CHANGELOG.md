@@ -1,3 +1,7 @@
+# Version 18.4.3 (2018-06-18)
+
+* [chg] seed: **[3.6.2](https://github.com/seedstack/seed/releases/tag/v3.6.2)**
+
 # Version 18.4.2 (2018-06-06)
 
 * [chg] seed: **[3.6.1](https://github.com/seedstack/seed/releases/tag/v3.6.1)**
