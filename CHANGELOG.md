@@ -1,3 +1,10 @@
+# Version 18.7 (2018-07-31)
+
+* [chg] seed: **[3.7.0](https://github.com/seedstack/seed/releases/tag/v3.7.0)**
+* [chg] jpa-addon: **[4.0.3](https://github.com/seedstack/jpa-addon/releases/tag/v4.0.3)**
+* [chg] w20-bridge-addon: **[3.2.5](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.2.5)**
+* [chg] spring-bridge-addon: **[3.1.1](https://github.com/seedstack/spring-bridge-addon/releases/tag/v3.1.1)**
+
 # Version 18.4.3 (2018-06-18)
 
 * [chg] seed: **[3.6.2](https://github.com/seedstack/seed/releases/tag/v3.6.2)**
