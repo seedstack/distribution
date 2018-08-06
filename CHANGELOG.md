@@ -1,9 +1,12 @@
-# Version 18.7 (2018-07-31)
+# Version 18.7 (2018-08-06)
 
 * [chg] seed: **[3.7.0](https://github.com/seedstack/seed/releases/tag/v3.7.0)**
+* [chg] i18n-addon: **[4.1.0](https://github.com/seedstack/i18n-addon/releases/tag/v4.1.0)**
 * [chg] jpa-addon: **[4.0.3](https://github.com/seedstack/jpa-addon/releases/tag/v4.0.3)**
-* [chg] w20-bridge-addon: **[3.2.5](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.2.5)**
+* [chg] kafka-addon: **[1.1.0](https://github.com/seedstack/kafka-addon/releases/tag/v1.1.0)**
+* [chg] swagger-addon: **[2.0.3](https://github.com/seedstack/swagger-addon/releases/tag/v2.0.3)**
 * [chg] spring-bridge-addon: **[3.1.1](https://github.com/seedstack/spring-bridge-addon/releases/tag/v3.1.1)**
+* [chg] w20-bridge-addon: **[3.2.5](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.2.5)**
 
 # Version 18.4.3 (2018-06-18)
 
@@ -61,7 +64,7 @@
 * [chg] business: **[4.1.0](https://github.com/seedstack/business/releases/tag/v4.1.0)**
 * [chg] feign-addon: **[1.1.0](https://github.com/seedstack/feign-addon/releases/tag/v1.1.0)**
 * [chg] jpa-addon: **[4.0.0](https://github.com/seedstack/jpa-addon/releases/tag/v4.0.0)**
-* [chg] i18n-addon: **[40.0](https://github.com/seedstack/i18n-addon/releases/tag/v4.0.0)**
+* [chg] i18n-addon: **[4.0.0](https://github.com/seedstack/i18n-addon/releases/tag/v4.0.0)**
 * [chg] mongodb-addon: **[3.0.0](https://github.com/seedstack/mongodb-addon/releases/tag/v3.0.0)**
 * [chg] netflix-addon: **[1.1.0](https://github.com/seedstack/netflix-addon/releases/tag/v1.1.0)**
 * [chg] shell-addon: **[1.0.1](https://github.com/seedstack/shell-addon/releases/tag/v1.0.1)**
