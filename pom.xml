@@ -36,7 +36,7 @@
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
         <feign-addon.version>1.2.0</feign-addon.version>
         <flyway-addon.version>1.0.0</flyway-addon.version>
-        <i18n-addon.version>4.1.0-SNAPSHOT</i18n-addon.version>
+        <i18n-addon.version>4.1.0</i18n-addon.version>
         <io-addon.version>3.0.0</io-addon.version>
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
@@ -58,9 +58,9 @@
         <scheduling-addon.version>3.1.0</scheduling-addon.version>
         <shell-addon.version>1.0.1</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
-        <spring-bridge-addon.version>3.1.1-SNAPSHOT</spring-bridge-addon.version>
+        <spring-bridge-addon.version>3.1.1</spring-bridge-addon.version>
         <swagger-addon.version>2.0.3</swagger-addon.version>
-        <w20-bridge-addon.version>3.2.5-SNAPSHOT</w20-bridge-addon.version>
+        <w20-bridge-addon.version>3.2.5</w20-bridge-addon.version>
         <web-bridge-addon.version>1.0.2</web-bridge-addon.version>
         <web-services-addon.version>3.0.2</web-services-addon.version>
 
