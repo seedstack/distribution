@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>18.7.1-SNAPSHOT</version>
+        <version>18.7.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>seedstack-bom</artifactId>

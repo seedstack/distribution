@@ -18,13 +18,13 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>18.7.1-SNAPSHOT</version>
+    <version>18.7.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <shed.version>1.1.3</shed.version>
         <coffig.version>3.1.1</coffig.version>
-        <seed.version>3.7.1</seed.version>
+        <seed.version>3.7.2-SNAPSHOT</seed.version>
         <business.version>4.2.2</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
@@ -60,7 +60,7 @@
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.1</spring-bridge-addon.version>
         <swagger-addon.version>2.0.3</swagger-addon.version>
-        <w20-bridge-addon.version>3.2.5</w20-bridge-addon.version>
+        <w20-bridge-addon.version>3.2.6-SNAPSHOT</w20-bridge-addon.version>
         <web-bridge-addon.version>1.0.2</web-bridge-addon.version>
         <web-services-addon.version>3.0.3</web-services-addon.version>
 

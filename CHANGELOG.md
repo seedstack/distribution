@@ -1,3 +1,8 @@
+# Version 18.7.2 (2018-??-??)
+
+* [fix] The `i18n-w20` module was not managed by the BOM.
+* [chg] seed: **[3.7.2](https://github.com/seedstack/seed/releases/tag/v3.7.2)**
+
 # Version 18.7.1 (2018-09-04)
 
 * [chg] seed: **[3.7.1](https://github.com/seedstack/seed/releases/tag/v3.7.1)**
