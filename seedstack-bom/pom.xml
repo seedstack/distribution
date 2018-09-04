@@ -234,7 +234,7 @@
             </dependency>
             <dependency>
                 <groupId>org.seedstack.addons.i18n</groupId>
-                <artifactId>i18n-web</artifactId>
+                <artifactId>i18n-w20</artifactId>
                 <version>${i18n-addon.version}</version>
             </dependency>
 
