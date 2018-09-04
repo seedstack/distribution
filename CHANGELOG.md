@@ -1,6 +1,7 @@
-# Version 18.7.1 (2018-09-??)
+# Version 18.7.1 (2018-09-04)
 
 * [chg] seed: **[3.7.1](https://github.com/seedstack/seed/releases/tag/v3.7.1)**
+* [chg] business: **[4.2.2](https://github.com/seedstack/business/releases/tag/4.2.2)**
 * [chg] coffig: **[3.1.2](https://github.com/seedstack/coffig/releases/tag/v3.1.2)**
 * [chg] web-services-addon: **[3.0.3](https://github.com/seedstack/web-services-addon/releases/tag/v3.0.3)**
 
