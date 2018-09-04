@@ -23,9 +23,9 @@
 
     <properties>
         <shed.version>1.1.3</shed.version>
-        <coffig.version>3.1.2-SNAPSHOT</coffig.version>
-        <seed.version>3.7.1-SNAPSHOT</seed.version>
-        <business.version>4.2.1</business.version>
+        <coffig.version>3.1.1</coffig.version>
+        <seed.version>3.7.1</seed.version>
+        <business.version>4.2.2</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
         <aws-addon.version>1.0.0</aws-addon.version>
@@ -62,7 +62,7 @@
         <swagger-addon.version>2.0.3</swagger-addon.version>
         <w20-bridge-addon.version>3.2.5</w20-bridge-addon.version>
         <web-bridge-addon.version>1.0.2</web-bridge-addon.version>
-        <web-services-addon.version>3.0.3-SNAPSHOT</web-services-addon.version>
+        <web-services-addon.version>3.0.3</web-services-addon.version>
 
         <!-- Versions for compatibility BOM -->
         <compat.business.version>3.1.0</compat.business.version>
