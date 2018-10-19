@@ -23,8 +23,8 @@
 
     <properties>
         <shed.version>1.1.3</shed.version>
-        <coffig.version>3.1.1</coffig.version>
-        <seed.version>3.7.2-SNAPSHOT</seed.version>
+        <coffig.version>3.1.2</coffig.version>
+        <seed.version>3.7.3</seed.version>
         <business.version>4.2.2</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
@@ -59,8 +59,8 @@
         <shell-addon.version>1.0.1</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.1</spring-bridge-addon.version>
-        <swagger-addon.version>2.0.3</swagger-addon.version>
-        <w20-bridge-addon.version>3.2.6-SNAPSHOT</w20-bridge-addon.version>
+        <swagger-addon.version>2.1.0</swagger-addon.version>
+        <w20-bridge-addon.version>3.2.6</w20-bridge-addon.version>
         <web-bridge-addon.version>1.0.2</web-bridge-addon.version>
         <web-services-addon.version>3.0.3</web-services-addon.version>
 
@@ -71,7 +71,7 @@
         <compat.i18n-addon.version>3.0.0</compat.i18n-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.7.1</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.7.2</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
