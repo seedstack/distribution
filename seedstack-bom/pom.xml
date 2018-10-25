@@ -524,32 +524,6 @@
                 <artifactId>web-services-web</artifactId>
                 <version>${web-services-addon.version}</version>
             </dependency>
-
-            <!-- Composites -->
-            <dependency>
-                <groupId>org.seedstack</groupId>
-                <artifactId>batch-composite</artifactId>
-                <version>${project.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack</groupId>
-                <artifactId>cli-composite</artifactId>
-                <version>${project.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack</groupId>
-                <artifactId>domain-composite</artifactId>
-                <version>${project.version}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.seedstack</groupId>
-                <artifactId>web-composite</artifactId>
-                <version>${project.version}</version>
-                <type>pom</type>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
