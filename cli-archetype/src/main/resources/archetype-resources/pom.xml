@@ -78,9 +78,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.seedstack</groupId>
-            <artifactId>cli-composite</artifactId>
-            <type>pom</type>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-cli</artifactId>
         </dependency>
         <dependency>
             <groupId>org.seedstack.business</groupId>

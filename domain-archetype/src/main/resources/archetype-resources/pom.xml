@@ -56,9 +56,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.seedstack</groupId>
-            <artifactId>domain-composite</artifactId>
-            <type>pom</type>
+            <groupId>org.seedstack.business</groupId>
+            <artifactId>business-core</artifactId>
         </dependency>
 
         <dependency>

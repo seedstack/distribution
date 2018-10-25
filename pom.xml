@@ -86,13 +86,9 @@
     <modules>
         <module>seedstack-bom</module>
         <module>seedstack-bom-compat</module>
-        <module>batch-composite</module>
         <module>batch-archetype</module>
-        <module>domain-composite</module>
         <module>domain-archetype</module>
-        <module>web-composite</module>
         <module>web-archetype</module>
-        <module>cli-composite</module>
         <module>cli-archetype</module>
         <module>addon-archetype</module>
     </modules>

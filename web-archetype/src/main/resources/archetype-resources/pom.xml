@@ -125,9 +125,24 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.seedstack</groupId>
-            <artifactId>web-composite</artifactId>
-            <type>pom</type>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-security-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-web-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-web-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.seedstack.seed</groupId>
+            <artifactId>seed-rest-jersey2</artifactId>
         </dependency>
         <dependency>
             <groupId>org.seedstack.seed</groupId>

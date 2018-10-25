@@ -1,5 +1,6 @@
 # Version 18.7.2 (2018-10-19)
 
+* [brk] Composite POMs have been removed and their dependencies have been placed directly in the corresponding archetype.
 * [fix] The `i18n-w20` module was not managed by the BOM.
 * [chg] seed: **[3.7.3](https://github.com/seedstack/seed/releases/tag/v3.7.2)**
 * [chg] coffig: **[3.1.3](https://github.com/seedstack/coffig/releases/tag/v3.1.3)**
