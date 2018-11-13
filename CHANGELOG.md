@@ -1,4 +1,4 @@
-# Version 18.7.2 (2018-10-19)
+# Version 18.11 (2018-11-29)
 
 * [brk] Composite POMs have been removed and their dependencies have been placed directly in the corresponding archetype.
 * [fix] The `i18n-w20` module was not managed by the BOM.

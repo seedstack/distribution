@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>18.7.2-SNAPSHOT</version>
+    <version>18.11-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
