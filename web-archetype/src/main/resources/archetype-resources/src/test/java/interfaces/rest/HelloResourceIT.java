@@ -13,7 +13,7 @@ import org.seedstack.seed.undertow.LaunchWithUndertow;
 @RunWith(SeedITRunner.class)
 @LaunchWithUndertow
 public class HelloResourceIT {
-    @Configuration("web.runtime.baseUrl")
+    @Configuration("runtime.web.baseUrl")
     private String baseUrl;
 
     @Test
@@ -21,7 +21,7 @@ public class HelloResourceIT {
         Response response = given()
                 .auth().basic("demo", "demo")
                 .expect().statusCode(200)
-                .when().get(baseUrl + "{% if w20.enabled %}api/{% endif %}hello");
+                .when().get(baseUrl + "/{% if w20.enabled %}api/{% endif %}hello");
 
         assertThat(response.body().asString()).isEqualTo("Hello World!");
     }

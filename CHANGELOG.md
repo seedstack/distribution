@@ -1,12 +1,14 @@
-# Version 18.11 (2018-11-29)
+# Version 18.11 (2018-12-04)
 
 * [brk] Composite POMs have been removed and their dependencies have been placed directly in the corresponding archetype.
 * [fix] The `i18n-w20` module was not managed by the BOM.
-* [chg] seed: **[3.7.3](https://github.com/seedstack/seed/releases/tag/v3.7.2)**
+* [chg] shed: **[1.1.4](https://github.com/seedstack/shed/releases/tag/v1.1.4)**
 * [chg] coffig: **[3.1.3](https://github.com/seedstack/coffig/releases/tag/v3.1.3)**
+* [chg] seed: **[3.8.0](https://github.com/seedstack/seed/releases/tag/v3.8.0)**
+* [chg] jpa-addon: **[4.0.4](https://github.com/seedstack/jpa-addon/releases/tag/v4.0.4)**
 * [chg] swagger-addon: **[2.1.0](https://github.com/seedstack/swagger-addon/releases/tag/v2.1.0)**
 * [chg] w20-bridge-addon: **[3.2.6](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.2.6)**
-* [chg] seedstack-maven-plugin: **[2.7.2](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.7.2)**
+* [chg] seedstack-maven-plugin: **[2.7.3](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.7.3)**
 
 # Version 18.7.1 (2018-09-04)
 
