@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>18.11-SNAPSHOT</version>
+    <version>18.11.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -60,8 +60,8 @@
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.1</spring-bridge-addon.version>
         <swagger-addon.version>2.1.0</swagger-addon.version>
-        <w20-bridge-addon.version>3.2.6</w20-bridge-addon.version>
-        <web-bridge-addon.version>1.0.2</web-bridge-addon.version>
+        <w20-bridge-addon.version>3.2.7-SNAPSHOT</w20-bridge-addon.version>
+        <web-bridge-addon.version>1.0.3-SNAPSHOT</web-bridge-addon.version>
         <web-services-addon.version>3.0.3</web-services-addon.version>
 
         <!-- Versions for compatibility BOM -->
