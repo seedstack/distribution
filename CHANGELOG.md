@@ -1,4 +1,4 @@
-# Version 18.11.1 (2018-12-14)
+# Version 18.11.1 (2018-12-17)
 
 * [chg] web-bridge-addon: **[1.0.3](https://github.com/seedstack/web-bridge-addon/releases/tag/v1.0.3)**
 * [chg] w20-bridge-addon: **[3.2.7](https://github.com/seedstack/w20-bridge-addon/releases/tag/v3.2.7)**
