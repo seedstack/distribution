@@ -14,8 +14,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <spring.version>4.0.5.RELEASE</spring.version>
-        <spring-batch.version>3.0.5.RELEASE</spring-batch.version>
+        <spring.version>4.3.22.RELEASE</spring.version>
+        <spring-batch.version>3.0.10.RELEASE</spring-batch.version>
         <logback.version>${logback.version}</logback.version>
         <assertj.version>${assertj.version}</assertj.version>
         <hsqldb.version>2.3.3</hsqldb.version>

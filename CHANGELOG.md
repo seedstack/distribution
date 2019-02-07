@@ -1,3 +1,7 @@
+# Version 18.11.2 (2019-02-??)
+
+* [chg] seed: **[3.8.1](https://github.com/seedstack/seed/releases/tag/v3.8.1)**
+
 # Version 18.11.1 (2018-12-17)
 
 * [chg] web-bridge-addon: **[1.0.3](https://github.com/seedstack/web-bridge-addon/releases/tag/v1.0.3)**
