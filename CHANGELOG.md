@@ -1,6 +1,11 @@
-# Version 18.11.2 (2019-02-??)
+# Version 18.11.2 (2019-02-20)
 
+* [chg] shed: **[1.1.5](https://github.com/seedstack/shed/releases/tag/v1.1.5)**
+* [chg] coffig: **[3.1.4](https://github.com/seedstack/coffig/releases/tag/v3.1.4)**
 * [chg] seed: **[3.8.1](https://github.com/seedstack/seed/releases/tag/v3.8.1)**
+* [chg] feign-addon: **[1.3.0](https://github.com/seedstack/feign-addon/releases/tag/v1.3.0)**
+* [chg] jpa-addon: **[4.0.5](https://github.com/seedstack/jpa-addon/releases/tag/v4.0.5)**
+* [chg] mongodb-addon: **[3.0.1](https://github.com/seedstack/mongodb-addon/releases/tag/v3.0.1)**
 
 # Version 18.11.1 (2018-12-17)
 
