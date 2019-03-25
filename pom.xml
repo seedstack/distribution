@@ -13,18 +13,18 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.4.4</version>
+        <version>3.4.6</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>18.11.2-SNAPSHOT</version>
+    <version>18.11.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <shed.version>1.1.5</shed.version>
         <coffig.version>3.1.4</coffig.version>
-        <seed.version>3.8.1</seed.version>
+        <seed.version>3.8.5</seed.version>
         <business.version>4.2.2</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
@@ -44,7 +44,7 @@
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.0.1</jms-addon.version>
         <jpa-addon.version>4.0.5</jpa-addon.version>
-        <kafka-addon.version>1.1.0</kafka-addon.version>
+        <kafka-addon.version>2.0.0</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
         <modelmapper-addon.version>1.0.0</modelmapper-addon.version>
@@ -71,10 +71,11 @@
         <compat.i18n-addon.version>3.0.0</compat.i18n-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.7.3</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.7.4</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
+        <hibernate-validator.version>6.0.16.Final</hibernate-validator.version>
         <hikari.version>2.6.3</hikari.version>
         <postgresql.version>42.1.1</postgresql.version>
         <h2.version>1.4.196</h2.version>

@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>18.11.2-SNAPSHOT</version>
+        <version>18.11.3-SNAPSHOT</version>
     </parent>
 
     <artifactId>cli-archetype</artifactId>

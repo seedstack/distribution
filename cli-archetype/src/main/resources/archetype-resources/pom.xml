@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <hibernate-validator.version>${hibernate-validator.version}</hibernate-validator.version>
         <logback.version>${logback.version}</logback.version>
         <assertj.version>${assertj.version}</assertj.version>
     </properties>
@@ -97,6 +98,11 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>\${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>\${hibernate-validator.version}</version>
         </dependency>
 
         <dependency>

@@ -1,3 +1,9 @@
+# Version 18.11.3 (2019-03-25)
+
+* [chg] seed: **[3.8.5](https://github.com/seedstack/seed/releases/tag/v3.8.5)**
+* [chg] kafka-addon: **[2.0.0](https://github.com/seedstack/kafka-addon/releases/tag/v2.0.0)**
+* [chg] seedstack-maven-plugin: **[2.7.4](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.7.4)**
+
 # Version 18.11.2 (2019-02-20)
 
 * [chg] shed: **[1.1.5](https://github.com/seedstack/shed/releases/tag/v1.1.5)**

@@ -15,6 +15,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <hibernate.version>${hibernate.version}</hibernate.version>
+        <hibernate-validator.version>${hibernate-validator.version}</hibernate-validator.version>
         <hikari.version>${hikari.version}</hikari.version>
         <postgresql.version>${postgresql.version}</postgresql.version>
         <logback.version>${logback.version}</logback.version>
@@ -160,6 +161,11 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>\${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>\${hibernate-validator.version}</version>
         </dependency>
 {% if persistence.type == "jpaHibernate" %}
         <dependency>
