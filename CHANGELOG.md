@@ -1,3 +1,7 @@
+# Version 19.4 (2019-04-30)
+
+* [chg] mongodb-addon: **[3.0.2](https://github.com/seedstack/mongodb-addon/releases/tag/v3.0.2)**
+
 # Version 18.11.3 (2019-03-25)
 
 * [chg] seed: **[3.8.5](https://github.com/seedstack/seed/releases/tag/v3.8.5)**

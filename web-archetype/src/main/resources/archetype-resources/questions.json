@@ -1,4 +1,16 @@
 {
+  "docker": {
+    "label": "Docker",
+    "order": 3,
+    "questions": [
+      {
+        "name": "enabled",
+        "style": "confirm",
+        "message": "Enable Docker support ?",
+        "default": "no"
+      }
+    ]
+  },
   "persistence": {
     "label": "Persistence",
     "order": 1,
@@ -23,11 +35,37 @@
         "values": [
           {
             "name": "jpaHibernate",
-            "label": "JPA with Hibernate"
+            "label": "JPA with Hibernate and HikariCP pooling"
           },
           {
             "name": "mongo",
             "label": "MongoDB with Morphia"
+          }
+        ]
+      },
+      {
+        "name": "reldb",
+        "conditions": [
+          {
+            "ref": "type",
+            "op": "eq",
+            "val": "jpaHibernate"
+          }
+        ],
+        "style": "list",
+        "message": "Choose your database",
+        "values": [
+          {
+            "name": "postgres",
+            "label": "PostgreSQL"
+          },
+          {
+            "name": "mariadb",
+            "label": "MariaDb"
+          },
+          {
+            "name": "mysql",
+            "label": "MySQL"
           }
         ]
       }
@@ -72,18 +110,6 @@
             "label": "No theme"
           }
         ]
-      }
-    ]
-  },
-  "docker": {
-    "label": "Docker",
-    "order": 3,
-    "questions": [
-      {
-        "name": "enabled",
-        "style": "confirm",
-        "message": "Enable Docker support ?",
-        "default": "no"
       }
     ]
   }

@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>18.11.3-SNAPSHOT</version>
+    <version>19.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -48,7 +48,7 @@
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.0.0</metrics-addon.version>
         <modelmapper-addon.version>1.0.0</modelmapper-addon.version>
-        <mongodb-addon.version>3.0.1</mongodb-addon.version>
+        <mongodb-addon.version>3.0.2</mongodb-addon.version>
         <monitoring-addon.version>3.1.0</monitoring-addon.version>
         <mqtt-addon.version>2.0.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
@@ -73,12 +73,15 @@
         <!-- Variables used in archetype poms -->
         <seedstack-maven-plugin.version>2.7.4</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
-        <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
+        <docker-maven-plugin.version>0.27.2</docker-maven-plugin.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
         <hibernate-validator.version>6.0.16.Final</hibernate-validator.version>
         <hikari.version>2.6.3</hikari.version>
         <postgresql.version>42.1.1</postgresql.version>
+        <mysql.version>8.0.15</mysql.version>
+        <mariadb.version>2.4.1</mariadb.version>
         <h2.version>1.4.196</h2.version>
+        <jaxb-api.version>2.3.1</jaxb-api.version>
         <!-- end -->
 
         <bintray.package>distribution</bintray.package>

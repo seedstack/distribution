@@ -21,6 +21,7 @@
                 <include>.env</include>
                 <include>questions.json</include>
                 <include>docker-compose.yaml</include>
+                <include>Dockerfile</include>
             </includes>
         </fileSet>
         <fileSet filtered="false" packaged="true" encoding="UTF-8">
@@ -43,12 +44,6 @@
         </fileSet>
         <fileSet filtered="false" packaged="false" encoding="UTF-8">
             <directory>src/test/resources</directory>
-            <includes>
-                <include>**/*</include>
-            </includes>
-        </fileSet>
-        <fileSet filtered="false" packaged="false" encoding="UTF-8">
-            <directory>src/main/docker</directory>
             <includes>
                 <include>**/*</include>
             </includes>

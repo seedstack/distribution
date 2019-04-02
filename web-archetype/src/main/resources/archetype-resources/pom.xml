@@ -18,10 +18,15 @@
         <hibernate-validator.version>${hibernate-validator.version}</hibernate-validator.version>
         <hikari.version>${hikari.version}</hikari.version>
         <postgresql.version>${postgresql.version}</postgresql.version>
+        <mariadb.version>${mariadb.version}</mariadb.version>
+        <mysql.version>${mysql.version}</mysql.version>
         <logback.version>${logback.version}</logback.version>
         <assertj.version>${assertj.version}</assertj.version>
         <rest-assured.version>${rest-assured.version}</rest-assured.version>
         <h2.version>${h2.version}</h2.version>
+        <jaxb-api.version>${jaxb-api.version}</jaxb-api.version>
+
+        <docker.name>\${project.groupId}/%a:%l</docker.name>
     </properties>
 
     <build>
@@ -62,32 +67,16 @@
                 </plugin>
 {% if docker.enabled %}
                 <plugin>
-                    <groupId>com.spotify</groupId>
+                    <groupId>io.fabric8</groupId>
                     <artifactId>docker-maven-plugin</artifactId>
                     <version>${docker-maven-plugin.version}</version>
                     <executions>
                         <execution>
-                            <id>build-image</id>
-                            <phase>install</phase>
+                            <id>docker-build</id>
                             <goals>
                                 <goal>build</goal>
                             </goals>
-                            <configuration>
-                                <dockerDirectory>\${project.basedir}/src/main/docker</dockerDirectory>
-                                <imageName>\${project.groupId}/\${project.artifactId}</imageName>
-                                <imageTags>
-                                    <imageTag>\${project.version}</imageTag>
-                                    <imageTag>latest</imageTag>
-                                </imageTags>
-                                <resources>
-                                    <resource>
-                                        <targetPath>/opt/bin</targetPath>
-                                        <directory>\${project.build.directory}</directory>
-                                        <include>\${project.build.finalName}-capsule.jar</include>
-                                    </resource>
-                                </resources>
-                                <skipDockerPush>true</skipDockerPush>
-                            </configuration>
+                            <phase>install</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -105,7 +94,7 @@
             </plugin>
 {% if docker.enabled %}
             <plugin>
-                <groupId>com.spotify</groupId>
+                <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
             </plugin>
 {% endif %}
@@ -163,7 +152,7 @@
             <version>\${logback.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>\${hibernate-validator.version}</version>
         </dependency>
@@ -178,16 +167,35 @@
             <version>\${hibernate.version}</version>
         </dependency>
         <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>\${jaxb-api.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
             <version>\${hikari.version}</version>
         </dependency>
-{% if docker.enabled %}
+    {% if docker.enabled %}
+        {% if persistence.reldb == "postgres" %}
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>\${postgresql.version}</version>
         </dependency>
+        {% elseif persistence.reldb == "mariadb" %}
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>\${mariadb.version}</version>
+        </dependency>
+        {% elseif persistence.reldb == "mysql" %}
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>\${mysql.version}</version>
+        </dependency>
+        {% endif %}
 {% else %}
         <dependency>
             <groupId>com.h2database</groupId>

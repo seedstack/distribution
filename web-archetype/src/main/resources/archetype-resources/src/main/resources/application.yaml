@@ -45,7 +45,7 @@ jpa:
       datasource: main
       properties:
         hibernate.hbm2ddl.auto: update
-        hibernate.dialect: {% if docker.enabled %}org.hibernate.dialect.PostgreSQLDialect{% else %}org.hibernate.dialect.H2Dialect{% endif %}
+        hibernate.dialect: {% if docker.enabled %}{% if persistence.reldb == "postgres" %}org.hibernate.dialect.PostgreSQLDialect{% elseif persistence.reldb == "mariadb" %}org.hibernate.dialect.MariaDB103Dialect{% elseif persistence.reldb == "mysql" %}org.hibernate.dialect.MySQL8Dialect{% endif %}{% else %}org.hibernate.dialect.H2Dialect{% endif %}
 
 
 {{ yamlClassConfig("jpaUnit", "main") }}

@@ -1,16 +1,30 @@
 {% if docker.enabled %}
-version: "2"
+version: "3"
 services:
 {% if persistence.enabled %}
   db:
-{% if persistence.type == "jpaHibernate" %}
-    image: postgres
+{% if persistence.reldb == "postgres" %}
+    image: postgres:11.2
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
+{% elseif persistence.reldb == "mariadb" %}
+    image: mariadb:10.3
+    environment:
+      MYSQL_ROOT_PASSWORD: changeMe
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+{% elseif persistence.reldb == "mysql" %}
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: changeMe
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
 {% elseif persistence.type == "mongo" %}
-    image: mongo
+    image: mongo:3.6
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${DB_USER}
       MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
@@ -27,8 +41,12 @@ services:
       - 8080:8080
 {% if persistence.enabled %}
     environment:
-{% if persistence.type == "jpaHibernate" %}
+{% if persistence.reldb == "postgres" %}
       DB_URL: jdbc:postgresql://db:5432/${DB_NAME}?user=${DB_USER}&password=${DB_PASSWORD}
+{% elseif persistence.reldb == "mariadb" %}
+      DB_URL: jdbc:mariadb://db:3306/${DB_NAME}?user=${DB_USER}&password=${DB_PASSWORD}
+{% elseif persistence.reldb == "mysql" %}
+      DB_URL: jdbc:mysql://db:3306/${DB_NAME}?user=${DB_USER}&password=${DB_PASSWORD}
 {% elseif persistence.type == "mongo" %}
       DB_URL: mongodb://db:27017/${DB_NAME}
 {% endif %}
