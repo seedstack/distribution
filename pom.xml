@@ -59,7 +59,7 @@
         <shell-addon.version>1.0.1</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
         <spring-bridge-addon.version>3.1.1</spring-bridge-addon.version>
-        <swagger-addon.version>2.1.0</swagger-addon.version>
+        <swagger-addon.version>2.1.1</swagger-addon.version>
         <w20-bridge-addon.version>3.2.7</w20-bridge-addon.version>
         <web-bridge-addon.version>1.0.3</web-bridge-addon.version>
         <web-services-addon.version>3.0.3</web-services-addon.version>
