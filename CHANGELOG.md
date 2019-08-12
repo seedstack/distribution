@@ -1,3 +1,9 @@
+# Version 19.7 (2019-08-12)
+
+* [chg] shed: **[1.1.6](https://github.com/seedstack/shed/releases/tag/v1.1.6)**
+* [chg] seed: **[3.9.0](https://github.com/seedstack/seed/releases/tag/v3.9.0)**
+* [chg] swagger-addon: **[2.1.2](https://github.com/seedstack/swagger-addon/releases/tag/v2.1.2)**
+
 # Version 19.4 (2019-06-06)
 
 * [chg] mongodb-addon: **[3.0.2](https://github.com/seedstack/mongodb-addon/releases/tag/v3.0.2)**
