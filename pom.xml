@@ -18,12 +18,12 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>19.7-SNAPSHOT</version>
+    <version>19.7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <shed.version>1.1.6</shed.version>
-        <coffig.version>3.1.4</coffig.version>
+        <coffig.version>3.1.5</coffig.version>
         <seed.version>3.9.0</seed.version>
         <business.version>4.2.2</business.version>
 
@@ -46,7 +46,7 @@
         <jpa-addon.version>4.0.5</jpa-addon.version>
         <kafka-addon.version>2.0.0</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
-        <metrics-addon.version>1.0.0</metrics-addon.version>
+        <metrics-addon.version>1.1.0</metrics-addon.version>
         <modelmapper-addon.version>1.0.0</modelmapper-addon.version>
         <mongodb-addon.version>3.0.2</mongodb-addon.version>
         <monitoring-addon.version>3.1.0</monitoring-addon.version>

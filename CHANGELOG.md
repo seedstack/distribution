@@ -1,3 +1,9 @@
+# Version 19.7.1 (2019-09-16)
+
+* [chg] coffig: **[3.1.5](https://github.com/seedstack/coffig/releases/tag/v3.1.5)**
+* [chg] metrics-addon: **[1.1.0](https://github.com/seedstack/metrics-addon/releases/tag/v1.1.0)**
+
+
 # Version 19.7 (2019-08-12)
 
 * [chg] shed: **[1.1.6](https://github.com/seedstack/shed/releases/tag/v1.1.6)**
