@@ -1,3 +1,7 @@
+# Version 19.7.2 (2019-09-16)
+
+* [chg] seedstack-maven-plugin: **[2.7.5](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.7.5)**
+
 # Version 19.7.1 (2019-09-16)
 
 * [chg] coffig: **[3.1.5](https://github.com/seedstack/coffig/releases/tag/v3.1.5)**

@@ -18,7 +18,7 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>19.7.1-SNAPSHOT</version>
+    <version>19.7.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -71,7 +71,7 @@
         <compat.i18n-addon.version>3.0.0</compat.i18n-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.7.4</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.7.5</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <docker-maven-plugin.version>0.27.2</docker-maven-plugin.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
