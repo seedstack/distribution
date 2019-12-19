@@ -1,3 +1,14 @@
+# Version 19.11 (2019-12-19)
+
+* [chg] seed: **[3.9.1](https://github.com/seedstack/seed/releases/tag/v3.9.1)**
+* [chg] business: **[4.3.0](https://github.com/seedstack/business/releases/tag/4.3.0)**
+* [chg] feign-addon: **[1.3.1](https://github.com/seedstack/feign-addon/releases/tag/v1.3.1)**
+* [chg] jms-addon: **[3.1.0](https://github.com/seedstack/jms-addon/releases/tag/v3.1.0)**
+* [chg] jpa-addon: **[4.1.0](https://github.com/seedstack/jpa-addon/releases/tag/v4.1.0)**
+* [chg] mqtt-addon: **[2.1.0](https://github.com/seedstack/mqtt-addon/releases/tag/v2.1.0)**
+* [new] oauth-addon: **[1.1.0](https://github.com/seedstack/oauth-addon/releases/tag/v1.1.0)**
+* [chg] scheduling-addon: **[3.2.0](https://github.com/seedstack/scheduling-addon/releases/tag/v3.2.0)**
+
 # Version 19.7.2 (2019-09-16)
 
 * [chg] seedstack-maven-plugin: **[2.7.5](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.7.5)**
