@@ -18,13 +18,13 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>19.11-SNAPSHOT</version>
+    <version>20.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <shed.version>1.1.6</shed.version>
         <coffig.version>3.1.5</coffig.version>
-        <seed.version>3.9.1</seed.version>
+        <seed.version>3.9.2-SNAPSHOT</seed.version>
         <business.version>4.3.0</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>

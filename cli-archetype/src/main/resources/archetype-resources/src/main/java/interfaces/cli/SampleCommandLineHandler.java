@@ -1,5 +1,6 @@
 package ${package}.interfaces.cli;
 
+import java.util.Arrays;
 import org.seedstack.seed.cli.CliArgs;
 import org.seedstack.seed.cli.CliCommand;
 import org.seedstack.seed.cli.CliOption;
@@ -18,15 +19,19 @@ public class SampleCommandLineHandler implements CommandLineHandler {
     @CliOption(name = "m", longName = "map", valueCount = -1, valueSeparator = '=')
     private Map<String, String> map;
 
-    @CliOption(name = "a", longName = "array", valueCount = -1, mandatory = true, defaultValues = {"1", "2", "3"})
+    @CliOption(name = "a", longName = "array", valueCount = -1, defaultValues = {"1", "2", "3"})
     private String[] array;
 
-    @CliArgs(mandatoryCount = 2)
+    @CliArgs
     private String[] args;
 
     public Integer call() throws Exception {
-        // do something here
-
+        System.out.println("Running sample command:");
+        System.out.println(String.format("\tArguments: %s", Arrays.toString(args)));
+        System.out.println(String.format("\tBoolean option: %s", flag));
+        System.out.println(String.format("\tValue option: %s", value));
+        System.out.println(String.format("\tMap option: %s", map));
+        System.out.println(String.format("\tArray option: %s", Arrays.toString(array)));
         return 0;
     }
 }
