@@ -24,7 +24,7 @@
     <properties>
         <shed.version>1.1.6</shed.version>
         <coffig.version>3.1.5</coffig.version>
-        <seed.version>3.9.2-SNAPSHOT</seed.version>
+        <seed.version>3.10.0-SNAPSHOT</seed.version>
         <business.version>4.3.0</business.version>
 
         <audit-addon.version>3.0.0</audit-addon.version>
