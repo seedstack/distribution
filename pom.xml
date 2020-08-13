@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright © 2013-2019, The SeedStack authors <http://seedstack.org>
+    Copyright © 2013-2020, The SeedStack authors <http://seedstack.org>
 
     This Source Code Form is subject to the terms of the Mozilla Public
     License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -25,50 +25,45 @@
         <shed.version>1.1.6</shed.version>
         <coffig.version>3.1.6</coffig.version>
         <seed.version>3.10.0</seed.version>
-        <business.version>4.3.2-SNAPSHOT</business.version>
+        <business.version>4.3.1</business.version>
 
-        <audit-addon.version>3.0.0</audit-addon.version>
+        <audit-addon.version>3.0.1</audit-addon.version>
         <aws-addon.version>1.0.0</aws-addon.version>
+        <camel-addon.version>1.0.0</camel-addon.version>
         <cci-addon.version>1.1.0</cci-addon.version>
-        <crud-addon.version>1.0.1-SNAPSHOT</crud-addon.version>
+        <crud-addon.version>1.0.1</crud-addon.version>
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
         <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
-        <feign-addon.version>1.4.0-SNAPSHOT</feign-addon.version>
+        <feign-addon.version>1.4.0</feign-addon.version>
         <flyway-addon.version>1.0.0</flyway-addon.version>
-        <i18n-addon.version>4.2.0-SNAPSHOT</i18n-addon.version>
-        <io-addon.version>3.0.1-SNAPSHOT</io-addon.version>
+        <i18n-addon.version>4.0.2</i18n-addon.version>
+        <io-addon.version>3.0.1</io-addon.version>
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
-        <jdbc-addon.version>3.0.2</jdbc-addon.version>
+        <jdbc-addon.version>3.0.3</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
-        <jms-addon.version>3.1.1-SNAPSHOT</jms-addon.version>
-        <jpa-addon.version>4.1.1-SNAPSHOT</jpa-addon.version>
-        <kafka-addon.version>2.0.1-SNAPSHOT</kafka-addon.version>
+        <jms-addon.version>3.1.1</jms-addon.version>
+        <jpa-addon.version>4.1.1</jpa-addon.version>
+        <kafka-addon.version>2.0.1</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.1.0</metrics-addon.version>
         <modelmapper-addon.version>1.0.0</modelmapper-addon.version>
-        <mongodb-addon.version>3.1.2-SNAPSHOT</mongodb-addon.version>
+        <mongodb-addon.version>3.1.2</mongodb-addon.version>
         <monitoring-addon.version>3.1.0</monitoring-addon.version>
-        <mqtt-addon.version>2.1.2-SNAPSHOT</mqtt-addon.version>
+        <mqtt-addon.version>2.1.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
-        <netflix-addon.version>1.2.2-SNAPSHOT</netflix-addon.version>
-        <oauth-addon.version>1.1.0</oauth-addon.version>
+        <netflix-addon.version>1.2.2</netflix-addon.version>
+        <oauth-addon.version>1.1.1</oauth-addon.version>
         <redis-addon.version>2.0.0</redis-addon.version>
-        <scheduling-addon.version>3.3.1-SNAPSHOT</scheduling-addon.version>
+        <scheduling-addon.version>3.3.1</scheduling-addon.version>
         <shell-addon.version>1.0.1</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
-        <spring-bridge-addon.version>3.1.1</spring-bridge-addon.version>
+        <spring-bridge-addon.version>3.1.2</spring-bridge-addon.version>
         <swagger-addon.version>2.1.2</swagger-addon.version>
-        <w20-bridge-addon.version>3.2.7</w20-bridge-addon.version>
-        <web-bridge-addon.version>1.0.3</web-bridge-addon.version>
-        <web-services-addon.version>3.0.4-SNAPSHOT</web-services-addon.version>
-
-        <!-- Versions for compatibility BOM -->
-        <compat.business.version>3.1.0</compat.business.version>
-        <compat.jpa-addon.version>3.0.2</compat.jpa-addon.version>
-        <compat.mongodb-addon.version>2.0.0</compat.mongodb-addon.version>
-        <compat.i18n-addon.version>3.0.0</compat.i18n-addon.version>
+        <w20-bridge-addon.version>3.2.8</w20-bridge-addon.version>
+        <web-bridge-addon.version>1.0.4</web-bridge-addon.version>
+        <web-services-addon.version>3.0.4</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
         <seedstack-maven-plugin.version>2.7.5</seedstack-maven-plugin.version>
@@ -89,7 +84,6 @@
 
     <modules>
         <module>seedstack-bom</module>
-        <module>seedstack-bom-compat</module>
         <module>batch-archetype</module>
         <module>domain-archetype</module>
         <module>web-archetype</module>
