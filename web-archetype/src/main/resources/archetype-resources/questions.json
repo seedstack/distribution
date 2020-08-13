@@ -70,47 +70,5 @@
         ]
       }
     ]
-  },
-  "w20": {
-    "label": "W20",
-    "order": 2,
-    "questions": [
-      {
-        "name": "enabled",
-        "style": "confirm",
-        "message": "Add a W20 UI ?",
-        "default": "no"
-      },
-      {
-        "name": "theme",
-        "conditions": [
-          {
-            "ref": "enabled",
-            "op": "eq",
-            "val": true
-          }
-        ],
-        "style": "list",
-        "message": "Choose your W20 theme",
-        "values": [
-          {
-            "name": "w20BusinessTheme",
-            "label": "W20 business theme"
-          },
-          {
-            "name": "w20SimpleTheme",
-            "label": "W20 simple theme"
-          },
-          {
-            "name": "w20MaterialTheme",
-            "label": "W20 material theme"
-          },
-          {
-            "name": "w20NoTheme",
-            "label": "No theme"
-          }
-        ]
-      }
-    ]
   }
 }

@@ -11,11 +11,6 @@ application:
   # Make sure all your application base packages are listed below
   basePackages: [ {{ project.groupId }} ]
 
-{% if w20.enabled %}
-rest:
-  path: /api
-{% endif %}
-
 security:
   # The security configuration realm uses the 'users' section below (replace it with a more useful realm later)
   # See http://seedstack.org/docs/seed/manual/security/#realms for more information

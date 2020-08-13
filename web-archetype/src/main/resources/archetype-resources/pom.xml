@@ -209,27 +209,6 @@
             <artifactId>mongodb-morphia</artifactId>
         </dependency>
 {% endif %}
-{% if w20.theme == "w20BusinessTheme" %}
-        <dependency>
-            <groupId>org.seedstack.addons.w20</groupId>
-            <artifactId>w20-bridge-web-business-theme</artifactId>
-        </dependency>
-{% elseif w20.theme == "w20SimpleTheme" %}
-        <dependency>
-            <groupId>org.seedstack.addons.w20</groupId>
-            <artifactId>w20-bridge-web-simple-theme</artifactId>
-        </dependency>
-{% elseif w20.theme == "w20MaterialTheme" %}
-        <dependency>
-            <groupId>org.seedstack.addons.w20</groupId>
-            <artifactId>w20-bridge-web-material-theme</artifactId>
-        </dependency>
-{% elseif w20.theme == "w20NoTheme" %}
-        <dependency>
-            <groupId>org.seedstack.addons.w20</groupId>
-            <artifactId>w20-bridge-web-bootstrap-3</artifactId>
-        </dependency>
-{% endif %}
 
         <dependency>
             <groupId>org.seedstack.seed</groupId>

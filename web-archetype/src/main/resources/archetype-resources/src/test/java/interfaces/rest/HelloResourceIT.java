@@ -21,7 +21,7 @@ public class HelloResourceIT {
         Response response = given()
                 .auth().basic("demo", "demo")
                 .expect().statusCode(200)
-                .when().get(baseUrl + "/{% if w20.enabled %}api/{% endif %}hello");
+                .when().get(baseUrl + "/hello");
 
         assertThat(response.body().asString()).isEqualTo("Hello World!");
     }
