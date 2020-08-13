@@ -41,6 +41,7 @@
         <io-addon.version>3.0.1</io-addon.version>
         <javamail-addon.version>3.0.0</javamail-addon.version>
         <jcache-addon.version>3.0.0</jcache-addon.version>
+        <jcr-addon.version>1.0.0</jcr-addon.version>
         <jdbc-addon.version>3.0.3</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.1.1</jms-addon.version>

@@ -281,6 +281,13 @@
                 <version>${jcache-addon.version}</version>
             </dependency>
 
+            <!-- JCR add-on -->
+            <dependency>
+                <groupId>org.seedstack.addons.jcr</groupId>
+                <artifactId>jcr</artifactId>
+                <version>${jcr-addon.version}</version>
+            </dependency>
+
             <!-- JDBC add-on -->
             <dependency>
                 <groupId>org.seedstack.addons.jdbc</groupId>
