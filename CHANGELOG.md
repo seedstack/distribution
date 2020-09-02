@@ -1,3 +1,7 @@
+# Version 20.11 (2020-11-30)
+
+* **[chg]** redis-addon: **[2.0.1](https://github.com/seedstack/redis-addon/releases/tag/v2.0.1)**
+
 # Version 20.7 (2020-08-13)
 
 * **[new]** camel-addon: **[1.0.0](https://github.com/seedstack/camel-addon/releases/tag/v1.0.0)**
