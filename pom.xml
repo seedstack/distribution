@@ -24,7 +24,7 @@
     <properties>
         <shed.version>1.1.6</shed.version>
         <coffig.version>3.1.6</coffig.version>
-        <seed.version>3.10.0</seed.version>
+        <seed.version>3.11.0-SNAPSHOT</seed.version>
         <business.version>4.3.1</business.version>
 
         <audit-addon.version>3.0.1</audit-addon.version>
@@ -55,7 +55,7 @@
         <mqtt-addon.version>2.1.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
         <netflix-addon.version>1.2.2</netflix-addon.version>
-        <oauth-addon.version>1.1.1</oauth-addon.version>
+        <oauth-addon.version>1.2.0-SNAPSHOT</oauth-addon.version>
         <redis-addon.version>2.0.1</redis-addon.version>
         <scheduling-addon.version>3.3.1</scheduling-addon.version>
         <shell-addon.version>1.0.1</shell-addon.version>
