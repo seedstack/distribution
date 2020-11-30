@@ -4,6 +4,7 @@
 * **[chg]** redis-addon: **[2.0.1](https://github.com/seedstack/redis-addon/releases/tag/v2.0.1)**
 * **[chg]** oauth-addon: **[3.0.0](https://github.com/seedstack/oauth-addon/releases/tag/v3.0.0)**
 * **[chg]** kafka-addon: **[2.0.2](https://github.com/seedstack/kafka-addon/releases/tag/v2.0.2)**
+* **[chg]** seedstack-maven-plugin: **[2.7.6](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.7.6)**
 
 # Version 20.7 (2020-08-13)
 
