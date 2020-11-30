@@ -1,6 +1,8 @@
 # Version 20.11 (2020-11-30)
 
+* **[chg]** seed: **[3.11.0](https://github.com/seedstack/seed/releases/tag/v3.11.0)**
 * **[chg]** redis-addon: **[2.0.1](https://github.com/seedstack/redis-addon/releases/tag/v2.0.1)**
+* **[chg]** oauth-addon: **[3.0.0](https://github.com/seedstack/oauth-addon/releases/tag/v3.0.0)**
 
 # Version 20.7 (2020-08-13)
 
