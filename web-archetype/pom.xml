@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack</groupId>
         <artifactId>distribution</artifactId>
-        <version>20.11-SNAPSHOT</version>
+        <version>20.11.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>web-archetype</artifactId>

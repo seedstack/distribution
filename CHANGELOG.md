@@ -1,3 +1,7 @@
+# Version 20.11.1 (2020-12-15)
+
+* **[chg]** swagger-addon: **[2.1.3](https://github.com/seedstack/swagger-addon/releases/tag/v2.1.3)**
+
 # Version 20.11 (2020-11-30)
 
 * **[chg]** seed: **[3.11.0](https://github.com/seedstack/seed/releases/tag/v3.11.0)**
