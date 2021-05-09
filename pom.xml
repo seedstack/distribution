@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright © 2013-2020, The SeedStack authors <http://seedstack.org>
+    Copyright © 2013-2021, The SeedStack authors <http://seedstack.org>
 
     This Source Code Form is subject to the terms of the Mozilla Public
     License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>3.4.10</version>
+        <version>4.0.2</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
@@ -23,9 +23,9 @@
 
     <properties>
         <shed.version>1.1.6</shed.version>
-        <coffig.version>3.1.6</coffig.version>
-        <seed.version>3.12.0-SNAPSHOT</seed.version>
-        <business.version>4.3.1</business.version>
+        <coffig.version>3.1.7</coffig.version>
+        <seed.version>3.12.0</seed.version>
+        <business.version>4.4.0</business.version>
 
         <audit-addon.version>3.0.1</audit-addon.version>
         <aws-addon.version>1.0.0</aws-addon.version>
@@ -34,9 +34,9 @@
         <crud-addon.version>1.0.1</crud-addon.version>
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
-        <elasticsearch-addon.version>3.0.0</elasticsearch-addon.version>
-        <feign-addon.version>1.4.0</feign-addon.version>
-        <flyway-addon.version>2.0.0-SNAPSHOT</flyway-addon.version>
+        <elasticsearch-addon.version>3.1.0</elasticsearch-addon.version>
+        <feign-addon.version>1.5.0</feign-addon.version>
+        <flyway-addon.version>2.0.0</flyway-addon.version>
         <i18n-addon.version>4.0.2</i18n-addon.version>
         <io-addon.version>3.0.1</io-addon.version>
         <javamail-addon.version>3.0.0</javamail-addon.version>
@@ -45,7 +45,7 @@
         <jdbc-addon.version>3.0.3</jdbc-addon.version>
         <jmh-addon.version>1.0.2</jmh-addon.version>
         <jms-addon.version>3.1.1</jms-addon.version>
-        <jpa-addon.version>4.1.1</jpa-addon.version>
+        <jpa-addon.version>4.2.0</jpa-addon.version>
         <kafka-addon.version>2.0.2</kafka-addon.version>
         <ldap-addon.version>3.0.0</ldap-addon.version>
         <metrics-addon.version>1.1.0</metrics-addon.version>
@@ -55,8 +55,8 @@
         <mqtt-addon.version>2.1.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
         <netflix-addon.version>1.2.2</netflix-addon.version>
-        <oauth-addon.version>3.0.0</oauth-addon.version>
-        <redis-addon.version>2.0.1</redis-addon.version>
+        <oauth-addon.version>3.2.0</oauth-addon.version>
+        <redis-addon.version>2.1.0</redis-addon.version>
         <scheduling-addon.version>3.3.1</scheduling-addon.version>
         <shell-addon.version>1.0.1</shell-addon.version>
         <solr-addon.version>2.0.0</solr-addon.version>
@@ -67,7 +67,7 @@
         <web-services-addon.version>3.0.4</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <seedstack-maven-plugin.version>2.7.6</seedstack-maven-plugin.version>
+        <seedstack-maven-plugin.version>2.8.0</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <docker-maven-plugin.version>0.27.2</docker-maven-plugin.version>
         <hibernate.version>5.4.24.Final</hibernate.version>
@@ -79,8 +79,6 @@
         <h2.version>1.4.196</h2.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
         <!-- end -->
-
-        <bintray.package>distribution</bintray.package>
     </properties>
 
     <modules>
@@ -119,17 +117,6 @@
         </pluginManagement>
     </build>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>bintray-jfrog-jfrog-jars</id>
-            <name>bintray-plugins</name>
-            <url>http://dl.bintray.com/jfrog/jfrog-jars</url>
-        </pluginRepository>
-    </pluginRepositories>
-
     <scm>
         <url>https://github.com/seedstack/distribution</url>
         <connection>scm:git:git://github.com/seedstack/distribution.git</connection>
@@ -137,46 +124,16 @@
         <tag>HEAD</tag>
     </scm>
 
-    <profiles>
-        <profile>
-            <id>snapshots</id>
-            <repositories>
-                <repository>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <id>ojo-libs-snapshot</id>
-                    <name>ojo-snapshots</name>
-                    <url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
-                </repository>
-            </repositories>
-        </profile>
-        <profile>
-            <id>bintray</id>
-            <repositories>
-                <repository>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <id>bintray</id>
-                    <name>bintray</name>
-                    <url>http://dl.bintray.com/seedstack/jars</url>
-                </repository>
-            </repositories>
-        </profile>
-    </profiles>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>oss-jfrog-artifactory</id>
-            <name>oss-jfrog-artifactory-snapshots</name>
-            <url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
-        </snapshotRepository>
-    </distributionManagement>
+    <repositories>
+        <repository>
+            <id>oss.sonatype.org-snapshot</id>
+            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>

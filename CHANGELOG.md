@@ -1,3 +1,16 @@
+# Version 21.4 (2021-05-09)
+
+* **[chg]** seed: **[3.12.0](https://github.com/seedstack/seed/releases/tag/v3.12.0)**
+* **[chg]** coffig: **[3.1.7](https://github.com/seedstack/coffig/releases/tag/v3.1.7)**
+* **[chg]** business: **[4.4.0](https://github.com/seedstack/business/releases/tag/v4.4.0)**
+* **[chg]** elasticsearch-addon: **[3.1.0](https://github.com/seedstack/elasticsearch-addon/releases/tag/v3.1.0)**
+* **[chg]** feign-addon: **[1.5.0](https://github.com/seedstack/feign-addon/releases/tag/v1.5.0)**
+* **[chg]** flyway-addon: **[2.0.0](https://github.com/seedstack/flyway-addon/releases/tag/v2.0.0)**
+* **[chg]** jpa-addon: **[4.2.0](https://github.com/seedstack/jpa-addon/releases/tag/v4.2.0)**
+* **[chg]** oauth-addon: **[3.2.0](https://github.com/seedstack/oauth-addon/releases/tag/v3.2.0)**
+* **[chg]** redis-addon: **[2.1.0](https://github.com/seedstack/redis-addon/releases/tag/v2.1.0)**
+* **[chg]** seedstack-maven-plugin: **[2.8.0](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.8.0)**
+
 # Version 20.11.1 (2020-12-15)
 
 * **[chg]** swagger-addon: **[2.1.3](https://github.com/seedstack/swagger-addon/releases/tag/v2.1.3)**
