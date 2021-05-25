@@ -287,6 +287,16 @@
                 <artifactId>jcr</artifactId>
                 <version>${jcr-addon.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.jcr</groupId>
+                <artifactId>jcr-specs</artifactId>
+                <version>${jcr-addon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seedstack.addons.jcr</groupId>
+                <artifactId>jcr-core</artifactId>
+                <version>${jcr-addon.version}</version>
+            </dependency>
 
             <!-- JDBC add-on -->
             <dependency>
