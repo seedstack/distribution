@@ -1,3 +1,8 @@
+# Version 21.4.1 (2021-05-25)
+
+* **[chg]** seed: **[3.12.1](https://github.com/seedstack/seed/releases/tag/v3.12.1)**
+* **[chg]** redis-addon: **[2.1.1](https://github.com/seedstack/redis-addon/releases/tag/v2.1.1)**
+
 # Version 21.4 (2021-05-09)
 
 * **[chg]** seed: **[3.12.0](https://github.com/seedstack/seed/releases/tag/v3.12.0)**
