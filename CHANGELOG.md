@@ -1,3 +1,9 @@
+# Version 21.7 (2021-07-23)
+
+* **[chg]** coffig: **[3.1.8](https://github.com/seedstack/coffig/releases/tag/v3.1.8)**
+* **[chg]** seed: **[3.13.0](https://github.com/seedstack/seed/releases/tag/v3.13.0)**
+* **[chg]** mongodb-addon: **[3.1.3](https://github.com/seedstack/mongodb-addon/releases/tag/v3.1.3)**
+
 # Version 21.4.1 (2021-05-25)
 
 * **[chg]** seed: **[3.12.1](https://github.com/seedstack/seed/releases/tag/v3.12.1)**
