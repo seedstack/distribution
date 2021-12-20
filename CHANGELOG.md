@@ -1,3 +1,9 @@
+# Version 21.11 (2021-12-20)
+
+* **[chg]** seed: **[3.14.0](https://github.com/seedstack/seed/releases/tag/v3.14.0)**
+* **[chg]** elasticsearch-addon: **[3.1.1](https://github.com/seedstack/elasticsearch-addon/releases/tag/v3.1.1)**
+* **[chg]** oauth-addon: **[3.3.0](https://github.com/seedstack/oauth-addon/releases/tag/v3.3.0)**
+
 # Version 21.7 (2021-07-23)
 
 * **[chg]** coffig: **[3.1.8](https://github.com/seedstack/coffig/releases/tag/v3.1.8)**

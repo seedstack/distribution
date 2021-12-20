@@ -18,13 +18,13 @@
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>21.7-SNAPSHOT</version>
+    <version>21.11-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <shed.version>1.1.6</shed.version>
         <coffig.version>3.1.8</coffig.version>
-        <seed.version>3.13.0</seed.version>
+        <seed.version>3.14.0</seed.version>
         <business.version>4.4.0</business.version>
 
         <audit-addon.version>3.0.1</audit-addon.version>
@@ -34,7 +34,7 @@
         <crud-addon.version>1.0.1</crud-addon.version>
         <consul-addon.version>1.0.0</consul-addon.version>
         <data-security-addon.version>1.0.0</data-security-addon.version>
-        <elasticsearch-addon.version>3.1.0</elasticsearch-addon.version>
+        <elasticsearch-addon.version>3.1.1</elasticsearch-addon.version>
         <feign-addon.version>1.5.0</feign-addon.version>
         <flyway-addon.version>2.0.0</flyway-addon.version>
         <i18n-addon.version>4.0.2</i18n-addon.version>
@@ -55,7 +55,7 @@
         <mqtt-addon.version>2.1.1</mqtt-addon.version>
         <neo4j-addon.version>2.0.0</neo4j-addon.version>
         <netflix-addon.version>1.2.2</netflix-addon.version>
-        <oauth-addon.version>3.2.0</oauth-addon.version>
+        <oauth-addon.version>3.3.0</oauth-addon.version>
         <redis-addon.version>2.1.1</redis-addon.version>
         <scheduling-addon.version>3.3.1</scheduling-addon.version>
         <shell-addon.version>1.0.1</shell-addon.version>
@@ -67,6 +67,7 @@
         <web-services-addon.version>3.0.4</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
+        <logback.version>1.2.9</logback.version> <!-- overrides the default from parent -->
         <seedstack-maven-plugin.version>2.8.0</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <docker-maven-plugin.version>0.27.2</docker-maven-plugin.version>
