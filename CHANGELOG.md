@@ -1,3 +1,8 @@
+# Version 24.4 (2024-04-17)
+
+* **[chg]** seed: **[3.15.0](https://github.com/seedstack/seed/releases/tag/v3.15.0)**
+* **[chg]** business: **[4.5.0](https://github.com/seedstack/business/releases/tag/v4.5.0)**
+
 # Version 21.11 (2021-12-20)
 
 * **[chg]** seed: **[3.14.0](https://github.com/seedstack/seed/releases/tag/v3.14.0)**

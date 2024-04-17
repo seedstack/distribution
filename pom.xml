@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright © 2013-2021, The SeedStack authors <http://seedstack.org>
+    Copyright © 2013-2024, The SeedStack authors <http://seedstack.org>
 
     This Source Code Form is subject to the terms of the Mozilla Public
     License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -13,19 +13,19 @@
     <parent>
         <groupId>org.seedstack.poms</groupId>
         <artifactId>parent-internal</artifactId>
-        <version>4.0.2</version>
+        <version>4.1.0-SNAPSHOT</version>
     </parent>
 
     <groupId>org.seedstack</groupId>
     <artifactId>distribution</artifactId>
-    <version>21.11-SNAPSHOT</version>
+    <version>24.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <shed.version>1.1.6</shed.version>
         <coffig.version>3.1.8</coffig.version>
-        <seed.version>3.14.0</seed.version>
-        <business.version>4.4.0</business.version>
+        <seed.version>3.15.0</seed.version>
+        <business.version>4.5.0</business.version>
 
         <audit-addon.version>3.0.1</audit-addon.version>
         <aws-addon.version>1.0.0</aws-addon.version>
@@ -67,12 +67,12 @@
         <web-services-addon.version>3.0.4</web-services-addon.version>
 
         <!-- Variables used in archetype poms -->
-        <logback.version>1.2.9</logback.version> <!-- overrides the default from parent -->
-        <seedstack-maven-plugin.version>2.8.0</seedstack-maven-plugin.version>
+        <logback.version>1.5.5</logback.version> <!-- overrides the default from parent -->
+        <seedstack-maven-plugin.version>2.8.1</seedstack-maven-plugin.version>
         <java-compiler.version>1.8</java-compiler.version>
         <docker-maven-plugin.version>0.27.2</docker-maven-plugin.version>
-        <hibernate.version>5.4.24.Final</hibernate.version>
-        <hibernate-validator.version>6.1.6.Final</hibernate-validator.version>
+        <hibernate.version>5.6.15.Final</hibernate.version>
+        <hibernate-validator.version>6.1.7.Final</hibernate-validator.version>
         <hikari.version>2.6.3</hikari.version>
         <postgresql.version>42.1.1</postgresql.version>
         <mysql.version>8.0.15</mysql.version>
