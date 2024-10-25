@@ -1,3 +1,8 @@
+# Version 24.4.1 (2024-10-25)
+
+* **[chg]** seed: **[3.15.1](https://github.com/seedstack/seed/releases/tag/v3.15.1)**
+* **[chg]** seedstack-maven-plugin: **[2.8.2](https://github.com/seedstack/seedstack-maven-plugin/releases/tag/v2.8.2)**
+
 # Version 24.4 (2024-04-17)
 
 * **[chg]** seed: **[3.15.0](https://github.com/seedstack/seed/releases/tag/v3.15.0)**
